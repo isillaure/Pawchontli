@@ -1,0 +1,50 @@
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/base';
+@import 'base/fonts';
+
+@import 'components/buttons';
+@import 'components/carousel';
+
+@import 'layout/footer';
+@import 'layout/forms';
+@import 'layout/header';
+@import 'layout/navigation';
+
+@import 'pages/404';
+@import 'pages/adoptionForm';
+@import 'pages/appointmentsShelter';
+@import 'pages/appointmentsUser';
+@import 'pages/createPet';
+@import 'pages/detailPet';
+@import 'pages/detailPetShelter';
+@import 'pages/directMessage';
+@import 'pages/directMessageShelter';
+@import 'pages/donate';
+@import 'pages/favouritePet';
+@import 'pages/formUser';
+@import 'pages/homeShelter';
+@import 'pages/index';
+@import 'pages/location';
+@import 'pages/logInShelter';
+@import 'pages/logInUser';
+@import 'pages/messagesShelter';
+@import 'pages/messagesUser';
+@import 'pages/profileShelter';
+@import 'pages/profileUser';
+@import 'pages/requestsShelter';
+@import 'pages/requestsUser';
+@import 'pages/searchPet';
+@import 'pages/signUpUser';
+@import 'pages/signUpShelter';
+@import 'pages/success';
+@import 'pages/updatePet';
+@import 'pages/updateShelter';
+@import 'pages/updateUser';
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}

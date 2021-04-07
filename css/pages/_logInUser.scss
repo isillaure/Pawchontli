@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,600");
+
+.josefinsans-normal-black-30px {
+    color: black;
+    font-family: "Josefin Sans", Helvetica;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.log-in-i887635144 {
+    letter-spacing: 0px;
+    min-height: 30px;
+    min-width: 114px;
+    text-align: center;
+}
+
+.page-header {
+    align-items: flex-start;
+    display: flex;
+    height: 36px;
+    padding: 0 112px;
+    width: 343px;
+}
+
+.josefinsans-normal-chetwode-blue-16px {
+    color: var(--chetwode-blue);
+    font-family: "Josefin Sans", Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.registrarme {
+    letter-spacing: 0px;
+    min-height: 16px;
+    min-width: 90px;
+    text-align: right;
+}
+
+:root {
+    --chetwode-blue: rgba(118, 126, 237, 1);
+}
+
+.border-2px-chetwode-blue {
+    border: 2px solid var(--chetwode-blue);
+}
+
+.dropdown-indicator {
+    align-items: flex-end;
+    display: flex;
+    height: 52px;
+    overflow: hidden;
+    width: 343px;
+}
+
+.josefinsans-normal-chetwode-blue-16px {
+    color: var(--chetwode-blue);
+    font-family: "Josefin Sans", Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.overlap-group {
+    align-items: flex-start;
+    background-color: var(--white-lilac);
+    border-radius: 16px;
+    display: flex;
+    height: 53px;
+    margin-bottom: -0.95px;
+    min-width: 343px;
+    padding: 12px 22px;
+}
+
+.vegetables-i887639 {
+    letter-spacing: 0px;
+    min-height: 16px;
+}
+
+:root {
+    --chetwode-blue: rgba(118, 126, 237, 1);
+    --white-lilac: rgba(246, 247, 251, 1);
+}
+
+.button-primary {
+    align-items: center;
+    background-color: var(--porsche);
+    border-radius: 15px;
+    display: flex;
+    height: 52px;
+    overflow: hidden;
+    padding: 0 132px;
+    width: 343px;
+}
+
+.josefinsans-normal-white-20px {
+    color: white;
+    font-family: "Josefin Sans", Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.log-in-i887636144 {
+    letter-spacing: 0px;
+    min-height: 20px;
+    min-width: 77px;
+    text-align: center;
+}
+
+:root {
+    --porsche: rgba(236, 163, 107, 1);
+}
+
+.josefinsans-semi-bold-chetwode-blue-16px {
+    color: var(--chetwode-blue);
+    font-family: "Josefin Sans", Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.text-1 {
+    letter-spacing: 0px;
+    min-height: 16px;
+    min-width: 160px;
+}
+
+:root {
+    --chetwode-blue: rgba(118, 126, 237, 1);
+}
