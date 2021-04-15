@@ -17,217 +17,189 @@
 
 <body>
 
-    <div class="page-header">
-        <img class="group" src="group-1.svg" />
-        <img class="vector" src="vector-26.svg" />
-        <!-- Hamburguer menu -->
-        <div class="list">
-            <img class="vector-2" src="vector-28.svg" />
-            <div class="overlap-group">
-                <img class="vector-1" src="vector.png" />
-                <img class="vector" src="vector-28.svg" />
-            </div>
-            <img class="vector-3" src="vector-28.svg" />
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/svg/logo.svg" class="pawchontli-icon" alt="">
+            </a>
         </div>
-    </div>
+        <div class="nav-bar">
+            <a href="favouritePet.html">
+                <img src="assets/svg/heart.svg" class="heart" alt="">
+            </a>
+            <img src="assets/svg/menu.svg" class="menu" alt="">
+        </div>
+    </header>
 
-    <div class="form-background">
-        <div class="background"></div>
-        <!-- Cancel button -->
-        <div class="x-circle">
-            <div class="overlap-group">
-                <img class="vector-2" src="vector.png" />
-                <img class="vector" src="vector-1.svg" />
-                <img class="vector-1" src="vector-2.svg" />
-                <img class="vector-1" src="vector-3.svg" />
+    <main class="user-form">
+        <div class="top-background">
+            <div class="background-orange"></div>
+            <div class="rectangle-background"></div>
+            <div class="close">
+                <img onclick="goBack()" src="assets/svg/xcircle.svg" class="x-circle" alt="">
             </div>
         </div>
-        <div class="rectangle-245"></div>
-    </div>
 
-    <div class="form-body">
-        <div class="page-title">
-            <h1 class="log-in-i483761442 josefinsans-normal-black-30px">Completa tu perfil</h1>
+        <div class="title">
+            <h1 class="josefinsans-normal-black-30px">Completa tu perfil</h1>
         </div>
 
-        <!-- Form -->
-        <div>
-            <div class="">
-                <div>
+        <form action="" method="" class="group-form" id="adoption-form">
+            <ul class="d-flex align-content-center flex-column align-items-center justify-content-center">
+                <li>
                     <label for="inputName"
-                        class="dropdown-indicator form-label cmo-te-llamas josefinsans-normal-chetwode-blue-20px">¿Cómo
-                        te
-                        llamas?
+                        class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Cómo te llamas?
                     </label>
                     <input type="given-name"
-                        class="vegetables-i486731 josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                        class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
                         placeholder="Nombre">
-                </div>
-
-                <div class="">
+                    <br>
                     <input type="family-name"
-                        class="vegetables-i486731 josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                        placeholder="Apellido">
-                </div>
-            </div>
-
-
-            <div class="">
-                <label for="inputBday"
-                    class="dropdown-indicator cundo-naciste josefinsans-normal-chetwode-blue-20px">¿Cuándo naciste?
-                </label>
-                <input type="bday"
-                    class="vegetables-i481963 josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                    placeholder="Fecha de nacimiento">
-                <!--  Despliegue de fecha <img class="forward" src="forward.svg" /> -->
-            </div>
-
-            <div class="">
-                <label for="inputTel"
-                    class="dropdown-indicator cundo-naciste josefinsans-normal-chetwode-blue-20px">¿Cómo te podemos
-                    contactar?
-                </label>
-                <input type="tel"
-                    class="vegetables-i481963 josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                    placeholder="Teléfono">
-            </div>
-
-            <div class="">
-                <label for="inputOcupation"
-                    class="dropdown-indicator cundo-naciste josefinsans-normal-chetwode-blue-20px">¿A qué te dedicas?
-                </label>
-                <input type="text"
-                    class="vegetables-i481963 josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                    placeholder="Ocupación">
-            </div>
-
-            <div class="">
-                <div>
+                        class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                        placeholder="Apellidos">
+                </li>
+                <br>
+                <li>
+                    <label for="inputBirthDate"
+                        class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Cuándo naciste?
+                    </label>
+                    <input type="text"
+                        class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue datepicker"
+                        placeholder="Fecha de nacimiento" />
+                </li>
+                <br>
+                <li>
+                    <label for="inputPhone"
+                        class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Cómo te podemos
+                        contactar?
+                    </label>
+                    <input type="tel"
+                        class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                        placeholder="Teléfono">
+                </li>
+                <br>
+                <li>
                     <label for="inputAdress"
-                        class="dropdown-indicator form-label cmo-te-llamas josefinsans-normal-chetwode-blue-20px">¿Dónde
-                        vives?</label>
-                    <input type="street"
-                        class="vegetables-i486731 josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                        class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Dónde vives?
+                    </label>
+                    <input type="street-address"
+                        class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
                         placeholder="Calle y número">
-                </div>
-
-                <div class="">
-                    <input type="family-name"
-                        class="vegetables-i486731 josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                    <br>
+                    <input type="address-line1"
+                        class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                        placeholder="Colonia">
+                    <br>
+                    <input type="address-line2"
+                        class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
                         placeholder="Municipio/Delegación">
+                    <br>
+                    <input type="address-line3"
+                        class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                        placeholder="Estado">
+                    <br>
+                    <input type="postal-code"
+                        class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                        placeholder="Código postal">
+                </li>
+                <br>
+                <li>
+                    <label for="inputDescription"
+                        class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap"> ¿Por qué deseas adoptar?
+                    </label>
+                    <input type="text"
+                        class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
+                </li>
+                <br>
+                <div class="file-upload">
+                    <div class="image-upload-wrap">
+                        <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                        <div class="drag-text">
+                            <br>
+                            <img src="assets/svg/add.svg" alt="" style="height: 3em; width: 3em;">
+                            <h3 class="josefinsans-medium-chetwode-blue-14px">Añadir foto de perfil</h3>
+                        </div>
+                    </div>
+                    <div class="file-upload-content">
+                        <img class="file-upload-image" src="#" alt="your image" />
+                        <div class="image-title-wrap">
+                            <button type="button" onclick="removeUpload()" class="remove-image">Borrar <span
+                                    class="image-title">Tu foto</span></button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="dropdown-indicator">
-                <div class="overlap-group border-2px-chetwode-blue">
-                    <div class="vegetables-i487031 josefinsans-normal-chetwode-blue-16px">Colonia</div>
-                </div>
-            </div>
-            <div class="dropdown-indicator">
-                <div class="overlap-group border-2px-chetwode-blue">
-                    <div class="vegetables-i486981 josefinsans-normal-chetwode-blue-16px">Ciudad</div>
-                </div>
-            </div>
-            <div class="dropdown-indicator">
-                <div class="overlap-group border-2px-chetwode-blue">
-                    <div class="vegetables-i486261 josefinsans-normal-chetwode-blue-16px">Estado</div>
-                    <img class="forward" src="forward.svg" />
-                </div>
-            </div>
-            <div class="dropdown-indicator">
-                <div class="overlap-group border-2px-chetwode-blue">
-                    <div class="vegetables-i487141 josefinsans-normal-chetwode-blue-16px">Código postal</div>
-                </div>
-            </div>
-
-            <div class="text-1 josefinsans-normal-chetwode-blue-20px">¿Por qué deseas adoptar?</div>
-            <div class="dropdown-indicator">
-                <div class="overlap-group border-2px-chetwode-blue">
-                    <div class="vegetables-i887556 josefinsans-normal-chetwode-blue-16px">Comentario</div>
-                </div>
-            </div>
-
-            <div class="dropdown-indicator border-2px-chetwode-blue"></div>
-            <div class="text-1 josefinsans-normal-chetwode-blue-20px">
-                He leído y acepto los términos <br />y condiciones de uso.
-            </div>
-
-            <div class="component-12">
-                <div class="overlap-group">
-                    <img class="oval" src="vector.png" />
-                    <img class="oval-1" src="oval-1.svg" />
-                    <div class="mask border-1px-chetwode-blue"></div>
-                    <img class="path" src="path.svg" />
-                    <div class="text-i88756148404 josefinsans-bold-chetwode-blue-14px">Añadir foto de perfil</div>
-                </div>
-            </div>
-
-            <div class="button-primary">
-                <div class="log-in-i483791442 josefinsans-normal-white-20px">Ingresar</div>
-            </div>
+                <br>
+                <li class="checkbox-form">
+                    <input type="checkbox" class="overlap-group" id="checkbox-form">
+                    <label for="inputText12" class="josefinsans-normal-chetwode-blue-20px">He leído y acepto los
+                        términos
+                        y condiciones de uso.
+                    </label>
+                </li>
+                <input type="submit" value="Ingresar" class="button-p josefinsans-normal-white-20px button-primary">
+            </ul>
+        </form>
+    </main>
+    <footer text-center>
+        <div class="top-footer">
+            <img onclick="topFunction()" id="myBtn" title="Go to top" src="assets/svg/arrow.svg" alt="" class="arrow">
         </div>
-    </div>
-
-    <!-- Footer -->
-
-    <div class="footer">
-        <div class="overlap-group">
-            <div class="perros josefinsans-normal-white-16px">Perros</div>
-            <div class="background"></div>
-            <div class="github-logo">
-                <div class="overlap-group1">
-                    <img class="vector-10" src="vector.png" />
-                    <img class="vector-3" src="vector-7.svg" />
-                    <img class="vector" src="vector-8.svg" />
-                    <img class="vector-11" src="vector-9.svg" />
-                    <img class="vector-5" src="vector-10.svg" />
-                    <img class="vector-14" src="vector-11.svg" />
-                </div>
-            </div>
-            <div class="instagram-logo">
-                <div class="overlap-group-1">
-                    <img class="vector-1" src="vector.png" />
-                    <img class="vector-4" src="vector-13.svg" />
-                    <img class="vector-2" src="vector-14.svg" />
-                    <img class="vector-15" src="vector-15.svg" />
-                </div>
-            </div>
-            <div class="twitter-logo">
-                <div class="overlap-group3">
-                    <img class="vector-13" src="vector.png" />
-                    <img class="vector-6" src="vector-15.svg" />
-                </div>
-            </div>
-            <div class="arrow-up">
-                <div class="overlap-group4">
-                    <img class="vector-8" src="vector.png" />
-                    <img class="vector-9" src="vector-19.svg" />
-                    <img class="vector-7" src="vector-20.svg" />
-                </div>
-            </div>
-            <img class="group" src="group.svg" />
-            <p class="text-1 josefinsans-normal-white-16px">
-                Acerca<br /><br />Refugios<br /><br />Condiciones de uso <br /><br />Política de privacidad
-            </p>
-            <div class="text-2 josefinsans-normal-white-16px">Partners<br /><br />Soporte<br /><br />Mapa del sitio
-            </div>
-            <p class="text-3 quicksand-normal-white-10px">© 2021 Kodemia. Todos los derechos reservados.</p>
-            <div class="facebook-logo">
-                <div class="overlap-group-1">
-                    <img class="vector-1" src="vector.png" />
-                    <img class="vector-2" src="vector-22.svg" />
-                    <img class="vector-16" src="vector-23.svg" />
-                    <img class="vector-12" src="vector-24.svg" />
-                </div>
-            </div>
+        <div class="container text-center">
+            <img src="assets/svg/logowhite.svg" alt="" class="logo-white">
         </div>
-    </div>
+        <div class="block-footer d-flex flex-column pb-4 align-content-start">
+            <ul>
+                <li>
+                    <a href="">Acerca</a>
+                </li>
+                <li>
+                    <a href="">Refugios</a>
+                </li>
+                <li>
+                    <a href="">Condiciones de uso</a>
+                </li>
+                <li>
+                    <a href="">Política de privacidad</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">Partners</a>
+                </li>
+                <li>
+                    <a href="">Soporte</a>
+                </li>
+                <li>
+                    <a href="">Mapa del sitio</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="icons-footer d-flex justify-content-evenly">
+            <a href="" role="button">
+                <img src="/assets/svg/facebook.svg" alt="" style="height: 2.5em; width: 2.5em;">
+            </a>
+            <a href="" role="button">
+                <img src="/assets/svg/twitter.svg" alt="" style="height: 2.5em; width: 2.5em;">
+            </a>
+            <a href="" role="button">
+                <img src="/assets/svg/instagram.svg" alt="" style="height: 2.5em; width: 2.5em;">
+            </a>
+            <a href="">
+                <img src="/assets/svg/git.svg" alt="" style="height: 3em; width: 3em;">
+            </a>
+        </div>
+        <div class="text-center pb-4">
+            <p class="quicksand-normal-white-10px">© 2021 Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
     </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

@@ -1,176 +1,200 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400");
+
 .josefinsans-normal-black-30px {
-  color: black;
-  font-family: "Josefin Sans", Helvetica;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
+    color: black;
+    font-family: "Josefin Sans", Helvetica;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
 }
+
 .josefinsans-normal-chetwode-blue-16px {
-  color: var(--chetwode-blue);
-  font-family: "Josefin Sans", Helvetica;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
+    color: var(--chetwode-blue);
+    font-family: "Josefin Sans", Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
 }
+
 .login-i571442324 {
-  letter-spacing: 0px;
-  margin-bottom: 4px;
-  margin-left: 20px;
-  min-height: 16px;
-  min-width: 62px;
-  text-align: right;
+    letter-spacing: 0px;
+    margin-bottom: 4px;
+    margin-left: 20px;
+    min-height: 16px;
+    min-width: 62px;
+    text-align: right;
 }
+
 .page-header {
-  align-items: center;
-  display: flex;
-  height: 36px;
-  overflow: hidden;
-  width: 343px;
+    align-items: center;
+    display: flex;
+    height: 36px;
+    overflow: hidden;
+    width: 343px;
 }
+
 .sign-up-i57144232 {
-  align-self: flex-end;
-  letter-spacing: 0px;
-  margin-bottom: -24px;
-  min-height: 60px;
-  min-width: 177px;
-  text-align: center;
+    align-self: flex-end;
+    letter-spacing: 0px;
+    margin-bottom: -24px;
+    min-height: 60px;
+    min-width: 177px;
+    text-align: center;
 }
+
 :root {
-  --chetwode-blue: rgba(118, 126, 237, 1);
+    --chetwode-blue: rgba(118, 126, 237, 1);
 }
 
 .border-2px-chetwode-blue {
-  border: 2px solid var(--chetwode-blue);
+    border: 2px solid var(--chetwode-blue);
 }
+
 .dropdown-indicator {
-  align-items: flex-end;
-  display: flex;
-  height: 50px;
-  overflow: hidden;
-  width: 343px;
+    align-items: flex-end;
+    display: flex;
+    height: 50px;
+    overflow: hidden;
+    width: 343px;
 }
+
 .josefinsans-normal-chetwode-blue-16px {
-  color: var(--chetwode-blue);
-  font-family: "Josefin Sans", Helvetica;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
+    color: var(--chetwode-blue);
+    font-family: "Josefin Sans", Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
 }
+
 .overlap-group {
-  align-items: flex-start;
-  background-color: var(--white-lilac);
-  border-radius: 16px;
-  display: flex;
-  height: 51px;
-  margin-bottom: -0.91px;
-  min-width: 343px;
-  padding: 11px 22px;
+    align-items: flex-start;
+    background-color: var(--white-lilac);
+    border-radius: 16px;
+    display: flex;
+    height: 51px;
+    margin-bottom: -0.91px;
+    min-width: 343px;
+    padding: 11px 22px;
 }
+
 .vegetables-i486371 {
-  letter-spacing: 0px;
-  min-height: 16px;
+    letter-spacing: 0px;
+    min-height: 16px;
 }
+
 :root {
-  --chetwode-blue: rgba(118, 126, 237, 1);
-  --white-lilac: rgba(246, 247, 251, 1);
+    --chetwode-blue: rgba(118, 126, 237, 1);
+    --white-lilac: rgba(246, 247, 251, 1);
 }
 
 .border-2px-chetwode-blue {
-  border: 2px solid var(--chetwode-blue);
+    border: 2px solid var(--chetwode-blue);
 }
+
 .dropdown-indicator {
-  align-items: flex-end;
-  display: flex;
-  height: 50px;
-  overflow: hidden;
-  width: 343px;
+    align-items: flex-end;
+    display: flex;
+    height: 50px;
+    overflow: hidden;
+    width: 343px;
 }
+
 .josefinsans-normal-chetwode-blue-16px {
-  color: var(--chetwode-blue);
-  font-family: "Josefin Sans", Helvetica;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
+    color: var(--chetwode-blue);
+    font-family: "Josefin Sans", Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
 }
+
 .overlap-group {
-  align-items: flex-start;
-  background-color: var(--white-lilac);
-  border-radius: 16px;
-  display: flex;
-  height: 51px;
-  margin-bottom: -0.91px;
-  min-width: 343px;
-  padding: 11px 22px;
+    align-items: flex-start;
+    background-color: var(--white-lilac);
+    border-radius: 16px;
+    display: flex;
+    height: 51px;
+    margin-bottom: -0.91px;
+    min-width: 343px;
+    padding: 11px 22px;
 }
+
 .vegetables-i486431 {
-  letter-spacing: 0px;
-  min-height: 16px;
+    letter-spacing: 0px;
+    min-height: 16px;
 }
+
 :root {
-  --chetwode-blue: rgba(118, 126, 237, 1);
-  --white-lilac: rgba(246, 247, 251, 1);
+    --chetwode-blue: rgba(118, 126, 237, 1);
+    --white-lilac: rgba(246, 247, 251, 1);
 }
 
 .border-2px-chetwode-blue {
-  border: 2px solid var(--chetwode-blue);
+    border: 2px solid var(--chetwode-blue);
 }
+
 .dropdown-indicator {
-  align-items: flex-end;
-  display: flex;
-  height: 50px;
-  overflow: hidden;
-  width: 343px;
+    align-items: flex-end;
+    display: flex;
+    height: 50px;
+    overflow: hidden;
+    width: 343px;
 }
+
 .josefinsans-normal-chetwode-blue-16px {
-  color: var(--chetwode-blue);
-  font-family: "Josefin Sans", Helvetica;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
+    color: var(--chetwode-blue);
+    font-family: "Josefin Sans", Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
 }
+
 .overlap-group {
-  align-items: flex-start;
-  background-color: var(--white-lilac);
-  border-radius: 16px;
-  display: flex;
-  height: 51px;
-  margin-bottom: -0.91px;
-  min-width: 343px;
-  padding: 11px 22px;
+    align-items: flex-start;
+    background-color: var(--white-lilac);
+    border-radius: 16px;
+    display: flex;
+    height: 51px;
+    margin-bottom: -0.91px;
+    min-width: 343px;
+    padding: 11px 22px;
 }
+
 .vegetables-i486481 {
-  letter-spacing: 0px;
-  min-height: 16px;
+    letter-spacing: 0px;
+    min-height: 16px;
 }
+
 :root {
-  --chetwode-blue: rgba(118, 126, 237, 1);
-  --white-lilac: rgba(246, 247, 251, 1);
+    --chetwode-blue: rgba(118, 126, 237, 1);
+    --white-lilac: rgba(246, 247, 251, 1);
 }
 
 .button-primary {
-  align-items: center;
-  background-color: var(--porsche);
-  border-radius: 15px;
-  display: flex;
-  height: 52px;
-  overflow: hidden;
-  padding: 0 128px;
-  width: 343px;
+    align-items: center;
+    background-color: var(--porsche);
+    border-radius: 15px;
+    display: flex;
+    height: 52px;
+    overflow: hidden;
+    padding: 0 128px;
+    width: 343px;
 }
+
 .josefinsans-normal-white-20px {
-  color: white;
-  font-family: "Josefin Sans", Helvetica;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
+    color: white;
+    font-family: "Josefin Sans", Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
 }
+
 .sign-up-i51314421 {
-  letter-spacing: 0px;
-  min-height: 20px;
-  min-width: 85px;
-  text-align: center;
+    letter-spacing: 0px;
+    min-height: 20px;
+    min-width: 85px;
+    text-align: center;
 }
+
 :root {
-  --porsche: rgba(236, 163, 107, 1);
+    --porsche: rgba(236, 163, 107, 1);
 }

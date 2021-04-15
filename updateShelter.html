@@ -12,21 +12,215 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <title>Pawchontli 🐶🐱</title>
+    <title>Pawchontli 🐶🐱 || Actualizar perfil de mi refugio</title>
 </head>
 
 <body>
-    
-<div>
-    <h1>ola ke ase</h1>
-</div>
 
-    
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/svg/logo.svg" class="pawchontli-icon" alt="">
+            </a>
+        </div>
+        <div class="nav-bar">
+            <a href="favouritePet.html">
+                <img src="assets/svg/heart.svg" class="heart" alt="">
+            </a>
+            <img src="assets/svg/menu.svg" class="menu" alt="">
+        </div>
+    </header>
+
+    <main class="shelter-form">
+        <div class="top-background">
+            <div class="background-orange"></div>
+            <div class="rectangle-background"></div>
+            <div class="close">
+                <img onclick="goBack()" src="assets/svg/xcircle.svg" class="x-circle" alt="">
+            </div>
+        </div>
+
+        <div class="title">
+            <h1 class="josefinsans-normal-black-30px">Actualizar el perfil <br />de mi refugio</h1>
+        </div>
+
+        <form action="" method="" class="group-form" id="adoption-form">
+            <ul class="d-flex align-content-center flex-column align-items-center justify-content-center">
+                <li>
+                    <label for="inputNameShelter"
+                        class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Cómo se llama tu
+                        refugio?
+                    </label>
+                    <input type="organization"
+                        class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                        placeholder="Nombre del refugio">
+                </li>
+                <br>
+                <li>
+                    <label for="inputName"
+                        class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Cuál es el nombre del
+                        representante?
+                    </label>
+                    <input type="given-name"
+                        class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                        placeholder="Nombre">
+                    <br>
+                    <input type="family-name"
+                        class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                        placeholder="Apellidos">
+                </li>
+                <br>
+                <li>
+                    <label for="inputPhone"
+                        class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Cómo se les puede
+                        contactar?
+                    </label>
+                    <input type="tel"
+                        class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                        placeholder="Teléfono">
+                </li>
+                <br>
+                <li>
+                    <label for="inputAdress"
+                        class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Dónde está ubicado el
+                        refugio?
+                    </label>
+                    <input type="street-address"
+                        class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                        placeholder="Calle y número">
+                    <br>
+                    <input type="address-line1"
+                        class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                        placeholder="Colonia">
+                    <br>
+                    <input type="address-line2"
+                        class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                        placeholder="Municipio/Delegación">
+                    <br>
+                    <input type="address-line3"
+                        class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                        placeholder="Estado">
+                    <br>
+                    <input type="postal-code"
+                        class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                        placeholder="Código postal">
+                </li>
+                <br>
+                <li>
+                    <label for="inputlink" class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">Si
+                        tienes un link de la página web, por favor ingrésalo:
+                    </label>
+                    <input type="url"
+                        class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                        placeholder="Link">
+                </li>
+                <br>
+                <li>
+                    <label for="inputPayPal"
+                        class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">Ingresa el link del
+                        PayPal donde puedan donar los adoptantes.
+                    </label>
+                    <input type="url"
+                        class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                        placeholder="PayPal">
+                </li>
+                <br>
+                <li>
+                    <label for="inputDescription"
+                        class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap"> Cuéntanos sobre tu
+                        refugio.
+                    </label>
+                    <input type="text"
+                        class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
+                </li>
+                <br>
+                <div class="file-upload">
+                    <div class="image-upload-wrap">
+                        <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                        <div class="drag-text">
+                            <br>
+                            <img src="assets/svg/add.svg" alt="" style="height: 3em; width: 3em;">
+                            <h3 class="josefinsans-medium-chetwode-blue-14px">Añadir foto de perfil</h3>
+                        </div>
+                    </div>
+                    <div class="file-upload-content">
+                        <img class="file-upload-image" src="#" alt="your image" />
+                        <div class="image-title-wrap">
+                            <button type="button" onclick="removeUpload()" class="remove-image">Borrar <span
+                                    class="image-title">Tu foto</span></button>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <li class="checkbox-form">
+                    <input type="checkbox" class="overlap-group" id="checkbox-form">
+                    <label for="inputText12" class="josefinsans-normal-chetwode-blue-20px">He leído y acepto los términos 
+                        y condiciones de uso.
+                    </label>
+                </li>
+                <input type="submit" value="Actualizar" class="button-p josefinsans-normal-white-20px button-primary">
+            </ul>
+        </form>
+    </main>
+    <footer text-center>
+        <div class="top-footer">
+            <img onclick="topFunction()" id="myBtn" title="Go to top" src="assets/svg/arrow.svg" alt="" class="arrow">
+        </div>
+        <div class="container text-center">
+            <img src="assets/svg/logowhite.svg" alt="" class="logo-white">
+        </div>
+        <div class="block-footer d-flex flex-column pb-4 align-content-start">
+            <ul>
+                <li>
+                    <a href="">Acerca</a>
+                </li>
+                <li>
+                    <a href="">Refugios</a>
+                </li>
+                <li>
+                    <a href="">Condiciones de uso</a>
+                </li>
+                <li>
+                    <a href="">Política de privacidad</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">Partners</a>
+                </li>
+                <li>
+                    <a href="">Soporte</a>
+                </li>
+                <li>
+                    <a href="">Mapa del sitio</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="icons-footer d-flex justify-content-evenly">
+            <a href="" role="button">
+                <img src="/assets/svg/facebook.svg" alt="" style="height: 2.5em; width: 2.5em;">
+            </a>
+            <a href="" role="button">
+                <img src="/assets/svg/twitter.svg" alt="" style="height: 2.5em; width: 2.5em;">
+            </a>
+            <a href="" role="button">
+                <img src="/assets/svg/instagram.svg" alt="" style="height: 2.5em; width: 2.5em;">
+            </a>
+            <a href="">
+                <img src="/assets/svg/git.svg" alt="" style="height: 3em; width: 3em;">
+            </a>
+        </div>
+        <div class="text-center pb-4">
+            <p class="quicksand-normal-white-10px">© 2021 Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-        crossorigin="anonymous"></script>
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
     <script src="js/main.js"></script>
 </body>
 

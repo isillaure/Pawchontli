@@ -1,0 +1,53 @@
+footer {
+
+    background-color: var(--porsche);
+    position: relative;
+    top: 8em;
+
+    .arrow {
+        height: 2.5em;
+        width: 2.5em;
+        position: absolute;
+        top: 3em;
+        right: 3em;
+    }
+
+    .logo-white{
+        height: 8em;
+        width: 8em;
+        position: relative;
+        top: 7em;
+    }
+
+    .block-footer {
+        padding-top: 8em;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    .block-footer{
+        padding-left: 3em;
+    }
+
+    .icons-footer{
+        padding-bottom: 3em;
+    }
+
+    .josefinsans-normal-white-16px {
+        color: white;
+        font-family: "Josefin Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .quicksand-normal-white-10px {
+        color: white;
+        font-family: "Quicksand";
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+    }
+}
