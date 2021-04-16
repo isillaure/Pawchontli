@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:700");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400|Quicksand:400");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Quicksand:400,500");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400");
 footer {
   background-color: var(--porsche);
@@ -486,6 +487,286 @@ footer .quicksand-normal-white-10px {
   --porsche: rgba(236, 163, 107, 1);
 }
 
+.welcome {
+  background-image: url(../assets/img/index.jpg);
+  background-size: cover;
+  background-position: 50% 45%;
+}
+
+.welcome .text-1 {
+  letter-spacing: 0px;
+  min-height: 7px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 202px;
+  margin-left: 2em;
+  padding-top: 2em;
+}
+
+.welcome .josefinsans-normal-white-30px {
+  color: white;
+  font-family: var(--font-family-josefin_sans);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.welcome a {
+  text-decoration: none;
+  padding-top: 13em;
+  padding-bottom: 3.5em;
+}
+
+.welcome a .button-primary {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.welcome a .josefinsans-semi-bold-white-25px {
+  color: var(--white);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.finder {
+  background-color: var(--porsche);
+  padding: 1em;
+}
+
+.finder .find {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.finder .pet {
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.finder .quicksand-medium-white-14px {
+  color: var(--white);
+  font-family: var(--font-family-quicksand);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.pets-anounce {
+  padding-top: 3em;
+}
+
+.pets-anounce .josefinsans-semi-bold-chetwode-blue-24px {
+  color: var(--chetwode-blue);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.scrolling-wrapper .card {
+  display: inline-block;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.scrolling-wrapper .card .card-img-top {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.scrolling-wrapper .josefinsans-semi-bold-chetwode-blue-16px {
+  color: var(--chetwode-blue);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.ico {
+  border-radius: 50%;
+  cursor: pointer;
+  fill: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border: var(--chetwode-blue);
+  position: absolute;
+  top: 1em;
+  right: 1.5em;
+}
+
+.liked {
+  -webkit-transform: scale(1.05) rotate(360deg);
+          transform: scale(1.05) rotate(360deg);
+  background-color: var(--chetwode-blue);
+  padding: .8rem;
+  fill: white;
+}
+
+.shelter-register {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--porsche);
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 216px;
+  padding: 36px 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+
+.shelter-register .button-white {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--white);
+  border-radius: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 52px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 2px;
+  min-width: 327px;
+  padding: 0 120px;
+  letter-spacing: 0px;
+  min-height: 20px;
+  min-width: 85px;
+  text-align: center;
+}
+
+.shelter-register .josefinsans-normal-porsche-25px {
+  color: var(--porsche);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.shelter-register .josefinsans-normal-white-30px {
+  color: var(--white);
+  font-family: var(--font-family-josefin_sans);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.shelter-register .josefinsans-semi-bold-chetwode-blue-20px {
+  color: var(--chetwode-blue);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.donations {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--chetwode-blue);
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 216px;
+  padding: 36px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.donations .button-white {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--white);
+  border-radius: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 52px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 2px;
+  min-width: 327px;
+  padding: 0 120px;
+  letter-spacing: 0px;
+  min-height: 20px;
+  min-width: 85px;
+  text-align: center;
+}
+
+.donations .josefinsans-button-white-25px {
+  color: var(--chetwode-blue);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.donations .josefinsans-normal-white-30px {
+  color: var(--white);
+  font-family: var(--font-family-josefin_sans);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.donations .quicksand-regular-white-20px {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+}
+
+:root {
+  --font-family-josefin_sans: "Josefin Sans", Helvetica;
+  --font-family-quicksand: "Quicksand", Helvetica;
+  --font-size-m: 16px;
+  --font-size-xxxxl: 35px;
+  --chetwode-blue: rgba(118, 126, 237, 1);
+  --porsche: rgba(236, 163, 107, 1);
+  --white: rgba(255, 255, 255, 1);
+}
+
 .log-in {
   position: relative;
   padding-top: 3em;
@@ -598,6 +879,143 @@ footer .quicksand-normal-white-10px {
   color: white;
   font-family: "Josefin Sans";
   font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.top .background-orange {
+  background-color: var(--porsche);
+  height: 6em;
+}
+
+.top .josefinsans-normal-white-30px {
+  color: var(--white);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.top .location {
+  width: 2em;
+  height: 2em;
+  position: relative;
+  top: -4em;
+  left: 1.5em;
+}
+
+.top p {
+  position: relative;
+  top: -3.25em;
+  left: 2.5em;
+}
+
+.search-pet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.search-pet .card {
+  display: inline-block;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.search-pet .card .card-img-top {
+  border-radius: 8px 8px 0px 0px;
+}
+
+.search-pet .card .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search-pet .josefinsans-semi-bold-chetwode-blue-16px {
+  color: var(--chetwode-blue);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.publicity {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--porsche);
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 216px;
+  padding: 36px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.publicity .button-white {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--white);
+  border-radius: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 52px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 2px;
+  min-width: 327px;
+  padding: 0 120px;
+  letter-spacing: 0px;
+  min-height: 20px;
+  min-width: 85px;
+  text-align: center;
+}
+
+.publicity .quicksand-regular-white-20px {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+}
+
+.publicity .josefinsans-normal-porsche-25px {
+  color: var(--porsche);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.publicity .josefinsans-normal-white-30px {
+  color: var(--white);
+  font-family: var(--font-family-josefin_sans);
+  font-size: var(--font-size-xxxxl);
   font-style: normal;
   font-weight: 400;
 }
