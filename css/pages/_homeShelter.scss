@@ -1,0 +1,118 @@
+//Top
+
+.top-main {
+
+    .background-main {
+        background-color: var(--porsche);
+        height: 150px;
+        width: 100%;
+
+        p {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+        }
+
+        .josefinsans-normal-white-30px {
+            color: var(--white);
+            font-family: var(--font-family-josefin_sans);
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+        }
+    }
+
+    .rectangle-background {
+        background-color: white;
+        border-radius: 15px;
+        height: 100px;
+        width: 100%;
+        position: absolute;
+        top: 12em;
+    }
+}
+
+// Adoption requests card
+
+.adoption-requests {
+
+    padding-left: 3em;
+    margin-right: 3em;
+
+    .card {
+        background-color: var(--chetwode-blue);
+        border-color: none;
+        border-radius: 15px;
+
+        a{
+            text-decoration: none;
+        }     
+
+        .requests-number{
+            padding-top: 2em;
+        }
+
+        .title-requests{
+            padding-bottom: 2em;
+        }
+
+        .josefinsans-semi-white-30px {
+            font-family: Josefin Sans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .josefinsans-semi-white-20px {
+            font-family: Josefin Sans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            color: white;
+        }
+    }
+}
+
+// Add new pet
+
+.add-new-pet{
+
+    padding-left: 3em;
+    margin-right: 3em;
+
+    .card{
+        border-color: var(--chetwode-blue);
+        border-radius: 15px;
+        background-color: var(--chetwode-blue);
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .josefinsans-medium-chetwode-blue-20px{
+            font-family: Josefin Sans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            color: white;
+        }
+    }
+}
+
+:root {
+    --chetwode-blue: rgba(118, 126, 237, 1);
+    --white-lilac: rgba(246, 247, 251, 1);
+    --porsche: rgba(236, 163, 107, 1);
+}

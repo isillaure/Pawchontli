@@ -121,7 +121,6 @@ header {
         background-color: var(--white-lilac);
         border-radius: 15px;
         height: 60px;
-        width: 70vw;
         display: flex;
         justify-content: center;
     }
@@ -212,6 +211,11 @@ footer {
 
     ul {
         list-style-type: none;
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
     }
 
     .block-footer{
