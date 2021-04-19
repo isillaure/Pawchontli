@@ -158,41 +158,42 @@
                     </div>
                 </div>
             </div>
-        <div class="shelter-register text-center container-fluid">
-            <h1 class="josefinsans-normal-white-30px">¿Tienes un refugio?</h1>
-            <div class="actions">
-                <a href="signUpShelter.html">
-                    <button class="button-white josefinsans-normal-porsche-25px">
-                        Registrar
-                    </button>
-                </a>
-                <br>
-                <a href="logInShelter.html" class="josefinsans-semi-bold-white-20px">
-                    <div>Ingresar</div>
-                </a>
+            <div class="shelter-register text-center container-fluid">
+                <h1 class="josefinsans-normal-white-30px">¿Tienes un refugio?</h1>
+                <div class="actions">
+                    <a href="signUpShelter.html">
+                        <button class="button-white josefinsans-normal-porsche-25px">
+                            Registrar
+                        </button>
+                    </a>
+                    <br>
+                    <a href="logInShelter.html" class="josefinsans-semi-bold-white-20px">
+                        <div>Ingresar</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="donations text-center container-fluid">
+                <h1 class="josefinsans-normal-white-30px">
+                    Los refugios necesitan tu ayuda
+                </h1>
+                <p class="quicksand-regular-white-20px">
+                    Consequat velit qui adipisicing sunt do reprehenderit ad laborum tempor ullamco exercitation.
+                </p>
+                <div>
+                    <form action="https://www.paypal.com/donate" method="post" target="_top" class="button-donation">
+                        <input type="hidden" name="business" value="princessna11@hotmail.com" />
+                        <input type="hidden" name="item_name" value="Pawchontli" />
+                        <input type="hidden" name="currency_code" value="MXN" />
+                        <input type="image" src="assets/svg/button-donation.svg" border="0" name="submit"
+                            title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
+                            style="width: 20em;" />
+                        <img alt="" border="0" src="https://www.paypal.com/en_MX/i/scr/pixel.gif" width="1"
+                            height="1" />
+                    </form>
+                </div>
             </div>
         </div>
-
-        <div class="donations text-center container-fluid">
-            <h1 class="josefinsans-normal-white-30px">
-                Los refugios necesitan tu ayuda
-            </h1>
-            <p class="quicksand-regular-white-20px">
-                Consequat velit qui adipisicing sunt do reprehenderit ad laborum tempor ullamco exercitation.
-            </p>
-            <div>
-                <form action="https://www.paypal.com/donate" method="post" target="_top" class="button-donation">
-                    <input type="hidden" name="business" value="princessna11@hotmail.com" />
-                    <input type="hidden" name="item_name" value="Pawchontli" />
-                    <input type="hidden" name="currency_code" value="MXN" />
-                    <input type="image" src="assets/svg/button-donation.svg" border="0" name="submit"
-                        title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
-                        style="width: 20em;" />
-                    <img alt="" border="0" src="https://www.paypal.com/en_MX/i/scr/pixel.gif" width="1" height="1" />
-                </form>
-            </div>
-        </div>
-
     </main>
 
     <footer text-center>
@@ -202,7 +203,7 @@
         <div class="container text-center">
             <img src="assets/svg/logowhite.svg" alt="" class="logo-white">
         </div>
-        <div class="block-footer d-inline-flex flex-column pb-4 align-content-start">
+        <div cclass="block-footer d-flex flex-wrap pb-4 justify-content-around">
             <ul>
                 <li>
                     <a href="">Acerca</a>
@@ -263,7 +264,7 @@
             loop: false,
             margin: 30,
             nav: true,
-            autoWidth:true,
+            autoWidth: true,
             stagePadding: 100,
             responsiveClass: true,
             responsive: {

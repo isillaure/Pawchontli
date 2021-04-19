@@ -207,6 +207,7 @@ footer {
 
     .block-footer {
         padding-top: 8em;
+        padding-right: 4em;
         // Acomodar responsivo en pantallas medianas y grandes.
     }
 
@@ -217,10 +218,14 @@ footer {
     a{
         color: white;
         text-decoration: none;
-    }
 
-    .block-footer{
-        padding-left: 3em;
+        :hover {
+            color: var(--chetwode-blue);
+        }
+
+        :active{
+            color: var(--chetwode-blue);
+        }
     }
 
     .icons-footer{

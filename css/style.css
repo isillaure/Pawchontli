@@ -346,6 +346,7 @@ footer .logo-white {
 
 footer .block-footer {
   padding-top: 8em;
+  padding-right: 4em;
 }
 
 footer ul {
@@ -357,8 +358,12 @@ footer a {
   text-decoration: none;
 }
 
-footer .block-footer {
-  padding-left: 3em;
+footer a :hover {
+  color: var(--chetwode-blue);
+}
+
+footer a :active {
+  color: var(--chetwode-blue);
 }
 
 footer .icons-footer {
@@ -398,6 +403,11 @@ footer .quicksand-normal-white-10px {
           box-shadow: 0px -5px -5px rgba(0, 0, 0, 0.1);
 }
 
+.detail-pet h2 {
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+}
+
 .detail-pet .rectangle-background {
   background-color: white;
   border-radius: 15px;
@@ -420,6 +430,33 @@ footer .quicksand-normal-white-10px {
 .detail-pet .info-shelter {
   padding-left: 3.5em;
   padding-right: 3.5em;
+}
+
+.detail-pet .info-shelter a {
+  text-decoration: none;
+  color: black;
+}
+
+.detail-pet .info-shelter a img {
+  border-radius: 100px;
+}
+
+.detail-pet .josefinsans-normal-black-30px {
+  color: black;
+  font-family: var(--font-family-josefin_sans);
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.detail-pet .josefinsans-chetwode-blue-18px {
+  color: var(--chetwode-blue);
+  font-family: "Josefin Sans";
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  min-height: 12px;
+  width: 54px;
 }
 
 :root {

@@ -1,3 +1,5 @@
+// Detail pet
+
 .detail-pet{
     background-color:var(--porsche);
 
@@ -7,6 +9,12 @@
         box-shadow: 0px -5px -5px rgba(0, 0, 0, 0.1);
         // Acomodar responsivo.
     }
+
+    h2{
+        padding-top: 1.5em;
+        padding-bottom: 0.5em;
+    }
+
     .rectangle-background {
         background-color: white;
         border-radius: 15px;
@@ -29,6 +37,36 @@
     .info-shelter{
         padding-left: 3.5em;
         padding-right: 3.5em;
+    }
+
+    .info-shelter{
+
+        a{
+            text-decoration: none;
+            color: black;
+
+            img{
+                border-radius: 100px;
+            }
+        }
+    }
+
+    .josefinsans-normal-black-30px {
+        color: black;
+        font-family: var(--font-family-josefin_sans);
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .josefinsans-chetwode-blue-18px {
+        color: var(--chetwode-blue);
+        font-family: "Josefin Sans";
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0px;
+        min-height: 12px;
+        width: 54px;
     }
 }
 
