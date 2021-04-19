@@ -42,11 +42,14 @@
 
     padding-left: 3em;
     margin-right: 3em;
+    padding-bottom: 2em;
+    padding-top: 3em;
 
     .card {
-        background-color: var(--chetwode-blue);
-        border-color: none;
+        background-color: white;
         border-radius: 15px;
+        border: 4px solid var(--chetwode-blue);
+        box-shadow: 0px 2px 10px rgba(223, 214, 214, 0.1);
 
         a{
             text-decoration: none;
@@ -67,7 +70,7 @@
             font-size: 30px;
             line-height: 30px;
             text-align: center;
-            color: white;
+            color: var(--chetwode-blue);
         }
 
         .josefinsans-semi-white-20px {
@@ -77,7 +80,7 @@
             font-size: 20px;
             line-height: 30px;
             text-align: center;
-            color: white;
+            color: var(--chetwode-blue);
         }
     }
 }
@@ -88,15 +91,23 @@
 
     padding-left: 3em;
     margin-right: 3em;
+    position: relative;
+    top:-0.4em;
 
     .card{
         border-color: var(--chetwode-blue);
         border-radius: 15px;
         background-color: var(--chetwode-blue);
+        box-shadow: 0px 2px 20px rgba(223, 214, 214, 0.1);
+
+        img{
+            padding-top: 3em;
+        }
 
         a{
             color: white;
             text-decoration: none;
+            padding-bottom: 3em;
         }
 
         .josefinsans-medium-chetwode-blue-20px{
@@ -108,6 +119,58 @@
             text-align: center;
             color: white;
         }
+    }
+}
+
+//Search in adoption pet
+
+.search-in-adoption-pet{
+    padding-top: 3em;
+
+    h1{
+        padding-bottom: 1em;
+    }
+
+    .filter-options{
+
+        a{
+            .filter-img{
+                padding-right: 1em;
+            }
+        }
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .josefinsans-semi-bold-chetwode-blue-24px {
+        color: var(--chetwode-blue);
+        font-family: var(--font-family-josefin_sans);
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+}
+
+.search-adopted-pets{
+    padding-top: 3em;
+
+    h1{
+        padding-bottom: 1em;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .josefinsans-semi-bold-chetwode-blue-24px {
+        color: var(--chetwode-blue);
+        font-family: var(--font-family-josefin_sans);
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
     }
 }
 

@@ -162,8 +162,9 @@ header {
     width: 343px;
     display: block;
     margin-top: 1em;
-    // box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-    // border-radius: 15px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-color: var(--porsche);
+    border: none;
 
     .button-p {
         letter-spacing: 0px;

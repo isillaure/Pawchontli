@@ -1,0 +1,39 @@
+.detail-pet{
+    background-color:var(--porsche);
+
+    .image-pet{
+        position: relative;
+        top: 1em;
+        box-shadow: 0px -5px -5px rgba(0, 0, 0, 0.1);
+        // Acomodar responsivo.
+    }
+    .rectangle-background {
+        background-color: white;
+        border-radius: 15px;
+        width: 100%;
+        position: relative;
+        top: -2em;
+        box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .secondary-info{
+        padding-left: 3.5em;
+        padding-right: 3.5em;
+    }
+    //Acomodar padding en pantallas grandes.
+
+    .user-actions{
+        padding-top: 4em;
+    }
+
+    .info-shelter{
+        padding-left: 3.5em;
+        padding-right: 3.5em;
+    }
+}
+
+:root {
+    --chetwode-blue: rgba(118, 126, 237, 1);
+    --white-lilac: rgba(246, 247, 251, 1);
+    --porsche: rgba(236, 163, 107, 1);
+}

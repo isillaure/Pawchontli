@@ -79,3 +79,4 @@ document.addEventListener('keydown', function (key) {
         likeBtn.classList.toggle('liked');
     }
 });
+

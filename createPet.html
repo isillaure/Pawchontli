@@ -19,13 +19,13 @@
 
     <header>
         <div class="logo">
-            <a href="index.html">
+            <a href="homeShelter.html">
                 <img src="assets/svg/logo.svg" class="pawchontli-icon" alt="">
             </a>
         </div>
         <nav class="nav-bar">
-            <a href="favouritePet.html">
-                <img src="assets/svg/heart.svg" class="heart" alt="">
+            <a href="adoptionRequestsShelter.html">
+                <img src="assets/svg/clipboard.svg" class="heart" alt="">
             </a>
             <img src="assets/svg/menu.svg" class="menu" alt="">
         </nav>
@@ -109,7 +109,24 @@
                         class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
                 </li>
                 <br>
-                <input type="submit" value="Ingresar" class="button-p josefinsans-normal-white-20px button-primary">
+                <div class="file-upload">
+                    <div class="image-upload-wrap">
+                        <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                        <div class="drag-text">
+                            <br>
+                            <img src="assets/svg/add.svg" alt="" style="height: 3em; width: 3em;">
+                            <h3 class="josefinsans-medium-chetwode-blue-14px">Añadir foto de perfil</h3>
+                        </div>
+                    </div>
+                    <div class="file-upload-content">
+                        <img class="file-upload-image" src="#" alt="your image" />
+                        <div class="image-title-wrap">
+                            <button type="button" onclick="removeUpload()" class="remove-image">Borrar <span
+                                    class="image-title">Tu foto</span></button>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Crear" class="button-p josefinsans-normal-white-20px button-primary">
             </ul>
         </form>
     </main>

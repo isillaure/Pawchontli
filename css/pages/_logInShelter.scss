@@ -1,3 +1,4 @@
+// Title 
 .log-in {
     position: relative;
     padding-top: 3em;
@@ -8,6 +9,8 @@
         right: 4em;
     }
 }
+
+// Form
 
 .group-form {
     position: relative;
@@ -49,6 +52,10 @@
         justify-content: center;
     }
 
+    ::placeholder{
+        color: var(--chetwode-blue)
+    }
+    
     .input-base {
         letter-spacing: 0.00px;
         min-height: 16px;
@@ -74,6 +81,8 @@
         font-weight: 400;
     }
 }
+
+//Button
 
 .button-primary {
     align-items: center;

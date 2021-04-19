@@ -10,7 +10,6 @@
         letter-spacing: 0px;
         min-height: 7px;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        width: 202px;
         margin-left: 2em;
         padding-top: 2em;
     }
@@ -25,7 +24,7 @@
 
     a {
         text-decoration: none;
-        padding-top: 13em;
+        padding-top: 22em;
         padding-bottom: 3.5em;
 
         .button-primary {
@@ -87,12 +86,7 @@
     }
 }
 
-.scrolling-wrapper {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    padding-left: 2em;
-    padding-right: 2em;
+.owl-carousel {
 
     .card {
         display: inline-block;
@@ -102,6 +96,10 @@
         .card-img-top {
             border-radius: 15px 15px 0px 0px;
         }
+    }
+
+    a{
+        text-decoration: none;
     }
 
     .josefinsans-semi-bold-chetwode-blue-16px {
@@ -148,6 +146,7 @@
     margin-right: auto;
     margin-top: 2em;
     margin-bottom: 4em;
+    width: 90%;
 
     a{
         text-decoration: none;
@@ -167,6 +166,9 @@
         min-height: 20px;
         min-width: 85px;
         text-align: center;
+        border-color: white;
+        border: none;
+        box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
     }
 
     .josefinsans-normal-porsche-25px {
@@ -185,8 +187,8 @@
         font-weight: 400;
     }
     
-    .josefinsans-semi-bold-chetwode-blue-20px {
-        color: var(--chetwode-blue);
+    .josefinsans-semi-bold-white-20px {
+        color: white;
         font-family: var(--font-family-josefin_sans);
         font-size: 20px;
         font-style: normal;
@@ -207,26 +209,12 @@
     padding: 36px 0;
     margin-left: auto;
     margin-right: auto;
+    width: 90%;
 
     a{
         text-decoration: none;
     }
 
-    .button-white {
-        align-items: center;
-        background-color: var(--white);
-        border-radius: 14px;
-        display: flex;
-        height: 52px;
-        justify-content: flex-end;
-        margin-right: 2px;
-        min-width: 327px;
-        padding: 0 120px;
-        letter-spacing: 0px;
-        min-height: 20px;
-        min-width: 85px;
-        text-align: center;
-    }
 
     .josefinsans-button-white-25px {
         color: var(--chetwode-blue);

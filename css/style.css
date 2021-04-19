@@ -302,6 +302,10 @@ header .menu {
   width: 343px;
   display: block;
   margin-top: 1em;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-color: var(--porsche);
+  border: none;
 }
 
 .button-primary .button-p {
@@ -375,6 +379,157 @@ footer .quicksand-normal-white-10px {
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
+}
+
+:root {
+  --chetwode-blue: rgba(118, 126, 237, 1);
+  --white-lilac: rgba(246, 247, 251, 1);
+  --porsche: rgba(236, 163, 107, 1);
+}
+
+.detail-pet {
+  background-color: var(--porsche);
+}
+
+.detail-pet .image-pet {
+  position: relative;
+  top: 1em;
+  -webkit-box-shadow: 0px -5px -5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px -5px -5px rgba(0, 0, 0, 0.1);
+}
+
+.detail-pet .rectangle-background {
+  background-color: white;
+  border-radius: 15px;
+  width: 100%;
+  position: relative;
+  top: -2em;
+  -webkit-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.detail-pet .secondary-info {
+  padding-left: 3.5em;
+  padding-right: 3.5em;
+}
+
+.detail-pet .user-actions {
+  padding-top: 4em;
+}
+
+.detail-pet .info-shelter {
+  padding-left: 3.5em;
+  padding-right: 3.5em;
+}
+
+:root {
+  --chetwode-blue: rgba(118, 126, 237, 1);
+  --white-lilac: rgba(246, 247, 251, 1);
+  --porsche: rgba(236, 163, 107, 1);
+}
+
+.top .background-orange {
+  background-color: var(--porsche);
+  height: 6em;
+}
+
+.top .background-orange h1 {
+  padding-top: 1em;
+}
+
+.top img {
+  padding-right: 1em;
+}
+
+.top .josefinsans-normal-white-30px {
+  color: var(--white);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.top .rectangle-background {
+  background-color: white;
+  border-radius: 15px;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  top: 10em;
+}
+
+.button-main {
+  background-color: var(--porsche);
+  border: 2px solid;
+  border-color: var(--porsche);
+  border-radius: 15px;
+  width: 160px;
+  height: 64px;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: var(--font-family-josefin_sans);
+}
+
+.search-pet a {
+  text-decoration: none;
+}
+
+.sponsored-pet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.sponsored-pet h1 {
+  padding-top: 1em;
+}
+
+.sponsored-pet a {
+  text-decoration: none;
+}
+
+.sponsored-pet .card {
+  display: inline-block;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.sponsored-pet .card .card-img-top {
+  border-radius: 8px 8px 0px 0px;
+}
+
+.sponsored-pet .card .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sponsored-pet .josefinsans-semi-bold-chetwode-blue-24px {
+  color: var(--chetwode-blue);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.sponsored-pet .josefinsans-semi-bold-chetwode-blue-16px {
+  color: var(--chetwode-blue);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
 }
 
 :root {
@@ -534,12 +689,16 @@ footer .quicksand-normal-white-10px {
 .adoption-requests {
   padding-left: 3em;
   margin-right: 3em;
+  padding-bottom: 2em;
+  padding-top: 3em;
 }
 
 .adoption-requests .card {
-  background-color: var(--chetwode-blue);
-  border-color: none;
+  background-color: white;
   border-radius: 15px;
+  border: 4px solid var(--chetwode-blue);
+  -webkit-box-shadow: 0px 2px 10px rgba(223, 214, 214, 0.1);
+          box-shadow: 0px 2px 10px rgba(223, 214, 214, 0.1);
 }
 
 .adoption-requests .card a {
@@ -561,7 +720,7 @@ footer .quicksand-normal-white-10px {
   font-size: 30px;
   line-height: 30px;
   text-align: center;
-  color: white;
+  color: var(--chetwode-blue);
 }
 
 .adoption-requests .card .josefinsans-semi-white-20px {
@@ -571,23 +730,32 @@ footer .quicksand-normal-white-10px {
   font-size: 20px;
   line-height: 30px;
   text-align: center;
-  color: white;
+  color: var(--chetwode-blue);
 }
 
 .add-new-pet {
   padding-left: 3em;
   margin-right: 3em;
+  position: relative;
+  top: -0.4em;
 }
 
 .add-new-pet .card {
   border-color: var(--chetwode-blue);
   border-radius: 15px;
   background-color: var(--chetwode-blue);
+  -webkit-box-shadow: 0px 2px 20px rgba(223, 214, 214, 0.1);
+          box-shadow: 0px 2px 20px rgba(223, 214, 214, 0.1);
+}
+
+.add-new-pet .card img {
+  padding-top: 3em;
 }
 
 .add-new-pet .card a {
   color: white;
   text-decoration: none;
+  padding-bottom: 3em;
 }
 
 .add-new-pet .card .josefinsans-medium-chetwode-blue-20px {
@@ -598,6 +766,50 @@ footer .quicksand-normal-white-10px {
   line-height: 30px;
   text-align: center;
   color: white;
+}
+
+.search-in-adoption-pet {
+  padding-top: 3em;
+}
+
+.search-in-adoption-pet h1 {
+  padding-bottom: 1em;
+}
+
+.search-in-adoption-pet .filter-options a .filter-img {
+  padding-right: 1em;
+}
+
+.search-in-adoption-pet a {
+  text-decoration: none;
+}
+
+.search-in-adoption-pet .josefinsans-semi-bold-chetwode-blue-24px {
+  color: var(--chetwode-blue);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.search-adopted-pets {
+  padding-top: 3em;
+}
+
+.search-adopted-pets h1 {
+  padding-bottom: 1em;
+}
+
+.search-adopted-pets a {
+  text-decoration: none;
+}
+
+.search-adopted-pets .josefinsans-semi-bold-chetwode-blue-24px {
+  color: var(--chetwode-blue);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
 }
 
 :root {
@@ -616,7 +828,6 @@ footer .quicksand-normal-white-10px {
   letter-spacing: 0px;
   min-height: 7px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  width: 202px;
   margin-left: 2em;
   padding-top: 2em;
 }
@@ -631,7 +842,7 @@ footer .quicksand-normal-white-10px {
 
 .welcome a {
   text-decoration: none;
-  padding-top: 13em;
+  padding-top: 22em;
   padding-bottom: 3.5em;
 }
 
@@ -695,26 +906,22 @@ footer .quicksand-normal-white-10px {
   font-weight: 600;
 }
 
-.scrolling-wrapper {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  padding-left: 2em;
-  padding-right: 2em;
-}
-
-.scrolling-wrapper .card {
+.owl-carousel .card {
   display: inline-block;
   border-radius: 15px;
   -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.scrolling-wrapper .card .card-img-top {
+.owl-carousel .card .card-img-top {
   border-radius: 15px 15px 0px 0px;
 }
 
-.scrolling-wrapper .josefinsans-semi-bold-chetwode-blue-16px {
+.owl-carousel a {
+  text-decoration: none;
+}
+
+.owl-carousel .josefinsans-semi-bold-chetwode-blue-16px {
   color: var(--chetwode-blue);
   font-family: var(--font-family-josefin_sans);
   font-size: 20px;
@@ -763,6 +970,7 @@ footer .quicksand-normal-white-10px {
   margin-right: auto;
   margin-top: 2em;
   margin-bottom: 4em;
+  width: 90%;
 }
 
 .shelter-register a {
@@ -789,6 +997,10 @@ footer .quicksand-normal-white-10px {
   min-height: 20px;
   min-width: 85px;
   text-align: center;
+  border-color: white;
+  border: none;
+  -webkit-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
 }
 
 .shelter-register .josefinsans-normal-porsche-25px {
@@ -807,8 +1019,8 @@ footer .quicksand-normal-white-10px {
   font-weight: 400;
 }
 
-.shelter-register .josefinsans-semi-bold-chetwode-blue-20px {
-  color: var(--chetwode-blue);
+.shelter-register .josefinsans-semi-bold-white-20px {
+  color: white;
   font-family: var(--font-family-josefin_sans);
   font-size: 20px;
   font-style: normal;
@@ -834,32 +1046,11 @@ footer .quicksand-normal-white-10px {
   padding: 36px 0;
   margin-left: auto;
   margin-right: auto;
+  width: 90%;
 }
 
 .donations a {
   text-decoration: none;
-}
-
-.donations .button-white {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: var(--white);
-  border-radius: 14px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 52px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-right: 2px;
-  min-width: 327px;
-  padding: 0 120px;
-  letter-spacing: 0px;
-  min-height: 20px;
-  min-width: 85px;
-  text-align: center;
 }
 
 .donations .josefinsans-button-white-25px {
@@ -955,6 +1146,22 @@ footer .quicksand-normal-white-10px {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.group-form ::-webkit-input-placeholder {
+  color: var(--chetwode-blue);
+}
+
+.group-form :-ms-input-placeholder {
+  color: var(--chetwode-blue);
+}
+
+.group-form ::-ms-input-placeholder {
+  color: var(--chetwode-blue);
+}
+
+.group-form ::placeholder {
+  color: var(--chetwode-blue);
 }
 
 .group-form .input-base {
@@ -1061,6 +1268,12 @@ footer .quicksand-normal-white-10px {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: 3em;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter-options .button-filter img {
+  padding-right: 1em;
 }
 
 .filter-options .pet-tag {
@@ -1077,6 +1290,8 @@ footer .quicksand-normal-white-10px {
       -ms-flex-pack: center;
           justify-content: center;
   width: 10em;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .filter-options .pet-tag .text-tag {
@@ -1186,6 +1401,10 @@ footer .quicksand-normal-white-10px {
   min-height: 20px;
   min-width: 85px;
   text-align: center;
+  border-color: white;
+  border: none;
+  -webkit-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
 }
 
 .publicity .quicksand-regular-white-20px {
@@ -1212,24 +1431,6 @@ footer .quicksand-normal-white-10px {
   font-size: var(--font-size-xxxxl);
   font-style: normal;
   font-weight: 400;
-}
-
-.pagination a {
-  color: black;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
-  -webkit-transition: background-color .3s;
-  transition: background-color .3s;
-}
-
-.pagination a.active {
-  background-color: var(--chetwode-blue);
-  color: white;
-}
-
-.pagination a:hover:not(.active) {
-  background-color: var(--cyan);
 }
 
 :root {
