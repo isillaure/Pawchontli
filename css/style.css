@@ -392,6 +392,25 @@ footer .quicksand-normal-white-10px {
   --porsche: rgba(236, 163, 107, 1);
 }
 
+.button-p {
+  background-color: var(--porsche);
+  border-radius: 15px;
+  height: 55px;
+  overflow: hidden;
+  padding: 0 140px;
+  width: 343px;
+  margin-top: 1em;
+  border: none;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .detail-pet {
   background-color: var(--porsche);
 }
@@ -577,7 +596,7 @@ footer .quicksand-normal-white-10px {
 
 .file-upload {
   background-color: white;
-  width: 25em;
+  width: 80%;
   margin: 0 auto;
   padding: 20px;
   border-radius: 15px;
@@ -679,7 +698,7 @@ footer .quicksand-normal-white-10px {
 
 :root {
   --chetwode-blue: rgba(118, 126, 237, 1);
-  --white-lilac: rgba(246, 247, 251, 1);
+  --white-lilac: rgb(24, 38, 95);
   --porsche: rgba(236, 163, 107, 1);
 }
 
@@ -1412,6 +1431,7 @@ footer .quicksand-normal-white-10px {
   padding: 36px 0;
   margin-left: auto;
   margin-right: auto;
+  width: 90%;
 }
 
 .publicity a {
