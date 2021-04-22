@@ -1,67 +1,32 @@
 // Header 
 
-header {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 1em;
-    align-self: center;
-
-    .nav-bar {
-        align-items: flex-start;
-        display: flex;
-        flex-direction: row;
-        padding-right: 2em;
-        align-self: center;
+header{
+    a{
+        text-decoration: none;
     }
-
-    .pawchontli-icon {
-        height: 5em;
-        width: 5em;
-    }
-
-    .heart {
-        height: 3em;
-        width: 3em;
-        padding-right: 1em;
-    }
-
-    .menu {
-        height: 2em;
-        width: 2em;
-        display: flex;
-        align-self: center;
+    button{
+        border:none;
+        background-color: white;
     }
 }
 
 // Top
 
 .top-background {
-    .close {
-        height: 3em;
-        width: 3em;
-        position: relative;
-        top: 0.5em;
-        left: 1em;
-        // Hover
-    }
-
-    .background-orange {
-        background-color: var(--porsche);
-        height: 500px;
-        width: 100%;
-        position: absolute;
-        top: 5em;
-    }
+    background-color: var(--porsche);
+    padding-bottom: 2em;
 
     .rectangle-background {
-        background-color: white;
+        background-color:white;
         border-radius: 15px;
-        height: 500px;
-        width: 100%;
-        position: absolute;
-        top: 9em;
+        height: 50px;
+        position: relative;
+        top:7em;
+    }
+
+    .x-circle{
+        position: relative;
+        left:85%;
     }
 }
 
@@ -70,13 +35,6 @@ header {
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400|Quicksand:400");
 
 .title {
-    letter-spacing: 0px;
-    min-height: 60px;
-    min-width: 200px;
-    text-align: center;
-    position: relative;
-    top: 70px;
-
     .josefinsans-normal-black-30px {
         color: black;
         font-family: "Josefin Sans";
@@ -86,33 +44,18 @@ header {
     }
 }
 
-.group-form {
-    position: relative;
-    top: 4em;
+.adoption-form {
 
-    ul {
-        list-style-type: none;
-        margin-right: 2em;
-
-        li {
-            padding-top: 1em;
-            margin-left: 5em;
-            margin-right: 5em;
-            // Acomodar responsivo en pantallas medianas.
-        }
+    .base-form{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
     }
 
     label {
         display: flex;
         flex-wrap: wrap;
-    }
-
-    p {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: justify;
-        text-justify: inter-word;
-        // Acomodar responsivo en pantallas grandes y medianas.
+        justify-content: flex-start;
     }
 
     .overlap-group {
@@ -121,17 +64,20 @@ header {
         background-color: var(--white-lilac);
         border-radius: 15px;
         height: 60px;
-        display: flex;
-        justify-content: center;
+
+        .input-base {
+            min-height: 16px;
+        }
+    
+        .border-2px-chetwode-blue {
+            border: 2px solid var(--chetwode-blue);
+        }
     }
 
-    .input-base {
-        letter-spacing: 0.00px;
-        min-height: 16px;
-    }
-
-    .border-2px-chetwode-blue {
-        border: 2px solid var(--chetwode-blue);
+    .checkbox-form{
+        label{
+            padding-left: 2em;
+        }
     }
 
     .josefinsans-normal-chetwode-blue-16px {
@@ -151,6 +97,8 @@ header {
     }
 }
 
+
+
 .button-primary {
     align-items: center;
     background-color: var(--porsche);
@@ -158,7 +106,6 @@ header {
     display: flex;
     height: 55px;
     overflow: hidden;
-    padding: 0 140px;
     width: 343px;
     display: block;
     margin-top: 1em;
@@ -182,7 +129,7 @@ header {
     }
 }
 
-// Footer
+// // Footer
 
 footer {
 

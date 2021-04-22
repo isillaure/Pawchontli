@@ -12,10 +12,129 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <title>Pawchontli 🐶🐱 || Perfil</title>
+    <title>Pawchontli 🐶🐱 || Ver mi perfil </title>
 </head>
 
 <body>
+    <header>
+        <div class="nav-bar d-flex flex-row align-items-center justify-content-between px-3">
+            <div>
+                <a href="index.html">
+                    <img src="assets/svg/logo.svg" class="pawchontli-icon" alt="" style="width: 5em;">
+                </a>
+            </div>
+            <div>
+                <a href="favouritePet.html">
+                    <img src="assets/svg/heart.svg" class="heart" alt="" style="width: 2em;">
+                </a>
+                <button>
+                    <img src="assets/svg/menu.svg" class="menu" alt="" style="width: 2em;">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="detail-user">
+            <div class="detail-top pt-1">
+            </div>
+            <div class="user-text rectangle-background">
+                <div class="detail-top pt-1">
+                    <img src="assets/img/userImage.jpg" alt="" class="user-image" style="width: 15em;">
+                    <a href="updateUser.html">
+                        <img src="assets/svg/editwhite.svg" alt="" class="edit px-2" style="width: 3em;">
+                    </a>
+                </div>
+                <div class="info-user d-flex flex-column">
+                    <h2 class="josefinsans-normal-black-30px d-flex justify-content-center pb-3">Victoria Robertson</h2>
+                    <a href="updateUser.html">                    
+                        <img src="assets/svg/edit.svg" alt="" class="edit pb-4"  style="width: 2em;">
+                    </a>
+                    <div class="d-flex flex-column">
+                        <div class="main-info d-flex flex-wrap justify-content-between px-5">
+                            <div class="age">
+                                <p class="josefinsans-chetwode-blue-18px">EDAD</p>
+                                <p>27 años</p>
+                            </div>
+                            <div class="ocupation">
+                                <p class="josefinsans-chetwode-blue-18px">OCUPACIÓN</p>
+                                <p>Historiadora del arte</p>
+                            </div>
+                            <div class="location">
+                                <p class="josefinsans-chetwode-blue-18px">UBICACIÓN</p>
+                                <p>Coyoacán, 04000, CDMX.</p>
+                            </div>
+                        </div>
+                        <div class="secondary-info d-flex flex-wrap justify-content-center px-5">
+                            <div>
+                                <p class="josefinsans-chetwode-blue-18px">DETALLES</p>
+                                <p>Soy amante de los animales, busco un gato con quien compartir mi vida.</p>
+                            </div>
+                        </div>
+                        <div class="user-actions d-inline-flex flex-row justify-content-evenly">
+                            <a href="adoptionRequestsListUser.html">
+                                <button class="button-main">Ver solicitudes</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer text-center>
+        <div class="top-footer">
+            <img onclick="topFunction()" id="myBtn" title="Go to top" src="assets/svg/arrow.svg" alt="" class="arrow">
+        </div>
+        <div class="container text-center">
+            <img src="assets/svg/logowhite.svg" alt="" class="logo-white">
+        </div>
+        <div class="block-footer d-flex flex-wrap pb-4 justify-content-around">
+            <ul>
+                <li>
+                    <a href="">Acerca</a>
+                </li>
+                <li>
+                    <a href="">Refugios</a>
+                </li>
+                <li>
+                    <a href="">Condiciones de uso</a>
+                </li>
+                <li>
+                    <a href="">Política de privacidad</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">Partners</a>
+                </li>
+                <li>
+                    <a href="">Soporte</a>
+                </li>
+                <li>
+                    <a href="">Mapa del sitio</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="icons-footer d-flex justify-content-evenly">
+            <a href="" role="button">
+                <img src="/assets/svg/facebook.svg" alt="" style="height: 2.5em; width: 2.5em;">
+            </a>
+            <a href="" role="button">
+                <img src="/assets/svg/twitter.svg" alt="" style="height: 2.5em; width: 2.5em;">
+            </a>
+            <a href="" role="button">
+                <img src="/assets/svg/instagram.svg" alt="" style="height: 2.5em; width: 2.5em;">
+            </a>
+            <a href="">
+                <img src="/assets/svg/git.svg" alt="" style="height: 3em; width: 3em;">
+            </a>
+        </div>
+        <div class="text-center pb-4">
+            <p class="quicksand-normal-white-10px">© 2021 Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -23,6 +142,7 @@
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
     </script>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

@@ -117,94 +117,31 @@ footer .quicksand-normal-white-10px {
           justify-content: center;
 }
 
-header {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-left: 1em;
-  -ms-flex-item-align: center;
-      align-self: center;
+header a {
+  text-decoration: none;
 }
 
-header .nav-bar {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding-right: 2em;
-  -ms-flex-item-align: center;
-      align-self: center;
+header button {
+  border: none;
+  background-color: white;
 }
 
-header .pawchontli-icon {
-  height: 5em;
-  width: 5em;
-}
-
-header .heart {
-  height: 3em;
-  width: 3em;
-  padding-right: 1em;
-}
-
-header .menu {
-  height: 2em;
-  width: 2em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-
-.top-background .close {
-  height: 3em;
-  width: 3em;
-  position: relative;
-  top: 0.5em;
-  left: 1em;
-}
-
-.top-background .background-orange {
+.top-background {
   background-color: var(--porsche);
-  height: 500px;
-  width: 100%;
-  position: absolute;
-  top: 5em;
+  padding-bottom: 2em;
 }
 
 .top-background .rectangle-background {
   background-color: white;
   border-radius: 15px;
-  height: 500px;
-  width: 100%;
-  position: absolute;
-  top: 9em;
+  height: 50px;
+  position: relative;
+  top: 7em;
 }
 
-.title {
-  letter-spacing: 0px;
-  min-height: 60px;
-  min-width: 200px;
-  text-align: center;
+.top-background .x-circle {
   position: relative;
-  top: 70px;
+  left: 85%;
 }
 
 .title .josefinsans-normal-black-30px {
@@ -215,38 +152,24 @@ header .menu {
   font-weight: 400;
 }
 
-.group-form {
-  position: relative;
-  top: 4em;
+.adoption-form .base-form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
-.group-form ul {
-  list-style-type: none;
-  margin-right: 2em;
-}
-
-.group-form ul li {
-  padding-top: 1em;
-  margin-left: 5em;
-  margin-right: 5em;
-}
-
-.group-form label {
+.adoption-form label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-.group-form p {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.group-form .overlap-group {
+.adoption-form .overlap-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,22 +179,21 @@ header .menu {
   background-color: var(--white-lilac);
   border-radius: 15px;
   height: 60px;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-.group-form .input-base {
-  letter-spacing: 0.00px;
+.adoption-form .overlap-group .input-base {
   min-height: 16px;
 }
 
-.group-form .border-2px-chetwode-blue {
+.adoption-form .overlap-group .border-2px-chetwode-blue {
   border: 2px solid var(--chetwode-blue);
 }
 
-.group-form .josefinsans-normal-chetwode-blue-16px {
+.adoption-form .checkbox-form label {
+  padding-left: 2em;
+}
+
+.adoption-form .josefinsans-normal-chetwode-blue-16px {
   color: var(--chetwode-blue);
   font-family: "Josefin Sans";
   font-size: 16px;
@@ -279,7 +201,7 @@ header .menu {
   font-weight: 400;
 }
 
-.group-form .josefinsans-normal-chetwode-blue-20px {
+.adoption-form .josefinsans-normal-chetwode-blue-20px {
   color: var(--chetwode-blue);
   font-family: "Josefin Sans";
   font-size: 20px;
@@ -298,7 +220,6 @@ header .menu {
   display: flex;
   height: 55px;
   overflow: hidden;
-  padding: 0 140px;
   width: 343px;
   display: block;
   margin-top: 1em;
@@ -392,24 +313,58 @@ footer .quicksand-normal-white-10px {
   --porsche: rgba(236, 163, 107, 1);
 }
 
+.top-adoption {
+  background-color: var(--porsche);
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+
+.top-adoption .josefinsans-normal-white-30px {
+  color: var(--white);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.rectangle-background-adoption {
+  background-color: white;
+  height: 40px;
+  border-radius: 15px;
+  position: relative;
+  top: -2em;
+}
+
 .collapsible {
   background-color: var(--chetwode-blue);
   color: white;
   cursor: pointer;
-  padding: 18px;
   width: 80%;
   border: none;
   border-radius: 15px;
   text-align: left;
   outline: none;
-  font-size: 15px;
-  margin-top: 3em;
+  font-size: 20px;
+  margin-top: 1.5em;
+  font-family: 'Josefin sans';
+}
+
+.collapsible .image-pet {
+  border-radius: 15px 0px 0px 15px;
+  position: relative;
+  left: -0.4em;
+  border: 3px dotted white;
 }
 
 .active, collapsible:hover {
-  background-color: var(--porsche);
+  background-color: var(--chetwode-white);
   color: white;
   border-radius: 15px 15px 0px 0px;
+}
+
+.active .arrow-white, collapsible:hover .arrow-white {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .content {
@@ -418,9 +373,22 @@ footer .quicksand-normal-white-10px {
   overflow: hidden;
   background-color: white;
   border: 2px solid;
-  border-color: var(--porsche);
+  border-color: var(--chetwode-white);
   width: 80%;
   border-radius: 0px 0px 15px 15px;
+}
+
+.content .josefinsans-chetwode-blue-18px {
+  color: var(--chetwode-blue);
+  font-family: "Josefin Sans";
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  min-height: 12px;
+}
+
+.content .question {
+  color: var(--chetwode-blue);
 }
 
 :root {
@@ -1039,10 +1007,6 @@ footer .quicksand-normal-white-10px {
   text-decoration: none;
 }
 
-.finder .find-cat {
-  padding-right: 3em;
-}
-
 .finder .quicksand-medium-white-14px {
   color: var(--white);
   font-family: var(--font-family-quicksand);
@@ -1482,10 +1446,61 @@ footer .quicksand-normal-white-10px {
   width: 54px;
 }
 
-.detail-shelter .shelter-image {
-  height: 240px;
-  border-radius: 50%;
+.detail-user .user-actions {
+  padding-top: 3em;
+}
+
+.detail-user .user-actions .button-main {
+  width: 200px;
+}
+
+.detail-user {
+  background-color: var(--porsche);
+  padding-bottom: 5em;
+}
+
+.detail-user .rectangle-background {
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  margin-top: 10em;
+}
+
+.detail-user .rectangle-background .detail-top {
+  position: relative;
+  top: -8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 2em;
+}
+
+.detail-user .rectangle-background .detail-top .user-image {
+  border-radius: 15px;
   border: 8px solid white;
+}
+
+.detail-user .rectangle-background .info-user {
+  position: relative;
+  top: -5em;
+}
+
+.detail-user .rectangle-background .info-user .edit {
+  position: relative;
+  left: 80%;
+}
+
+.detail-user .rectangle-background .josefinsans-chetwode-blue-18px {
+  color: var(--chetwode-blue);
+  font-family: "Josefin Sans";
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  min-height: 12px;
+  width: 54px;
 }
 
 .top .background-orange {

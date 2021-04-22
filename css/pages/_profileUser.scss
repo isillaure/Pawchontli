@@ -1,7 +1,44 @@
-.detail-shelter{
-    .shelter-image {
-        height:240px;
-        border-radius: 50%;
-        border: 8px solid white;
+.detail-user{
+    background-color: var(--porsche);
+    padding-bottom: 5em;
+
+    .rectangle-background{
+        background-color: white;
+        border-radius: 15px;
+        position: relative;
+        margin-top: 10em;
+
+        .detail-top{
+            position: relative;
+            top: -8em;
+            display: flex;
+            justify-content: center;
+            padding-left: 2em;
+
+            .user-image {
+                border-radius: 15px;
+                border: 8px solid white;
+            }
+        }
+
+        .info-user{
+            position: relative;
+            top:-5em;
+
+            .edit{
+                position: relative;
+                left: 80%;
+            }
+        }
+
+        .josefinsans-chetwode-blue-18px {
+            color: var(--chetwode-blue);
+            font-family: "Josefin Sans";
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0px;
+            min-height: 12px;
+            width: 54px;
+        }
     }
 }

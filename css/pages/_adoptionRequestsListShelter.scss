@@ -1,15 +1,50 @@
+//Top
+
+.top-adoption{
+    background-color: var(--porsche);
+    padding-top: 2em;
+    padding-bottom: 3em;
+
+    .josefinsans-normal-white-30px {
+        color: var(--white);
+        font-family: var(--font-family-josefin_sans);
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+    }
+}
+
+.rectangle-background-adoption{
+    background-color:white;
+    height: 40px;
+    border-radius: 15px;
+    position: relative;
+    top: -2em;
+}
+
+
+//Collapsible
+
 .collapsible {
     background-color:var(--chetwode-blue);
     color: white;
     cursor: pointer;
-    padding: 18px;
     width: 80%;
     border: none;
     border-radius: 15px;
     text-align: left;
     outline: none;
-    font-size: 15px;
-    margin-top: 3em;
+    font-size: 20px;
+    margin-top: 1.5em;
+    font-family: 'Josefin sans';
+
+    .image-pet{
+        border-radius: 15px 0px 0px 15px;
+        position: relative;
+        left: -0.4em;
+        border: 3px dotted white;
+    }
+
 }
 
 // .collapsible:hover {
@@ -18,9 +53,13 @@
 // }
 
 .active, collapsible:hover{
-    background-color:var(--porsche);
+    background-color:var(--chetwode-white);
     color: white;
-    border-radius: 15px 15px 0px 0px ;
+    border-radius: 15px 15px 0px 0px;
+
+    .arrow-white{
+        transform: rotate(180deg);
+    }
 }
 
 .content {
@@ -29,9 +68,22 @@
     overflow: hidden;
     background-color: white;
     border: 2px solid;
-    border-color: var(--porsche);
+    border-color: var(--chetwode-white);
     width: 80%;
     border-radius: 0px 0px 15px 15px;
+
+    .josefinsans-chetwode-blue-18px {
+        color: var(--chetwode-blue);
+        font-family: "Josefin Sans";
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0px;
+        min-height: 12px;
+    }
+
+    .question{
+        color: var(--chetwode-blue);
+    }
 }
 
 :root {
