@@ -1,0 +1,39 @@
+.detail-pet {
+    .edit {
+        position: absolute;
+        right: 3em;
+        top: 2em;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .button-main {
+        display: flex;
+        align-items: center;
+        background-color: var(--porsche);
+        border: 2px solid;
+        border-color: var(--porsche);
+        border-radius: 15px;
+        width: 200px;
+        height: 80px;
+        color: white;
+        font-size: 22px;
+        font-weight: 600;
+        font-family: var(--font-family-josefin_sans);
+    }
+
+    .button-secondary {
+        background-color: white;
+        border: 2px solid;
+        border-color: var(--porsche);
+        border-radius: 15px;
+        width: 160px;
+        height: 64px;
+        color: var(--porsche);
+        font-size: 22px;
+        font-weight: 600;
+        font-family: var(--font-family-josefin_sans);
+    }
+}

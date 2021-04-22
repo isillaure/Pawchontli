@@ -69,14 +69,16 @@ $(function () {
 // Like button
 
 var likeBtn = document.querySelector('.ico');
+var i;
 
-likeBtn.addEventListener('click', function () {
-    likeBtn.classList.toggle('liked');
-});
-
-document.addEventListener('keydown', function (key) {
-    if (key.key === 'l' || key.key === 'L') {
+for (i = 0; i < likeBtn.length; i++) {
+    likeBtn.addEventListener('click', function () {
         likeBtn.classList.toggle('liked');
-    }
-});
+    });
 
+    document.addEventListener('keydown', function (key) {
+        if (key.key === 'l' || key.key === 'L') {
+            likeBtn.classList.toggle('liked');
+        }
+    });
+}

@@ -2,6 +2,13 @@
 
 .detail-pet{
     background-color:var(--porsche);
+    padding-bottom: 5em;
+
+    .arrow-left{
+        position: absolute;
+        top: 2em;
+        left: 2em;
+    }
 
     .image-pet{
         position: relative;
@@ -13,6 +20,7 @@
     h2{
         padding-top: 1.5em;
         padding-bottom: 0.5em;
+        padding-left: 15%;
     }
 
     .rectangle-background {
@@ -24,22 +32,19 @@
         box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
     }
 
-    .secondary-info{
-        padding-left: 3.5em;
-        padding-right: 3.5em;
-    }
-    //Acomodar padding en pantallas grandes.
-
     .user-actions{
         padding-top: 4em;
+
+        .button-main{
+            justify-content: center;
+            height: 64px;
+        }
     }
 
     .info-shelter{
-        padding-left: 3.5em;
-        padding-right: 3.5em;
-    }
 
-    .info-shelter{
+        margin-left: auto;
+        margin-right: auto;
 
         a{
             text-decoration: none;
@@ -48,6 +53,10 @@
             img{
                 border-radius: 100px;
             }
+        }
+
+        .text-shelter{
+            padding-left: 1em;
         }
     }
 

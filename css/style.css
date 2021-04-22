@@ -392,6 +392,45 @@ footer .quicksand-normal-white-10px {
   --porsche: rgba(236, 163, 107, 1);
 }
 
+.collapsible {
+  background-color: var(--chetwode-blue);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 80%;
+  border: none;
+  border-radius: 15px;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin-top: 3em;
+}
+
+.active, collapsible:hover {
+  background-color: var(--porsche);
+  color: white;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: white;
+  border: 2px solid;
+  border-color: var(--porsche);
+  width: 80%;
+  border-radius: 0px 0px 15px 15px;
+}
+
+:root {
+  --chetwode-blue: rgba(118, 126, 237, 1);
+  --white-lilac: rgba(246, 247, 251, 1);
+  --porsche: rgba(236, 163, 107, 1);
+  --cyan: #C4F7F4;
+  --chetwode-white:#9CA2F6;
+}
+
 .button-p {
   background-color: var(--porsche);
   border-radius: 15px;
@@ -413,6 +452,13 @@ footer .quicksand-normal-white-10px {
 
 .detail-pet {
   background-color: var(--porsche);
+  padding-bottom: 5em;
+}
+
+.detail-pet .arrow-left {
+  position: absolute;
+  top: 2em;
+  left: 2em;
 }
 
 .detail-pet .image-pet {
@@ -425,6 +471,7 @@ footer .quicksand-normal-white-10px {
 .detail-pet h2 {
   padding-top: 1.5em;
   padding-bottom: 0.5em;
+  padding-left: 15%;
 }
 
 .detail-pet .rectangle-background {
@@ -437,18 +484,20 @@ footer .quicksand-normal-white-10px {
           box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
 }
 
-.detail-pet .secondary-info {
-  padding-left: 3.5em;
-  padding-right: 3.5em;
-}
-
 .detail-pet .user-actions {
   padding-top: 4em;
 }
 
+.detail-pet .user-actions .button-main {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 64px;
+}
+
 .detail-pet .info-shelter {
-  padding-left: 3.5em;
-  padding-right: 3.5em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .detail-pet .info-shelter a {
@@ -458,6 +507,10 @@ footer .quicksand-normal-white-10px {
 
 .detail-pet .info-shelter a img {
   border-radius: 100px;
+}
+
+.detail-pet .info-shelter .text-shelter {
+  padding-left: 1em;
 }
 
 .detail-pet .josefinsans-normal-black-30px {
@@ -482,6 +535,48 @@ footer .quicksand-normal-white-10px {
   --chetwode-blue: rgba(118, 126, 237, 1);
   --white-lilac: rgba(246, 247, 251, 1);
   --porsche: rgba(236, 163, 107, 1);
+}
+
+.detail-pet .edit {
+  position: absolute;
+  right: 3em;
+  top: 2em;
+}
+
+.detail-pet a {
+  text-decoration: none;
+}
+
+.detail-pet .button-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--porsche);
+  border: 2px solid;
+  border-color: var(--porsche);
+  border-radius: 15px;
+  width: 200px;
+  height: 80px;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: var(--font-family-josefin_sans);
+}
+
+.detail-pet .button-secondary {
+  background-color: white;
+  border: 2px solid;
+  border-color: var(--porsche);
+  border-radius: 15px;
+  width: 160px;
+  height: 64px;
+  color: var(--porsche);
+  font-size: 22px;
+  font-weight: 600;
+  font-family: var(--font-family-josefin_sans);
 }
 
 .top .background-orange {
@@ -923,7 +1018,9 @@ footer .quicksand-normal-white-10px {
 
 .finder {
   background-color: var(--porsche);
-  padding: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: -1em;
 }
 
 .finder .find {
@@ -940,6 +1037,10 @@ footer .quicksand-normal-white-10px {
 
 .finder a {
   text-decoration: none;
+}
+
+.finder .find-cat {
+  padding-right: 3em;
 }
 
 .finder .quicksand-medium-white-14px {
@@ -962,11 +1063,16 @@ footer .quicksand-normal-white-10px {
   font-weight: 600;
 }
 
+.owl-carousel {
+  background-color: white;
+}
+
 .owl-carousel .card {
   display: inline-block;
   border-radius: 15px;
   -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 
 .owl-carousel .card .card-img-top {
@@ -1275,6 +1381,111 @@ footer .quicksand-normal-white-10px {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
+}
+
+.detail-shelter {
+  background-color: var(--porsche);
+  padding-bottom: 5em;
+}
+
+.detail-shelter .rectangle-background {
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  margin-top: 10em;
+}
+
+.detail-shelter .rectangle-background .detail-top {
+  position: relative;
+  top: -8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 2em;
+}
+
+.detail-shelter .rectangle-background .detail-top .shelter-image {
+  height: 240px;
+  border-radius: 50%;
+  border: 8px solid white;
+}
+
+.detail-shelter .rectangle-background .info-shelter {
+  position: relative;
+  top: -5em;
+}
+
+.detail-shelter .rectangle-background .info-shelter .edit {
+  position: relative;
+  left: 80%;
+}
+
+.detail-shelter .rectangle-background .josefinsans-chetwode-blue-18px {
+  color: var(--chetwode-blue);
+  font-family: "Josefin Sans";
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  min-height: 12px;
+  width: 54px;
+}
+
+.detail-shelter {
+  background-color: var(--porsche);
+  padding-bottom: 5em;
+}
+
+.detail-shelter .rectangle-background {
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  margin-top: 10em;
+}
+
+.detail-shelter .rectangle-background .detail-top {
+  position: relative;
+  top: -8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.detail-shelter .rectangle-background .detail-top .shelter-image {
+  height: 240px;
+  border-radius: 50%;
+  border: 8px solid white;
+}
+
+.detail-shelter .rectangle-background .info-shelter {
+  position: relative;
+  top: -5em;
+}
+
+.detail-shelter .rectangle-background .info-shelter .edit {
+  position: relative;
+  left: 80%;
+}
+
+.detail-shelter .rectangle-background .josefinsans-chetwode-blue-18px {
+  color: var(--chetwode-blue);
+  font-family: "Josefin Sans";
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  min-height: 12px;
+  width: 54px;
+}
+
+.detail-shelter .shelter-image {
+  height: 240px;
+  border-radius: 50%;
+  border: 8px solid white;
 }
 
 .top .background-orange {

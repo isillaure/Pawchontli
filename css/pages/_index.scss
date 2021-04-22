@@ -45,7 +45,9 @@
 
 .finder {
     background-color: var(--porsche);
-    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: -1em;
 
     .find {
         color: rgba(255, 255, 255, 1);
@@ -61,6 +63,10 @@
     
     a{
         text-decoration: none;
+    }
+
+    .find-cat{
+        padding-right: 3em;
     }
 
     .quicksand-medium-white-14px {
@@ -87,11 +93,13 @@
 }
 
 .owl-carousel {
+    background-color: white;
 
     .card {
         display: inline-block;
         border-radius: 15px;
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        background-color: white;
 
         .card-img-top {
             border-radius: 15px 15px 0px 0px;

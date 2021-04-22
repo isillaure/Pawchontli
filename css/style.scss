@@ -15,12 +15,12 @@
 
 @import 'pages/404';
 @import 'pages/adoptionForm';
-@import 'pages/adoptionRequestsShelter';
-@import 'pages/adoptionRequestsUser';
+@import 'pages/adoptionRequest';
+@import 'pages/adoptionRequestsListShelter';
+@import 'pages/adoptionRequestsListUser';
 @import 'pages/createPet';
 @import 'pages/detailPet';
 @import 'pages/detailPetShelter';
-@import 'pages/donate';
 @import 'pages/favouritePet';
 @import 'pages/formShelter';
 @import 'pages/formUser';
@@ -28,13 +28,13 @@
 @import 'pages/index';
 @import 'pages/logInShelter';
 @import 'pages/logInUser';
+@import 'pages/profileShelterEdit';
 @import 'pages/profileShelter';
+@import 'pages/profileUserEdit';
 @import 'pages/profileUser';
 @import 'pages/searchPet';
 @import 'pages/signUpUser';
 @import 'pages/signUpShelter';
-@import 'pages/sponsor';
-@import 'pages/success';
 @import 'pages/updatePet';
 @import 'pages/updateShelter';
 @import 'pages/updateUser';
