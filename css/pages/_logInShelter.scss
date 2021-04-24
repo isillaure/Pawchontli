@@ -52,13 +52,15 @@
         justify-content: center;
     }
 
-    ::placeholder{
-        color: var(--chetwode-blue)
-    }
-    
     .input-base {
-        letter-spacing: 0.00px;
-        min-height: 16px;
+        &.is-invalid {
+            border: 2px solid red;
+            color: red;
+        }
+    }
+
+    ::placeholder {
+        color: var(--chetwode-blue)
     }
 
     .border-2px-chetwode-blue {

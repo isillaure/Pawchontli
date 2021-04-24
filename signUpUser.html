@@ -23,24 +23,25 @@
     </header>
 
     <main>
-        <form action="" method="" class="group-form" id="adoption-form">
+        <form action="" method="" class="group-form" id="signup-form">
             <ul class="d-flex align-content-center flex-column align-items-center justify-content-center">
                 <li>
                     <input type="name"
                     class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                    placeholder="Nombre">
+                    placeholder="Nombre" id="name">
                     <br>
                     <input type="email"
                         class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                        placeholder="Correo">
+                        placeholder="Correo" id="email">
                     <br>
-                    <input type="new-password"
+                    <input type="password"
                         class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                        placeholder="Contraseña">
+                        placeholder="Contraseña" id="password">
                     <br>
-                    <input type="new-password"
+                    <input type="password"
                         class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                        placeholder="Confirmar contraseña">
+                        placeholder="Confirmar contraseña" id="password-confirmation">
+                        <p id='message-form'></p>
                 </li>
                 <br>
                 <input type="submit" value="Registrar" class="button-p josefinsans-normal-white-20px button-primary">
@@ -54,6 +55,7 @@
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
     </script>
     <script src="js/main.js"></script>
+    <script src="js/signUpUser.js"></script>
 </body>
 
 </html>

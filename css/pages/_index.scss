@@ -47,7 +47,6 @@
     background-color: var(--porsche);
     padding-top: 1em;
     padding-bottom: 1em;
-    padding-left: -1em;
 
     .find {
         color: rgba(255, 255, 255, 1);
@@ -79,6 +78,7 @@
 
 .pets-anounce {
     padding-top: 3em;
+    overflow-x: hidden;
 
     .josefinsans-semi-bold-chetwode-blue-24px {
         color: var(--chetwode-blue);

@@ -320,6 +320,19 @@ footer .quicksand-normal-white-10px {
   --porsche: rgba(236, 163, 107, 1);
 }
 
+.content a {
+  color: var(--porsche);
+  text-decoration: none;
+}
+
+:root {
+  --chetwode-blue: rgba(118, 126, 237, 1);
+  --white-lilac: rgba(246, 247, 251, 1);
+  --porsche: rgba(236, 163, 107, 1);
+  --cyan: #C4F7F4;
+  --chetwode-white:#9CA2F6;
+}
+
 .top-adoption {
   background-color: var(--porsche);
   padding-top: 2em;
@@ -363,13 +376,15 @@ footer .quicksand-normal-white-10px {
   border: 3px dotted white;
 }
 
-.active, collapsible:hover {
+.active,
+collapsible:hover {
   background-color: var(--chetwode-white);
   color: white;
   border-radius: 15px 15px 0px 0px;
 }
 
-.active .arrow-white, collapsible:hover .arrow-white {
+.active .arrow-white,
+collapsible:hover .arrow-white {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -383,6 +398,19 @@ footer .quicksand-normal-white-10px {
   border-color: var(--chetwode-white);
   width: 80%;
   border-radius: 0px 0px 15px 15px;
+}
+
+.content .button-secondary {
+  background-color: white;
+  border: 2px solid;
+  border-color: var(--porsche);
+  border-radius: 15px;
+  width: 160px;
+  height: 64px;
+  color: var(--porsche);
+  font-size: 22px;
+  font-weight: 600;
+  font-family: var(--font-family-josefin_sans);
 }
 
 .content .josefinsans-chetwode-blue-18px {
@@ -403,7 +431,7 @@ footer .quicksand-normal-white-10px {
   --white-lilac: rgba(246, 247, 251, 1);
   --porsche: rgba(236, 163, 107, 1);
   --cyan: #C4F7F4;
-  --chetwode-white:#9CA2F6;
+  --chetwode-white: #9CA2F6;
 }
 
 .create-pet-form .josefinsans-normal-chetwode-blue-20px {
@@ -680,7 +708,19 @@ footer .quicksand-normal-white-10px {
   font-weight: 400;
 }
 
-.shelter-form :placeholder {
+.shelter-form form ::-webkit-input-placeholder {
+  color: var(--chetwode-blue);
+}
+
+.shelter-form form :-ms-input-placeholder {
+  color: var(--chetwode-blue);
+}
+
+.shelter-form form ::-ms-input-placeholder {
+  color: var(--chetwode-blue);
+}
+
+.shelter-form form ::placeholder {
   color: var(--chetwode-blue);
 }
 
@@ -790,6 +830,30 @@ footer .quicksand-normal-white-10px {
   --chetwode-blue: rgba(118, 126, 237, 1);
   --white-lilac: rgb(24, 38, 95);
   --porsche: rgba(236, 163, 107, 1);
+}
+
+.user-form .josefinsans-normal-chetwode-blue-20px {
+  color: var(--chetwode-blue);
+  font-family: "Josefin Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.user-form form ::-webkit-input-placeholder {
+  color: var(--chetwode-blue);
+}
+
+.user-form form :-ms-input-placeholder {
+  color: var(--chetwode-blue);
+}
+
+.user-form form ::-ms-input-placeholder {
+  color: var(--chetwode-blue);
+}
+
+.user-form form ::placeholder {
+  color: var(--chetwode-blue);
 }
 
 .top-main .background-main {
@@ -1015,7 +1079,6 @@ footer .quicksand-normal-white-10px {
   background-color: var(--porsche);
   padding-top: 1em;
   padding-bottom: 1em;
-  padding-left: -1em;
 }
 
 .finder .find {
@@ -1044,6 +1107,7 @@ footer .quicksand-normal-white-10px {
 
 .pets-anounce {
   padding-top: 3em;
+  overflow-x: hidden;
 }
 
 .pets-anounce .josefinsans-semi-bold-chetwode-blue-24px {
@@ -1301,6 +1365,11 @@ footer .quicksand-normal-white-10px {
           justify-content: center;
 }
 
+.group-form .input-base.is-invalid {
+  border: 2px solid red;
+  color: red;
+}
+
 .group-form ::-webkit-input-placeholder {
   color: var(--chetwode-blue);
 }
@@ -1315,11 +1384,6 @@ footer .quicksand-normal-white-10px {
 
 .group-form ::placeholder {
   color: var(--chetwode-blue);
-}
-
-.group-form .input-base {
-  letter-spacing: 0.00px;
-  min-height: 16px;
 }
 
 .group-form .border-2px-chetwode-blue {
@@ -1372,6 +1436,11 @@ footer .quicksand-normal-white-10px {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
+}
+
+.input-base.is-invalid {
+  border: 2px solid red;
+  color: red;
 }
 
 .detail-shelter {
@@ -1461,6 +1530,11 @@ footer .quicksand-normal-white-10px {
 .detail-shelter .rectangle-background .info-shelter .edit {
   position: relative;
   left: 80%;
+}
+
+.detail-shelter .rectangle-background .info-shelter .button-main {
+  margin-left: 5em;
+  width: 250px;
 }
 
 .detail-shelter .rectangle-background .josefinsans-chetwode-blue-18px {

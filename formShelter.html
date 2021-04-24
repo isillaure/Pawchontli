@@ -25,12 +25,6 @@
                 </a>
             </div>
             <div>
-                <a href="adoptionRequestsListShelter.html">
-                    <img src="assets/svg/clipboard.svg" class="clipboard" alt="" style="width: 2em;">
-                </a>
-                <button>
-                    <img src="assets/svg/menu.svg" class="menu" alt="" style="width: 2em;">
-                </button>
             </div>
         </div>
     </header>
@@ -53,7 +47,7 @@
                         </label>
                         <input type="organization"
                             class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                            placeholder="Nombre del refugio">
+                            placeholder="Nombre del refugio" id="organization-name">
                     </div>
                     <br>
                     <div class="base-form d-flex flex-column justify-content-center">
@@ -64,11 +58,11 @@
                         </label>
                         <input type="given-name"
                             class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                            placeholder="Nombre">
+                            placeholder="Nombre" id="first-name">
                         <br>
                         <input type="family-name"
                             class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                            placeholder="Apellidos">
+                            placeholder="Apellidos" id="last-name">
                     </div>
                     <br>
                     <div class="base-form d-flex flex-column justify-content-center">
@@ -89,23 +83,23 @@
                         </label>
                         <input type="street-address"
                             class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                            placeholder="Calle y número">
+                            placeholder="Calle y número" id="street">
                         <br>
                         <input type="address-line1"
                             class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                            placeholder="Colonia">
+                            placeholder="Colonia" id="neighbourhood">
                         <br>
                         <input type="address-line2"
                             class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                            placeholder="Municipio/Delegación">
+                            placeholder="Municipio/Delegación" id="city">
                         <br>
                         <input type="address-line3"
                             class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                            placeholder="Estado">
+                            placeholder="Estado" id="state">
                         <br>
                         <input type="postal-code"
                             class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                            placeholder="Código postal">
+                            placeholder="Código postal" id="zip-code">
                     </div>
                     <br>
                     <div class="base-form d-flex flex-column justify-content-center">
@@ -115,7 +109,7 @@
                         </label>
                         <input type="url"
                             class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                            placeholder="Link">
+                            placeholder="Link" id="web-address">
                     </div>
                     <br>
                     <div class="base-form d-flex flex-column justify-content-center">
@@ -126,7 +120,7 @@
                         </label>
                         <input type="url"
                             class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                            placeholder="PayPal">
+                            placeholder="PayPal" id="donation-link">
                     </div>
                     <br>
                     <div class="base-form d-flex flex-column justify-content-center">
@@ -136,25 +130,17 @@
                             refugio.
                         </label>
                         <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
-                    </div>
-                    <br>
-                    <div class="base-form d-flex flex-column justify-content-center">
-                        <label for="inputText8"
-                            class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Requiere atención
-                            o
-                            cuidados especiales? ¿Cuáles?
-                        </label>
-                        <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
+                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue" id="story">
                     </div>
                     <br>
                     <div>
-                        <input type="checkbox" class="overlap-group" id="checkbox-form">
-                        <label for="inputText12" class="josefinsans-normal-chetwode-blue-20px">He leído y acepto los
-                            términos
-                            y condiciones de uso.
-                        </label>
+                        <div class="d-flex flex-row align-items-center">
+                            <input type="checkbox" class="" id="checkbox-form">
+                            <label for="inputText12" class="josefinsans-normal-chetwode-blue-20px px-3">He leído y acepto los
+                                términos
+                                y condiciones de uso.
+                            </label>
+                        </div>
                         <div class="d-flex justify-content-center">
                             <input type="submit" value="Ingresar" class="button-p josefinsans-normal-white-20px button-primary">
                         </div>

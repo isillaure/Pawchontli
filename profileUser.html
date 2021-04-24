@@ -28,13 +28,41 @@
                 <a href="adoptionRequestsListShelter.html">
                     <img src="assets/svg/clipboard.svg" class="clipboard" alt="" style="width: 2em;">
                 </a>
-                <button>
+                <button id="toggle-menu">
                     <img src="assets/svg/menu.svg" class="menu" alt="" style="width: 2em;">
                 </button>
             </div>
         </div>
     </header>
 
+    <nav class="container-menu">
+        <button id="close-menu" class="close-menu">
+            <img src="assets/svg/xcircle.svg" class="menu" alt="" style="width: 2em;">
+        </button>
+        <ul class="container-inner-menu">
+            <li>
+                <a href="homeShelter.html">
+                    Inicio
+                </a>
+            </li>
+            <li>
+                <a href="profileShelterEdit.html">
+                    Perfil
+                </a>
+            </li>
+            <li>
+                <a href="adoptionRequestsListShelter.html">
+                    Solicitudes
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    Cerrar sesión
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
     <main>
         <div class="detail-user">
             <div class="detail-top pt-1">
@@ -44,26 +72,26 @@
                     <img src="assets/img/userImage.jpg" alt="" class="user-image" style="width: 15em;">
                 </div>
                 <div class="info-user d-flex flex-column">
-                    <h2 class="josefinsans-normal-black-30px d-flex justify-content-center pb-3">Victoria Robertson</h2>
+                    <h2 class="user-name josefinsans-normal-black-30px d-flex justify-content-center pb-3"></h2>
                     <div class="d-flex flex-column">
                         <div class="main-info d-flex flex-wrap justify-content-between px-5">
                             <div class="age">
                                 <p class="josefinsans-chetwode-blue-18px">EDAD</p>
-                                <p>27 años</p>
+                                <p class="user-age"></p>
                             </div>
                             <div class="ocupation">
                                 <p class="josefinsans-chetwode-blue-18px">OCUPACIÓN</p>
-                                <p>Historiadora del arte</p>
+                                <p class="occupation-user"></p>
                             </div>
                             <div class="location">
                                 <p class="josefinsans-chetwode-blue-18px">UBICACIÓN</p>
-                                <p>Coyoacán, 04000, CDMX.</p>
+                                <p class="location-user"></p>
                             </div>
                         </div>
                         <div class="secondary-info d-flex flex-wrap justify-content-center px-5">
                             <div>
                                 <p class="josefinsans-chetwode-blue-18px">DETALLES</p>
-                                <p>Soy amante de los animales, busco un gato con quien compartir mi vida.</p>
+                                <p class="story-user"></p>
                             </div>
                         </div>
                     </div>
@@ -132,7 +160,7 @@
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
     </script>
     <script src="js/main.js"></script>
-
+    <script src="js/profileUser.js"></script>
 </body>
 
 </html>

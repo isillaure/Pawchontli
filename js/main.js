@@ -7,6 +7,12 @@ $(function (){
     $('#close-menu').click(function (){
         $('.container-menu').removeClass('open').fadeOut()
     })
+
+    $("#log-out").on("click", (element) => {
+        element.preventDefault()
+        localStorage.removeItem("authtoken");
+        window.location.href = "/index.html";
+    });
 })
 
 
@@ -73,24 +79,40 @@ $('.image-upload-wrap').bind('dragleave', function () {
 // Datepicker
 
 $(function () {
-    $('.datepicker').datepicker({
-        format: 'mm-dd-yyyy'
-    });
+    if ($('.datepicker').length>0){
+        $('.datepicker').datepicker({
+            format: 'mm-dd-yyyy'
+        });
+    }
 });
 
 // Like button
 
-var likeBtn = document.querySelector('.ico');
-var i;
+// var likeBtn = document.querySelector('.ico');
+// var i;
 
-for (i = 0; i < likeBtn.length; i++) {
-    likeBtn.addEventListener('click', function () {
-        likeBtn.classList.toggle('liked');
-    });
+// for (i = 0; i < likeBtn.length; i++) {
+//     likeBtn.addEventListener('click', function () {
+//         likeBtn.classList.toggle('liked');
+//     });
 
-    document.addEventListener('keydown', function (key) {
-        if (key.key === 'l' || key.key === 'L') {
-            likeBtn.classList.toggle('liked');
-        }
-    });
-}
+//     document.addEventListener('keydown', function (key) {
+//         if (key.key === 'l' || key.key === 'L') {
+//             likeBtn.classList.toggle('liked');
+//         }
+//     });
+// }
+
+// Filter button
+
+// $(function (){
+//     $('#toggle-filter').click(function (){
+//         $('.container-filter').addClass('open').fadeIn()
+//     })
+//     $('#toggle-filter').click(function (){
+//         $('.container-filter').removeClass('open').fadeOut()
+//     })
+// })
+
+// Log out
+
