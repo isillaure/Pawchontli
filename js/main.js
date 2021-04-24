@@ -1,3 +1,15 @@
+//Menu
+
+$(function (){
+    $('#toggle-menu').click(function (){
+        $('.container-menu').addClass('open').fadeIn()
+    })
+    $('#close-menu').click(function (){
+        $('.container-menu').removeClass('open').fadeOut()
+    })
+})
+
+
 // Go back 
 function goBack() {
     window.history.back();

@@ -129,6 +129,7 @@ header button {
 .top-background {
   background-color: var(--porsche);
   padding-bottom: 2em;
+  height: 80px;
 }
 
 .top-background .rectangle-background {
@@ -136,15 +137,21 @@ header button {
   border-radius: 15px;
   height: 50px;
   position: relative;
-  top: 7em;
+  top: 4em;
 }
 
 .top-background .x-circle {
   position: relative;
   left: 85%;
+  top: -2.5em;
 }
 
-.title .josefinsans-normal-black-30px {
+.adoption-form .title {
+  position: relative;
+  padding-top: 2em;
+}
+
+.adoption-form .title .josefinsans-normal-black-30px {
   color: black;
   font-family: "Josefin Sans";
   font-size: 30px;
@@ -397,6 +404,14 @@ footer .quicksand-normal-white-10px {
   --porsche: rgba(236, 163, 107, 1);
   --cyan: #C4F7F4;
   --chetwode-white:#9CA2F6;
+}
+
+.create-pet-form .josefinsans-normal-chetwode-blue-20px {
+  color: var(--chetwode-blue);
+  font-family: "Josefin Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .button-p {
@@ -655,6 +670,18 @@ footer .quicksand-normal-white-10px {
   --chetwode-blue: rgba(118, 126, 237, 1);
   --white-lilac: rgba(246, 247, 251, 1);
   --porsche: rgba(236, 163, 107, 1);
+}
+
+.shelter-form .josefinsans-normal-chetwode-blue-20px {
+  color: var(--chetwode-blue);
+  font-family: "Josefin Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.shelter-form :placeholder {
+  color: var(--chetwode-blue);
 }
 
 .file-upload {
@@ -1962,5 +1989,61 @@ footer .quicksand-normal-white-10px {
 body {
   font-family: 'Josefin Sans', sans-serif;
   font-family: 'Quicksand', sans-serif;
+}
+
+.container-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-menu.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-menu .close-menu {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.container-menu .container-inner-menu {
+  background-color: var(--porsche);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+  list-style: none;
+  margin: 0;
+}
+
+.container-menu .container-inner-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-family: 'Josefin sans', sans-serif;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

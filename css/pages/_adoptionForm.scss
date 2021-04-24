@@ -15,18 +15,20 @@ header{
 .top-background {
     background-color: var(--porsche);
     padding-bottom: 2em;
+    height: 80px;
 
     .rectangle-background {
         background-color:white;
         border-radius: 15px;
         height: 50px;
         position: relative;
-        top:7em;
+        top:4em;
     }
 
     .x-circle{
         position: relative;
         left:85%;
+        top: -2.5em;
     }
 }
 
@@ -34,17 +36,20 @@ header{
 
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400|Quicksand:400");
 
-.title {
-    .josefinsans-normal-black-30px {
-        color: black;
-        font-family: "Josefin Sans";
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 400;
-    }
-}
-
 .adoption-form {
+
+    .title {
+        position: relative;
+        padding-top: 2em;
+
+        .josefinsans-normal-black-30px {
+            color: black;
+            font-family: "Josefin Sans";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+        }
+    }
 
     .base-form{
         margin-left: auto;
@@ -96,8 +101,6 @@ header{
         font-weight: 400;
     }
 }
-
-
 
 .button-primary {
     align-items: center;

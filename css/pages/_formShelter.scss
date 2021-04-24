@@ -1,3 +1,19 @@
+//Form
+
+.shelter-form{
+    .josefinsans-normal-chetwode-blue-20px {
+        color: var(--chetwode-blue);
+        font-family: "Josefin Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    :placeholder{
+        color: var(--chetwode-blue)
+    }
+}
+
 // Add image
 
 .file-upload {
