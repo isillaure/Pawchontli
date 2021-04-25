@@ -72,13 +72,13 @@
         <div class="create-pet-form">
             <h1 class="title josefinsans-normal-black-30px text-center py-5">Dar de alta <br />nueva mascota</h1>
             <div class="d-flex justify-content-center align-content-center align-items-center">
-                <form action="" method="">
+                <form action="" method="" id="pet-form">
                     <div class="base-form d-flex flex-column justify-content-center">
                         <label for="inputText"
                             class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Cómo se llama?
                         </label>
                         <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
+                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue" id="name">
                     </div>
                     <br>
                     <div class="base-form d-flex flex-column justify-content-center">
@@ -88,7 +88,7 @@
                             es?
                         </label>
                         <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
+                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue" id="species">
                     </div>
                     <br>
                     <div class="base-form d-flex flex-column justify-content-center">
@@ -98,7 +98,7 @@
                             aproximada?
                         </label>
                         <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
+                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue" id="age">
                     </div>
                     <br>
                     <div class="base-form d-flex flex-column justify-content-center">
@@ -106,7 +106,7 @@
                             class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Cuál es su sexo?
                         </label>
                         <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
+                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue" id="sex">
                     </div>
                     <br>
                     <div class="base-form d-flex flex-column justify-content-center">
@@ -115,7 +115,7 @@
                             aproximada?
                         </label>
                         <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
+                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue" id="size">
                     </div>
                     <br>
                     <div class="base-form d-flex flex-column justify-content-center">
@@ -124,7 +124,7 @@
                             carácter.
                         </label>
                         <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
+                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue" id="character">
                     </div>
                     <br>
                     <div class="base-form d-flex flex-column justify-content-center">
@@ -134,7 +134,7 @@
                             su historia.
                         </label>
                         <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
+                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue" id="story">
                     </div>
                     <br>
                     <div class="base-form d-flex flex-column justify-content-center">
@@ -143,7 +143,7 @@
                         cuidados especiales? ¿Cuáles?
                     </label>
                     <input type="text"
-                        class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
+                        class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue" id="special-needs">
                     </div>
                     <div class="d-flex justify-content-center pt-5">
                         <input type="submit" value="Agregar mascota" class="button-p josefinsans-normal-white-20px ">
@@ -213,6 +213,7 @@
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
     </script>
     <script src="js/main.js"></script>
+    <script src="js/createPet.js"></script>
 </body>
 
 </html>

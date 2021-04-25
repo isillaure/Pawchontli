@@ -44,7 +44,7 @@
         <div class="adoption-form">
             <h1 class="title josefinsans-normal-black-30px text-center pb-3">Formulario de <br />adopción</h1>
             <div class="d-flex justify-content-center align-content-center align-items-center">
-                <form action="" method="">
+                <form action="" method="" id="adoption-form">
                     <div  class="base-form d-flex flex-column justify-content-center">
                         <label for="inputText"
                             class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Actualmente
@@ -52,7 +52,7 @@
                             animales?
                         </label>
                         <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue container-fluid">
+                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue container-fluid" id="amount-pets-today">
                     </div>
                     <br>
                     <div class="base-form d-flex flex-column justify-content-center">
@@ -60,7 +60,7 @@
                             class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Cuáles?
                         </label>
                         <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue container-fluid">
+                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue container-fluid" id="which-pets-today">
                     </div>
                     <br>
                     <div class="base-form d-flex flex-column justify-content-center">
@@ -69,7 +69,7 @@
                             tenido otros animales?
                         </label>
                         <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue container-fluid">
+                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue container-fluid" id="amount-pets-past">
                     </div>
                     <br>
                     <div class="base-form d-flex flex-column justify-content-center">
@@ -79,7 +79,7 @@
                             pasó con ellos?
                         </label>
                         <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue container-fluid">
+                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue container-fluid" id="story-pets-past">
                     </div>
                     <br>
                     <div class="base-form d-flex flex-column justify-content-center">
@@ -90,7 +90,16 @@
                             casa están de acuerdo en adoptar?
                         </label>
                         <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue container-fluid">
+                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue container-fluid" id="everyone-agrees">
+                    </div>
+                    <br>
+                    <div class="base-form d-flex flex-column justify-content-center">
+                        <label for="inputText5"
+                            class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">En caso de vivir en un lugar rentado,
+                            ¿tus arrendadores permiten animales?
+                        </label>
+                        <input type="text"
+                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue container-fluid" id="allowed-to-own">
                     </div>
                     <br>
                     <div class="base-form d-flex flex-column justify-content-center">
@@ -100,7 +109,7 @@
                             tuvieras que cambiar de domicilio, ¿qué pasaría con el adoptado?
                         </label>
                         <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue container-fluid">
+                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue container-fluid" id="if-change-address">
                     </div>
                     <br>
                     <div class="base-form d-flex flex-column justify-content-center">
@@ -111,7 +120,7 @@
                             vive un perro o gato en promedio?
                         </label>
                         <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue container-fluid">
+                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue container-fluid" id="average-age">
                     </div>
                     <br>
                     <div class="base-form d-flex flex-column justify-content-center">
@@ -121,7 +130,7 @@
                             adoptado?
                         </label>
                         <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue container-fluid">
+                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue container-fluid" id="place-of-sleep">
                     </div>
                     <br>
                     <div class="base-form d-flex flex-column justify-content-center">
@@ -132,7 +141,7 @@
                             solo?
                         </label>
                         <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue container-fluid">
+                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue container-fluid" id="time-by-itself">
                     </div>
                     <br>
                     <div class="base-form d-flex flex-column justify-content-center">
@@ -142,7 +151,7 @@
                             empleados domésticos, ¿ellos están al tanto de los cuidados de un animal?
                         </label>
                         <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue container-fluid">
+                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue container-fluid" id="petcare-awareness">
                     </div>
                     <br>
                     <div class="base-form d-flex flex-column justify-content-center">
@@ -152,7 +161,7 @@
                             responsable y se hará cargo de cubrir los gastos del adoptado?
                         </label>
                         <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue container-fluid">
+                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue container-fluid" id="pet-responsible">
                     </div>
                     <br>
                     <div class="base-form d-flex flex-column justify-content-center">
@@ -162,7 +171,7 @@
                             veterinario de cabecera?
                         </label>
                         <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue container-fluid">
+                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue container-fluid" id="veterinarian">
                     </div>
                     <br>
                     <div class="checkbox-form base-form d-flex flex-column">
@@ -249,6 +258,7 @@
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
     </script>
     <script src="js/main.js"></script>
+    <script src="js/adoptionForm.js"></script>
 </body>
 
 </html>

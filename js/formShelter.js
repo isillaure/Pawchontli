@@ -1,8 +1,15 @@
 $(function () {
     console.log('is profile')
 
-    $("#form-user").on("submit", async (event) => {
+    $("#pet-form").on("submit", async (event) => {
         event.preventDefault();
+        const organizationName = $("#organization-name").val();
+        if (organizationName === '') {
+            $("#organization-name").addClass("is-invalid");
+            return;
+        } else {
+            $("#organization-name").removeClass("is-invalid");
+        }
         const firstName = $("#first-name").val();
         if (firstName === '') {
             $("#first-name").addClass("is-invalid");
@@ -17,26 +24,12 @@ $(function () {
         } else {
             $("#last-name").removeClass("is-invalid");
         }
-        const birthdate = $("#birthdate").val();
-        if (birthdate === '') {
-            $("#birthdate").addClass("is-invalid");
-            return;
-        } else {
-            $("#birthdate").removeClass("is-invalid");
-        }
         const phone = $("#phone").val();
         if (phone === '') {
             $("#phone").addClass("is-invalid");
             return;
         } else {
             $("#phone").removeClass("is-invalid");
-        }
-        const occupation = $("#occupation").val();
-        if (occupation === '') {
-            $("#occupation").addClass("is-invalid");
-            return;
-        } else {
-            $("#occupation").removeClass("is-invalid");
         }
         const street = $("#street").val();
         if (street === '') {
@@ -73,6 +66,20 @@ $(function () {
         } else {
             $("#zip-code").removeClass("is-invalid");
         }
+        const webAddress = $("#web-address").val();
+        if (webAddress === '') {
+            $("#web-address").addClass("is-invalid");
+            return;
+        } else {
+            $("#web-address").removeClass("is-invalid");
+        }
+        const donationLink = $("#donation-link").val();
+        if (donationLink === '') {
+            $("#donation-link").addClass("is-invalid");
+            return;
+        } else {
+            $("#donation-link").removeClass("is-invalid");
+        }
         const story = $("#story").val();
         if (story === '') {
             $("#story").addClass("is-invalid");
@@ -89,21 +96,23 @@ $(function () {
         }
 
         try {
-            const data = await fetch("http://localhost:8000/api/adopters/create/", {
+            const data = await fetch("http://localhost:8000/api/associations/create/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
+                    organizationName,
                     firstName,
                     lastName,
-                    birthdate,
                     phone,
-                    occupation,
                     street,
                     neighbourhood,
                     city,
                     state,
+                    zipCode,
+                    webAddress,
+                    donationLink,
                     story
                 }),
             });
@@ -111,7 +120,7 @@ $(function () {
             console.log(data, json);
             if (data.status === 200) {
                 localStorage.setItem("authtoken", json.token);
-                window.location.href = "/searchPet.html";
+                window.location.href = "/homeShelter.html";
             }
         } catch (error) {
             console.log(error);
@@ -123,8 +132,3 @@ $(function () {
         }
     })
 })
-
-function validateEmail($email) {
-    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-    return emailReg.test($email);
-}
