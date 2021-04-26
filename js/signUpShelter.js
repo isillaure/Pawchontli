@@ -43,7 +43,8 @@ $(function () {
                 body: JSON.stringify({
                     name,
                     email,
-                    password
+                    password,
+                    typeUser: "association"
                 }),
             });
             const json = await data.json();
