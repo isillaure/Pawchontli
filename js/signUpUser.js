@@ -25,7 +25,7 @@ $(function () {
             $("#password").removeClass("is-invalid");
         }
         const passwordConfirmation = $("#password-confirmation").val();
-        if (passwordConfirmation === '' || passwordconfirmation !== password) {
+        if (passwordConfirmation === '' || passwordConfirmation !== password) {
             $("#password-confirmation").addClass("is-invalid");
             $('#message-form').text("Las contraseñas deben ser iguales.")
             return;
