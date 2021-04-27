@@ -149,6 +149,7 @@ header button {
 .adoption-form .title {
   position: relative;
   padding-top: 2em;
+  width: 80%;
 }
 
 .adoption-form .title .josefinsans-normal-black-30px {
@@ -1535,6 +1536,19 @@ collapsible:hover .arrow-white {
 .detail-shelter .rectangle-background .info-shelter .button-main {
   margin-left: 5em;
   width: 250px;
+}
+
+.detail-shelter .rectangle-background .info-shelter .button-secondary {
+  background-color: white;
+  border: 2px solid;
+  border-color: var(--porsche);
+  border-radius: 15px;
+  width: 160px;
+  height: 64px;
+  color: var(--porsche);
+  font-size: 22px;
+  font-weight: 600;
+  font-family: var(--font-family-josefin_sans);
 }
 
 .detail-shelter .rectangle-background .josefinsans-chetwode-blue-18px {
