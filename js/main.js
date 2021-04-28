@@ -26,7 +26,7 @@ function goBack() {
 mybutton = document.getElementById("myBtn");
 
 window.onscroll = function () {
-    scrollFunction()
+   /* scrollFunction()*/
 };
 
 function scrollFunction() {

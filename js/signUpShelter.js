@@ -1,14 +1,15 @@
 $(function () {
-    console.log('is profile')
+    console.log('is sing up shelter')
 
     $("#signup-form").on("submit", async (event) => {
         event.preventDefault();
-        const name = $("#name").val();
-        if (!name) {
-            $("#name").addClass("is-invalid");
+        console.log("prueba");
+        const username = $("#username").val();
+        if (!username) {
+            $("#username").addClass("is-invalid");
             return;
         } else {
-            $("#name").removeClass("is-invalid");
+            $("#username").removeClass("is-invalid");
         }
         const email = $("#email").val();
         if (!email || !validateEmail(email)) {
@@ -25,7 +26,7 @@ $(function () {
             $("#password").removeClass("is-invalid");
         }
         const passwordConfirmation = $("#password-confirmation").val();
-        if (passwordConfirmation === '' || passwordconfirmation !== password) {
+        if (passwordConfirmation === '' || passwordConfirmation !== password) {
             $("#password-confirmation").addClass("is-invalid");
             $('#message-form').text("Las contraseñas deben ser iguales.")
             return;
@@ -35,18 +36,17 @@ $(function () {
         }
 
         try {
-            const data = await fetch("http://localhost:8000/api/associations/signup/", {
+            const data = await fetch("http://localhost:8000/api/register/association/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
-                    name,
+                    username,
                     email,
-                    password,
-                    typeUser: "association"
-                }),
-            });
+                    password
+                })
+            })
             const json = await data.json();
             console.log(data, json);
             if (data.status === 200) {

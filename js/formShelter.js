@@ -1,7 +1,7 @@
 $(function () {
     console.log('is profile')
 
-    $("#pet-form").on("submit", async (event) => {
+    $("#form-shelter").on("submit", async (event) => {
         event.preventDefault();
         const organizationName = $("#organization-name").val();
         if (organizationName === '') {
@@ -96,31 +96,45 @@ $(function () {
         }
 
         try {
-            const data = await fetch("http://localhost:8000/api/associations/create/", {
-                method: "POST",
+            
+            const fileInput = $('#image')[0].files[0]
+            const formData = new FormData()
+            formData.append('image', fileInput)
+            formData.append('first_name_contact', firstName)
+            formData.append('last_name_contact', lastName)
+            formData.append('phone', phone)
+            formData.append('donation_link', donationLink)
+            formData.append('web_address', webAddress)
+            formData.append('state', state)
+            formData.append('city', city)
+            formData.append('zip_code', zipCode)
+            formData.append('neighbourhood', neighbourhood)
+            formData.append('street_and_number', street)
+            formData.append('story', story)
+            
+
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const association_id = urlParams.get('association_id')
+            console.log(association_id);
+
+            const authtokenshelter = localStorage.getItem("authtokenshelter");
+
+            const data = await fetch(`http://localhost:8000/api/associations/${association_id}/update/`, {
+                method: "PATCH",
                 headers: {
-                    "Content-Type": "application/json",
+                    Authorization: `Token ${authtokenshelter}`
+                    
                 },
-                body: JSON.stringify({
-                    organizationName,
-                    firstName,
-                    lastName,
-                    phone,
-                    street,
-                    neighbourhood,
-                    city,
-                    state,
-                    zipCode,
-                    webAddress,
-                    donationLink,
-                    story
-                }),
+                body: formData
+                
             });
             const json = await data.json();
             console.log(data, json);
+            
             if (data.status === 200) {
-                localStorage.setItem("authtoken", json.token);
-                window.location.href = "/homeShelter.html";
+                var associationid = json.id
+                window.location.href = "/homeShelter.html?association_id="+associationid;
             }
         } catch (error) {
             console.log(error);

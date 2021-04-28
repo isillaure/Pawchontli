@@ -1,14 +1,14 @@
 $(function () {
     console.log('is profile')
 
-    $("#login-form").on("submit", async (event) => {
+    $("#login-shelter-form").on("submit", async (event) => {
         event.preventDefault();
-        const email = $("#email").val();
-        if (!email || !validateEmail(email)) {
-            $("#email").addClass("is-invalid");
+        const username = $("#username").val();
+        if (username =='') {
+            $("#username").addClass("is-invalid");
             return;
         } else {
-            $("#email").removeClass("is-invalid");
+            $("#username").removeClass("is-invalid");
         }
         const password = $("#password").val();
         if (password === '') {
@@ -19,21 +19,22 @@ $(function () {
         }
 
         try {
-            const data = await fetch("http://localhost:8000/api/associations/login/", {
+            const data = await fetch("http://localhost:8000/api/login/association/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
-                    email,
-                    password,
-                }),
-            });
+                    username,
+                    password
+                })
+            })
             const json = await data.json();
             console.log(data, json);
             if (data.status === 200) {
-                localStorage.setItem("authtoken", json.token);
-                window.location.href = "/formShelter.html";
+                localStorage.setItem("authtokenshelter", json.token);
+                var association_id = json.association_id
+                window.location.href = "/formShelter.html?association_id="+association_id;
             }
         } catch (error) {
             console.log(error);

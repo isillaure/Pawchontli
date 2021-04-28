@@ -10,13 +10,6 @@ $(function () {
         } else {
             $("#username").removeClass("is-invalid");
         }
-        const email = $("#email").val();
-        if (!email || !validateEmail(email)) {
-            $("#email").addClass("is-invalid");
-            return;
-        } else {
-            $("#email").removeClass("is-invalid");
-        }
         const password = $("#password").val();
         if (password === '') {
             $("#password").addClass("is-invalid");
@@ -26,16 +19,15 @@ $(function () {
         }
 
         try {
-            const authtoken = localStorage.getItem("authtoken");
+            /*const authtoken = localStorage.getItem("authtoken");*/
             const data = await fetch("http://localhost:8000/api/login/adopter/", {
                 method: "POST",
                 headers: {
-                    Authorization: `Token ${authtoken}`,
+                    /*Authorization: `Token ${authtoken}`,*/
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
                     username,
-                    email,
                     password,
                 }),
             });
