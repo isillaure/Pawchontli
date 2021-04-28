@@ -3,12 +3,26 @@ $(function () {
 
     $("#signup-form").on("submit", async (event) => {
         event.preventDefault();
-        const name = $("#name").val();
-        if (!name) {
-            $("#name").addClass("is-invalid");
+        const username = $("#username").val();
+        if (!username) {
+            $("#username").addClass("is-invalid");
             return;
         } else {
-            $("#name").removeClass("is-invalid");
+            $("#username").removeClass("is-invalid");
+        }
+        const first_name = $("#first_name").val();
+        if (!first_name) {
+            $("#first_name").addClass("is-invalid");
+            return;
+        } else {
+            $("#first_name").removeClass("is-invalid");
+        }
+        const last_name = $("#last_name").val();
+        if (!last_name) {
+            $("#last_name").addClass("is-invalid");
+            return;
+        } else {
+            $("#last_name").removeClass("is-invalid");
         }
         const email = $("#email").val();
         if (!email || !validateEmail(email)) {
@@ -35,22 +49,23 @@ $(function () {
         }
 
         try {
-            const data = await fetch("http://localhost:8000/api/users/signup/", {
+            const data = await fetch("http://localhost:8000/api/register/adopter/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
-                    name,
+                    username,
+                    first_name,
+                    last_name,
                     email,
-                    password,
-                    typeUser: "adopter"
+                    password
                 }),
             });
             const json = await data.json();
             console.log(data, json);
             if (data.status === 200) {
-                window.location.href = "/logInUser.html";
+                window.location.href = "/loginUser.html"
             }
         } catch (error) {
             console.log(error);

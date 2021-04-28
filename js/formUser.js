@@ -3,20 +3,20 @@ $(function () {
 
     $("#form-user").on("submit", async (event) => {
         event.preventDefault();
-        const firstName = $("#first-name").val();
-        if (firstName === '') {
-            $("#first-name").addClass("is-invalid");
-            return;
-        } else {
-            $("#first-name").removeClass("is-invalid");
-        }
-        const lastName = $("#last-name").val();
-        if (lastName === '') {
-            $("#last-name").addClass("is-invalid");
-            return;
-        } else {
-            $("#last-name").removeClass("is-invalid");
-        }
+        // const firstName = $("#first-name").val();
+        // if (firstName === '') {
+        //     $("#first-name").addClass("is-invalid");
+        //     return;
+        // } else {
+        //     $("#first-name").removeClass("is-invalid");
+        // }
+        // const lastName = $("#last-name").val();
+        // if (lastName === '') {
+        //     $("#last-name").addClass("is-invalid");
+        //     return;
+        // } else {
+        //     $("#last-name").removeClass("is-invalid");
+        // }
         const birthdate = $("#birthdate").val();
         if (birthdate === '') {
             $("#birthdate").addClass("is-invalid");
@@ -81,7 +81,7 @@ $(function () {
             $("#story").removeClass("is-invalid");
         }
         const checkbox = $("#checkbox-form");
-        if (!checkbox.is(":checked")){
+        if (!checkbox.is(":checked")) {
             $("#checkbox-form").addClass("is-invalid");
             return;
         } else {
@@ -89,22 +89,24 @@ $(function () {
         }
 
         try {
-            const data = await fetch("http://localhost:8000/api/adopters/create/", {
-                method: "POST",
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const adopterid = urlParams.get('adopterid')
+            console.log(adopterid);
+            const data = await fetch(`http://localhost:8000/api/adopters/${adopterid}/update/`, {
+                method: "PATCH",
                 headers: {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
-                    firstName,
-                    lastName,
                     birthdate,
                     phone,
                     occupation,
-                    street,
+                    street_and_number: street,
                     neighbourhood,
                     city,
                     state,
-                    zipCode,
+                    zip_code: zipCode,
                     story
                 }),
             });
