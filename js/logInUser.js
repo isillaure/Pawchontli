@@ -35,8 +35,8 @@ $(function () {
             console.log(data, json);
             if (data.status === 200) {
                 localStorage.setItem("authtoken", json.token);
-                var adopterid = json.adopter_id
-                window.location.href = "/formUser.html?adopterid="+adopterid;
+                var adopter_id = json.adopter_id
+                window.location.href = "/formUser.html?adopter_id="+adopter_id;
             }
         } catch (error) {
             console.log(error);

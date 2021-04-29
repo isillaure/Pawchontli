@@ -89,32 +89,36 @@ $(function () {
         }
 
         try {
+            const fileInput = $('#image')[0].files[0]
+            const formData = new FormData()
+            formData.append('image', fileInput)
+            formData.append('phone', phone)
+            formData.append('state', state)
+            formData.append('zip_code', zipCode)
+            formData.append('neighbourhood', neighbourhood)
+            formData.append('street_and_number', street)
+            
+
+
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
-            const adopterid = urlParams.get('adopterid')
+            const adopter_id = urlParams.get('adopter_id')
             console.log(adopterid);
-            const data = await fetch(`http://localhost:8000/api/adopters/${adopterid}/update/`, {
+
+            const authtoken = localStorage.getItem("authtoken");
+
+            const data = await fetch(`http://localhost:8000/api/adopters/${adopter_id}/update/`, {
                 method: "PATCH",
                 headers: {
-                    "Content-Type": "application/json",
+                    Authorization: `Token ${authtoken}`
                 },
-                body: JSON.stringify({
-                    birthdate,
-                    phone,
-                    occupation,
-                    street_and_number: street,
-                    neighbourhood,
-                    city,
-                    state,
-                    zip_code: zipCode,
-                    story
-                }),
+                body: formData
             });
             const json = await data.json();
             console.log(data, json);
             if (data.status === 200) {
-                localStorage.setItem("authtoken", json.token);
-                window.location.href = "/searchPet.html";
+                var adopterid = json.id
+                window.location.href = "/searchPet.html?adopterid="+adopterid;
             }
         } catch (error) {
             console.log(error);
