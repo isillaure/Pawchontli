@@ -65,7 +65,7 @@ $(function () {
             const json = await data.json();
             console.log(data, json);
             if (data.status === 200) {
-                window.location.href = "/loginUser.html"
+                window.location.href = "/logInUser.html"
             }
         } catch (error) {
             console.log(error);
