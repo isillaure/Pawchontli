@@ -34,7 +34,13 @@ $(function () {
             if (data.status === 200) {
                 localStorage.setItem("authtokenshelter", json.token);
                 var association_id = json.association_id
-                window.location.href = "/formShelter.html?association_id="+association_id;
+                if(json.first_name_contact == ""){
+                    window.location.href = "/formShelter.html?association_id="+association_id;
+                }
+                else{
+                    window.location.href = "/homeShelter.html?association_id="+association_id;
+                }
+                
             }
         } catch (error) {
             console.log(error);
