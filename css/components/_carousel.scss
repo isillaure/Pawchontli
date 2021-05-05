@@ -1,35 +1,24 @@
-// .owl-carousel {
-//     background-color: white;
+.owl-carousel {
 
-//     .card {
-//         display: inline-block;
-//         border-radius: 15px;
-//         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-//         background-color: white;
+    .card {
+        display: inline-block;
+        border-radius: 8px 8px 0px 0px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 
-//         .card-img-top {
-//             border-radius: 15px 15px 0px 0px;
-//         }
+        .card-img-top {
+            border-radius: 8px 8px 0px 0px;
+        }
+    }
 
-//         .card-body {
-//             border-color: white;
-//             border-radius: 15px;
+    a{
+        text-decoration: none;
+    }
 
-//             a {
-//                 text-decoration: none;
-//             }
-//         }
-//     }
-
-//     a{
-//         text-decoration: none;
-//     }
-
-//     .josefinsans-semi-bold-chetwode-blue-16px {
-//         color: var(--chetwode-blue);
-//         font-family: var(--font-family-josefin_sans);
-//         font-size: 20px;
-//         font-style: normal;
-//         font-weight: 600;
-//     }
-// }
+    .josefinsans-semi-bold-chetwode-blue-16px {
+        color: var(--chetwode-blue);
+        font-family: var(--font-family-josefin_sans);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+    }
+}
