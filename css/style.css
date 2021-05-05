@@ -2,6 +2,29 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400|Quicksand:400");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Quicksand:400,500");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400");
+.owl-carousel .card {
+  display: inline-block;
+  border-radius: 8px 8px 0px 0px;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.owl-carousel .card .card-img-top {
+  border-radius: 8px 8px 0px 0px;
+}
+
+.owl-carousel a {
+  text-decoration: none;
+}
+
+.owl-carousel .josefinsans-semi-bold-chetwode-blue-16px {
+  color: var(--chetwode-blue);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+
 footer {
   background-color: var(--porsche);
   position: relative;
@@ -25,18 +48,28 @@ footer .logo-white {
 
 footer .block-footer {
   padding-top: 8em;
+  padding-right: 4em;
 }
 
 footer ul {
   list-style-type: none;
 }
 
-footer .block-footer {
-  padding-left: 3em;
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a :hover {
+  color: var(--chetwode-blue);
+}
+
+footer a :active {
+  color: var(--chetwode-blue);
 }
 
 footer .icons-footer {
-  padding-bottom: 3em;
+  padding-bottom: 2em;
 }
 
 footer .josefinsans-normal-white-16px {
@@ -53,6 +86,71 @@ footer .quicksand-normal-white-10px {
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header button {
+  border: none;
+  background-color: white;
+}
+
+.container-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-menu.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-menu .close-menu {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.container-menu .container-inner-menu {
+  background-color: var(--porsche);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+  list-style: none;
+  margin: 0;
+}
+
+.container-menu .container-inner-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-family: 'Josefin sans', sans-serif;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  width: 100%;
 }
 
 .x404 .bg {
@@ -115,15 +213,6 @@ footer .quicksand-normal-white-10px {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-header a {
-  text-decoration: none;
-}
-
-header button {
-  border: none;
-  background-color: white;
 }
 
 .top-background {
@@ -252,86 +341,10 @@ header button {
   font-weight: 400;
 }
 
-footer {
-  background-color: var(--porsche);
-  position: relative;
-  top: 8em;
-}
-
-footer .arrow {
-  height: 2.5em;
-  width: 2.5em;
-  position: absolute;
-  top: 3em;
-  right: 3em;
-}
-
-footer .logo-white {
-  height: 8em;
-  width: 8em;
-  position: relative;
-  top: 7em;
-}
-
-footer .block-footer {
-  padding-top: 8em;
-  padding-right: 4em;
-}
-
-footer ul {
-  list-style-type: none;
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
-}
-
-footer a :hover {
-  color: var(--chetwode-blue);
-}
-
-footer a :active {
-  color: var(--chetwode-blue);
-}
-
-footer .icons-footer {
-  padding-bottom: 2em;
-}
-
-footer .josefinsans-normal-white-16px {
-  color: white;
-  font-family: "Josefin Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-}
-
-footer .quicksand-normal-white-10px {
-  color: white;
-  font-family: "Quicksand";
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 400;
-}
-
 :root {
   --chetwode-blue: rgba(118, 126, 237, 1);
   --white-lilac: rgba(246, 247, 251, 1);
   --porsche: rgba(236, 163, 107, 1);
-}
-
-.content a {
-  color: var(--porsche);
-  text-decoration: none;
-}
-
-:root {
-  --chetwode-blue: rgba(118, 126, 237, 1);
-  --white-lilac: rgba(246, 247, 251, 1);
-  --porsche: rgba(236, 163, 107, 1);
-  --cyan: #C4F7F4;
-  --chetwode-white:#9CA2F6;
 }
 
 .top-adoption {
@@ -489,7 +502,6 @@ collapsible:hover .arrow-white {
 .detail-pet .rectangle-background {
   background-color: white;
   border-radius: 15px;
-  width: 80%;
   position: relative;
   top: -2em;
   -webkit-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
@@ -1119,34 +1131,6 @@ collapsible:hover .arrow-white {
   font-weight: 600;
 }
 
-.owl-carousel {
-  background-color: white;
-}
-
-.owl-carousel .card {
-  display: inline-block;
-  border-radius: 15px;
-  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: white;
-}
-
-.owl-carousel .card .card-img-top {
-  border-radius: 15px 15px 0px 0px;
-}
-
-.owl-carousel a {
-  text-decoration: none;
-}
-
-.owl-carousel .josefinsans-semi-bold-chetwode-blue-16px {
-  color: var(--chetwode-blue);
-  font-family: var(--font-family-josefin_sans);
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-}
-
 .ico {
   border-radius: 50%;
   cursor: pointer;
@@ -1559,6 +1543,22 @@ collapsible:hover .arrow-white {
   letter-spacing: 0px;
   min-height: 12px;
   width: 54px;
+}
+
+.show-pets-shelter {
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  top: -1em;
+}
+
+.show-pets-shelter .josefinsans-normal-40px {
+  color: var(--chetwode-blue);
+  font-family: "Josefin Sans";
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  min-height: 12px;
 }
 
 .detail-user .user-actions {
@@ -2077,61 +2077,5 @@ collapsible:hover .arrow-white {
 body {
   font-family: 'Josefin Sans', sans-serif;
   font-family: 'Quicksand', sans-serif;
-}
-
-.container-menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 10;
-  display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.container-menu.open {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.container-menu .close-menu {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-}
-
-.container-menu .container-inner-menu {
-  background-color: var(--porsche);
-  border-radius: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  padding: 2rem;
-  list-style: none;
-  margin: 0;
-}
-
-.container-menu .container-inner-menu a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.25rem;
-  font-family: 'Josefin sans', sans-serif;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  display: inline-block;
-  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

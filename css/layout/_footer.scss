@@ -21,18 +21,29 @@ footer {
 
     .block-footer {
         padding-top: 8em;
+        padding-right: 4em;
+        // Acomodar responsivo en pantallas medianas y grandes.
     }
 
     ul {
         list-style-type: none;
     }
 
-    .block-footer{
-        padding-left: 3em;
+    a{
+        color: white;
+        text-decoration: none;
+
+        :hover {
+            color: var(--chetwode-blue);
+        }
+
+        :active{
+            color: var(--chetwode-blue);
+        }
     }
 
     .icons-footer{
-        padding-bottom: 3em;
+        padding-bottom: 2em;
     }
 
     .josefinsans-normal-white-16px {

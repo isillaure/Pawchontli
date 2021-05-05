@@ -22,7 +22,7 @@ $(document).ready(async () => {
     
     const pets = await fetch(`http://localhost:8000/api/associations/${association_id}/pets/`, {
       headers: {
-        //Authorization: `Token ${authtokenshelter}`,
+        Authorization: `Token ${authtokenshelter}`,
       },
     });
     const arrayPets = await pets.json();
