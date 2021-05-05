@@ -133,72 +133,9 @@ header{
     }
 }
 
-// // Footer
+// Footer
 
-footer {
 
-    background-color: var(--porsche);
-    position: relative;
-    top: 8em;
-
-    .arrow {
-        height: 2.5em;
-        width: 2.5em;
-        position: absolute;
-        top: 3em;
-        right: 3em;
-    }
-
-    .logo-white{
-        height: 8em;
-        width: 8em;
-        position: relative;
-        top: 7em;
-    }
-
-    .block-footer {
-        padding-top: 8em;
-        padding-right: 4em;
-        // Acomodar responsivo en pantallas medianas y grandes.
-    }
-
-    ul {
-        list-style-type: none;
-    }
-
-    a{
-        color: white;
-        text-decoration: none;
-
-        :hover {
-            color: var(--chetwode-blue);
-        }
-
-        :active{
-            color: var(--chetwode-blue);
-        }
-    }
-
-    .icons-footer{
-        padding-bottom: 2em;
-    }
-
-    .josefinsans-normal-white-16px {
-        color: white;
-        font-family: "Josefin Sans";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-    }
-
-    .quicksand-normal-white-10px {
-        color: white;
-        font-family: "Quicksand";
-        font-size: 10px;
-        font-style: normal;
-        font-weight: 400;
-    }
-}
 
 :root {
     --chetwode-blue: rgba(118, 126, 237, 1);
