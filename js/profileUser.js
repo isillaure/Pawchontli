@@ -12,7 +12,6 @@ $(document).ready(async () => {
       },
     });
     const arrayUser = await data.json();
-    //const arrayShelter = await data.json();
     console.log(data, arrayUser);
     $('.user-image').attr('src',arrayUser.image)
     $('.user-name').text(`${arrayUser.user.first_name} ${arrayUser.user.last_name}`)

@@ -52,9 +52,3 @@ $(document).ready(async () => {
     $('.search-pet').html(layoutpets)
 
   });
-
-
-
-    
-  
- 

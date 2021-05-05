@@ -97,6 +97,10 @@ $(function () {
             formData.append('zip_code', zipCode)
             formData.append('neighbourhood', neighbourhood)
             formData.append('street_and_number', street)
+            formData.append('story', story)
+            formData.append('occupation', occupation)
+            formData.append('birthdate', birthdate)
+
             
 
 

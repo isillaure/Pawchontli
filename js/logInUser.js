@@ -46,7 +46,7 @@ $(function () {
                     window.location.href = "/formUser.html?adopter_id="+adopter_id;
                 }
                 else{
-                    window.location.href = "/profileUserEdit.html?adopter_id="+adopter_id;
+                    window.location.href = "/searchPet.html?adopter_id="+adopter_id;
                 }
                 
             }

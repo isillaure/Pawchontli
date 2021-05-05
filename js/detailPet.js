@@ -42,31 +42,31 @@ $(document).ready(async () => {
 
 
 
-    
-    // const data1 = await fetch(`http://localhost:8000/api/associations/${association_id}/`, {
-    //   headers: {
-    //     //Authorization: `Token ${authtokenshelter}`,
-    //   },
-    // });
-    // const arrayShelter = await data1.json();
-   
-    // let layoutshelter = "";
-    // layoutshelter=`
-    // <p class="px-4 josefinsans-chetwode-blue-18px">
-    //                             REFUGIO
-    //                         </p>
-    //                         <a href="profileShelter.html?${association_id}" class="d-inline-flex container flex-row shelter-button">
-    //                             <img src="assets/img/shelterImage.jpg" alt=""
-    //                                 style="width: 6em; height: 6em;">
-    //                             <div class="col-12 text-shelter">
-    //                                 <p class= "shelter-name">${arrayPet.association.user.username}</p>
-    //                                 <p class="d-flex flex-wrap">Felipe Carrillo puerto #400, Alberto Zamora, <br> Coyoacán, 04000, CDMX.</p>
-    //                             </div>
-    //                         </a>
+    const association_id= arrayPet.association.id
+    console.log(association_id)
+    const data1 = await fetch(`http://localhost:8000/api/associations/${association_id}/`, {
+      headers: {
+        //Authorization: `Token ${authtokenshelter}`,
+      },
+    });
+    const arrayShelter = await data1.json();
+    let layoutshelter = "";
+    layoutshelter=`
+    <p class="px-4 josefinsans-chetwode-blue-18px">
+                                REFUGIO
+                            </p>
+                            <a href="profileShelter.html?association_id=${association_id}" class="d-inline-flex container flex-row shelter-button">
+                                <img src="${arrayShelter.image}" alt=""
+                                    style="width: 6em; height: 6em;">
+                                <div class="col-12 text-shelter">
+                                    <p class= "shelter-name">${arrayShelter.user.username}</p>
+                                    <p class="d-flex flex-wrap">${arrayShelter.street_and_number} <br> ${arrayShelter.city}, ${arrayShelter.state}.</p>
+                                </div>
+                            </a>
 
     
-    //     `
-    // $('.shelter-button').html(layoutshelter)
+        `
+    $('.shelter-button').html(layoutshelter)
     
 
 
