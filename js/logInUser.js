@@ -28,15 +28,27 @@ $(function () {
                 },
                 body: JSON.stringify({
                     username,
-                    password,
-                }),
-            });
+                    password
+                })
+            })
             const json = await data.json();
             console.log(data, json);
             if (data.status === 200) {
-                localStorage.setItem("authtoken", json.token);
+                const authtoken=localStorage.setItem("authtoken", json.token);
                 var adopter_id = json.adopter_id
-                window.location.href = "/profileUser.html?adopter_id="+adopter_id;
+                const adopterinfo = await fetch(`http://localhost:8000/api/adopters/${adopter_id}/`, {
+                headers: {
+                        //Authorization: `Token ${authtoken}`,
+                },
+                });
+                const arrayAdopter = await adopterinfo.json();
+                if(arrayAdopter.phone == "null"){
+                    window.location.href = "/formUser.html?adopter_id="+adopter_id;
+                }
+                else{
+                    window.location.href = "/profileUserEdit.html?adopter_id="+adopter_id;
+                }
+                
             }
         } catch (error) {
             console.log(error);

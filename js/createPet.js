@@ -61,7 +61,7 @@ $(function () {
         }
 
         try {
-            const data = await fetch("http://localhost:8000/api/associations/create/", {
+            const data = await fetch(`http://localhost:8000/api/associations/${association_id}/create/`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

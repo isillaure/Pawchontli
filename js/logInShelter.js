@@ -32,9 +32,16 @@ $(function () {
             const json = await data.json();
             console.log(data, json);
             if (data.status === 200) {
+                const authtokenshelter = localStorage.getItem("authtokenshelter");
                 localStorage.setItem("authtokenshelter", json.token);
                 var association_id = json.association_id
-                if(json.first_name_contact == ""){
+                const shelterinfo = await fetch(`http://localhost:8000/api/associations/${association_id}/`, {
+                headers: {
+                    Authorization: `Token ${authtokenshelter}`,
+                },
+                });
+                const arrayShelter = await shelterinfo.json();
+                if(arrayShelter.first_name_contact == ""){
                     window.location.href = "/formShelter.html?association_id="+association_id;
                 }
                 else{

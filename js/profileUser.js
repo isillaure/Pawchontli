@@ -6,7 +6,7 @@ $(document).ready(async () => {
     console.log(adopter_id);
     const authtoken = localStorage.getItem("authtoken");
 
-    const data = await fetch(`http://localhost:8000/api/adopters/18/`, {
+    const data = await fetch(`http://localhost:8000/api/adopters/${adopter_id}/`, {
       headers: {
         Authorization: `Token ${authtoken}`,
       },
@@ -15,7 +15,7 @@ $(document).ready(async () => {
     //const arrayShelter = await data.json();
     console.log(data, arrayUser);
     $('.user-image').attr('src',arrayUser.image)
-    $('.user-name').text(`${arrayUser.first_name} ${arrayUser.last_name}`)
+    $('.user-name').text(`${arrayUser.user.first_name} ${arrayUser.user.last_name}`)
     $('.user-age').text(_calculateAge(new Date(arrayUser.birthdate)))
     $('.occupation-user').text(arrayUser.occupation)
     $('.location-user').text(arrayUser.state)
