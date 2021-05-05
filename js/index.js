@@ -1,14 +1,14 @@
 $(document).ready(async () => {
     const pets = await fetch(`http://localhost:8000/api/pets/`, {
-      headers: {
-        //Authorization: `Token ${authtoken}`,
-      },
+        headers: {
+            //Authorization: `Token ${authtoken}`,
+        },
     });
     const arrayPets = await pets.json();
     console.log(arrayPets);
     let layoutpets = "";
     arrayPets.forEach(pet => {
-        layoutpets+=`
+        layoutpets += `
         <div class="card" style="width: 20rem;">
                     <svg class="ico" viewBox="0 0 24 24" style="width: 3em; height: 3em">
                         <path
@@ -23,11 +23,8 @@ $(document).ready(async () => {
                             <p class="card-text josefinsans-semi-bold-chetwode-blue-16px">${pet.name}</p>
                         </a>
                     </div>
-        </div>
-
-    
+        </div>    
         `
     });
     $('.pet-carousel').html(layoutpets)
-
-  });
+});
