@@ -1,4 +1,7 @@
 $(document).ready(async () => {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const adopter_id = urlParams.get('adopter_id');
     const is_adopter = localStorage.getItem("is_adopter")
     if (is_adopter == "true"){
         console.log('Es adoptante');

@@ -49,7 +49,7 @@ $(function () {
         } else {
             $("#everyone-agrees").removeClass("is-invalid");
         }
-        const allowedToOwn = $("allowed-to-own").val();
+        const allowedToOwn = $("#allowed-to-own").val();
         if (allowedToOwn === '') {
             $("#allowed-to-own").addClass("is-invalid");
             return;
@@ -91,14 +91,14 @@ $(function () {
         } else {
             $("#petcare-awareness").removeClass("is-invalid");
         }
-        const petResponsible = $("#pet-responsible");
+        const petResponsible = $("#pet-responsible").val();
         if (petResponsible === '') {
             $("#pet-responsible").addClass("is-invalid");
             return;
         } else {
             $("#pet-responsible").removeClass("is-invalid");
         }
-        const veterinarian= $("#veterinarian");
+        const veterinarian= $("#veterinarian").val();
         if (veterinarian === '') {
             $("#veterinarian").addClass("is-invalid");
             return;
@@ -152,6 +152,7 @@ $(function () {
                     pet_responsable: petResponsible,
                     veterinarian: veterinarian,
                     pet:id_pet,
+                    adopter:"33",
                 }),
                 
             });
