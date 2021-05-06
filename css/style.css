@@ -825,35 +825,11 @@ collapsible:hover .arrow-white {
           justify-content: center;
 }
 
-.detail-pet {
-  background-color: var(--porsche);
-  padding-bottom: 5em;
-  margin-left: auto;
-  margin-right: auto;
+.pet-view {
+  background-color: var(--chetwode-blue);
 }
 
-.detail-pet .arrow-left {
-  position: absolute;
-  top: 2em;
-  left: 2em;
-}
-
-.detail-pet .image-pet {
-  position: relative;
-  top: 1em;
-  -webkit-box-shadow: 0px -5px -5px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px -5px -5px rgba(0, 0, 0, 0.1);
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.detail-pet h2 {
-  padding-top: 1.5em;
-  padding-bottom: 0.5em;
-  padding-left: 15%;
-}
-
-.detail-pet .rectangle-background {
+.pet-view .rectangle-background {
   background-color: white;
   border-radius: 15px;
   position: relative;
@@ -863,36 +839,51 @@ collapsible:hover .arrow-white {
   margin-right: auto;
 }
 
-.detail-pet .user-actions {
-  padding-top: 4em;
+.pet-view .detail-pet {
+  background-size: cover;
+  border-radius: 15px;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
 }
 
-.detail-pet .user-actions .button-main {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 64px;
+.pet-view .detail-pet .arrow-left {
+  position: relative;
+  right: 12em;
+  top: 4em;
 }
 
-.detail-pet .info-shelter {
-  margin-left: auto;
+.pet-view .detail-pet .image-pet {
+  position: relative;
+  -webkit-box-shadow: 0px -5px -5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px -5px -5px rgba(0, 0, 0, 0.1);
   margin-right: auto;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.detail-pet .info-shelter a {
-  text-decoration: none;
-  color: black;
+.pet-view .detail-pet .image-pet img {
+  border-radius: 15px;
+  width: 40vw;
+  min-width: 35em;
+  height: auto;
 }
 
-.detail-pet .info-shelter a img {
-  border-radius: 100px;
+.pet-view .detail-pet .info-pet {
+  width: 50vw;
 }
 
-.detail-pet .info-shelter .text-shelter {
-  padding-left: 1em;
+.pet-view .detail-pet h2 {
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  padding-left: 15%;
 }
 
-.detail-pet .josefinsans-normal-black-30px {
+.pet-view .detail-pet .josefinsans-normal-black-30px {
   color: black;
   font-family: var(--font-family-josefin_sans);
   font-size: 35px;
@@ -900,7 +891,7 @@ collapsible:hover .arrow-white {
   font-weight: 400;
 }
 
-.detail-pet .josefinsans-chetwode-blue-18px {
+.pet-view .detail-pet .josefinsans-chetwode-blue-18px {
   color: var(--chetwode-blue);
   font-family: "Josefin Sans";
   font-size: 18px;
@@ -908,6 +899,40 @@ collapsible:hover .arrow-white {
   letter-spacing: 0px;
   min-height: 12px;
   width: 54px;
+}
+
+.pet-view .pet-actions {
+  position: relative;
+  top: 3em;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.pet-view .pet-actions .button-main {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 64px;
+}
+
+.pet-view .pet-actions .shelter-text {
+  text-align: start;
+  margin-bottom: 3em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pet-view .pet-actions .shelter-text a {
+  text-decoration: none;
+  color: black;
+}
+
+.pet-view .pet-actions .shelter-text a img {
+  border-radius: 100px;
+}
+
+.pet-view .pet-actions .shelter-text .text-shelter {
+  padding-left: 1em;
 }
 
 :root {
@@ -1861,7 +1886,6 @@ collapsible:hover .arrow-white {
 .detail-user .rectangle-background {
   background-color: white;
   border-radius: 15px;
-  position: relative;
   margin-top: 10em;
 }
 
@@ -1874,7 +1898,6 @@ collapsible:hover .arrow-white {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 2em;
 }
 
 .detail-user .rectangle-background .detail-top .user-image {
