@@ -19,7 +19,7 @@
     .josefinsans-normal-chetwode-blue-20px {
         color: var(--chetwode-blue);
         font-family: "Josefin Sans";
-        font-size: 20px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
     }
@@ -28,7 +28,8 @@
         width: 80%;
 
         ::placeholder{
-            color: var(--chetwode-blue)
+            color: var(--chetwode-blue);
+            font-size: 16px;
         }
     }
 }

@@ -1,0 +1,32 @@
+.border-2px-chetwode-blue {
+    border: 2px solid var(--chetwode-blue);
+}
+
+.overlap-group {
+    align-items: flex-start;
+    background-color: var(--white-lilac);
+    border-radius: 16px;
+    display: flex;
+    height: 40px;
+    margin-bottom: -0.91px;
+    padding: 11px 22px;
+}
+
+.button-primary {
+    align-items: center;
+    background-color: var(--porsche);
+    border-radius: 15px;
+    display: flex;
+    height: 52px;
+    overflow: hidden;
+    padding: 0 128px;
+    width: 343px;
+}
+
+.josefinsans-normal-white-20px {
+    color: white;
+    font-family: "Josefin Sans", Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}

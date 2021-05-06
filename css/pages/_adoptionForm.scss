@@ -13,7 +13,6 @@
 
     background-color: var(--porsche);
     position: relative;
-    top: -0.5em;
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 6em;
@@ -58,7 +57,7 @@
         align-items: center;
         background-color: var(--white-lilac);
         border-radius: 15px;
-        height: 60px;
+        height: 40px;
 
         .input-base {
             min-height: 16px;
@@ -86,7 +85,7 @@
     .josefinsans-normal-chetwode-blue-20px {
         color: var(--chetwode-blue);
         font-family: "Josefin Sans";
-        font-size: 20px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
     }
