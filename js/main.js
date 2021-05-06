@@ -11,6 +11,7 @@ $(function (){
     $("#log-out").on("click", (element) => {
         element.preventDefault()
         localStorage.removeItem("authtoken");
+        localStorage.removeItem("authtokenshelter");
         window.location.href = "/index.html";
     });
 })
