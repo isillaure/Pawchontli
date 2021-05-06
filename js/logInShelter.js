@@ -34,6 +34,7 @@ $(function () {
             if (data.status === 200) {
                 const authtokenshelter = localStorage.getItem("authtokenshelter");
                 localStorage.setItem("authtokenshelter", json.token);
+                localStorage.setItem("is_adopter", json.is_adopter);
                 var association_id = json.association_id
                 const shelterinfo = await fetch(`http://localhost:8000/api/associations/${association_id}/`, {
                 headers: {
