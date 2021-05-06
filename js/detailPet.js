@@ -52,6 +52,22 @@ $(document).ready(async () => {
     const arrayShelter = await data1.json();
     let layoutshelter = "";
     layoutshelter=`
+    <form action="https://www.paypal.com/donate" method="post" target="_top"
+                                class="button-donation">
+                                <input type="hidden" name="business" value="paw.chontli@gmail.com" />
+                                <input type="hidden" name="item_name" value="Pawchontli" />
+                                <input type="hidden" name="currency_code" value="MXN" />
+                                <input type="image" src="assets/svg/button-sponsor.svg" border="0" name="submit style"
+                                    title="PayPal - The safer, easier way to pay online!"
+                                    alt="Donate with PayPal button" style="width: 10em;" />
+                                <img alt="" border="0" src="https://www.paypal.com/en_MX/i/scr/pixel.gif" width="1"
+                                    height="1" />
+                            </form>
+                            <a  href="adoptionForm.html?id_pet=${id_pet}">
+                                <button class="button-main">Adoptar</button>
+                            </a>
+                        </div>
+    <div class="info-shelter py-5 d-flex flex-column ">
     <p class="px-4 josefinsans-chetwode-blue-18px">
                                 REFUGIO
                             </p>
@@ -63,6 +79,7 @@ $(document).ready(async () => {
                                     <p class="d-flex flex-wrap">${arrayShelter.street_and_number} <br> ${arrayShelter.city}, ${arrayShelter.state}.</p>
                                 </div>
                             </a>
+                            </div>
 
     
         `
