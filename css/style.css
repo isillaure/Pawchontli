@@ -744,6 +744,8 @@ collapsible:hover .arrow-white {
 .detail-pet {
   background-color: var(--porsche);
   padding-bottom: 5em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .detail-pet .arrow-left {
@@ -769,7 +771,7 @@ collapsible:hover .arrow-white {
   background-color: white;
   border-radius: 15px;
   position: relative;
-  top: -2em;
+  top: -1em;
   -webkit-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
 }
