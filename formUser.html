@@ -30,114 +30,107 @@
     </header>
 
     <main>
-        <div class="top-background">
-            <div class="rectangle-background container-fluid"></div>
-            <div class="close">
-                <img onclick="goBack()" src="assets/svg/xcircle.svg" class="x-circle" alt="" style="width: 3em;">
-            </div>
-        </div>
         <div class="user-form">
-            <h1 class="title josefinsans-normal-black-30px text-center py-5">Completa tu perfil</h1>
-            <div class="d-flex justify-content-center align-content-center align-items-center">
-                <form action="" method="" id="form-user">
-                    <!-- <div class="base-form d-flex flex-column justify-content-center">
-                        <label for="inputName"
-                            class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Cómo te llamas?
-                        </label>
-                        <input type="given-name"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                            placeholder="Nombre" id="first-name">
-                        <br>
-                        <input type="family-name"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                            placeholder="Apellidos" id="last-name">
-                    </div>
-                    <br> -->
-                    <div class="base-form d-flex flex-column justify-content-center">
-                        <label for="inputBirthDate"
-                            class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Cuándo naciste?
-                        </label>
-                        <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue datepicker"
-                            placeholder="Fecha de nacimiento" id="birthdate">
-                    </div>
-                    <br>
-                    <div class="base-form d-flex flex-column justify-content-center">
-                        <label for="inputPhone"
-                            class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Cómo te podemos
-                            contactar?
-                        </label>
-                        <input type="tel"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                            placeholder="Teléfono" id="phone">
-                    </div>
-                    <br>
-                    <div class="base-form d-flex flex-column justify-content-center">
-                        <label for="inputOccupation"
-                            class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿A qué te dedicas?
-                        </label>
-                        <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                            placeholder="Ocupación" id="occupation">
-                    </div>
-                    <br>
-                    <div class="base-form d-flex flex-column justify-content-center">
-                        <label for="inputAdress"
-                            class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Dónde vives?
-                        </label>
-                        <input type="street-address"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                            placeholder="Calle y número" id="street">
-                        <br>
-                        <input type="address-line1"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                            placeholder="Colonia" id="neighbourhood">
-                        <br>
-                        <input type="address-line2"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                            placeholder="Municipio/Delegación" id="city">
-                        <br>
-                        <input type="address-line3"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                            placeholder="Estado" id="state">
-                        <br>
-                        <input type="postal-code"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
-                            placeholder="Código postal" id="zip-code">
-                    </div>
-                    <br>
-                    <div class="base-form d-flex flex-column justify-content-center">
-                        <label for="inputDescription"
-                            class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap"> ¿Por qué deseas
-                            adoptar?
-                        </label>
-                        <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue" id="story">
-                    </div>
-                    <br>
-                    <div class="base-form d-flex flex-column justify-content-center">
-                        <label for="inputDescription"
-                            class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap"> Sube tu foto de perfil.
-                        </label>
-                        <input type="file"
-                            class="input-picture josefinsans-normal-chetwode-blue-16px" id="image">
-                    </div>
-                    <br>
-                    <div>
-                        <div class="d-flex flex-row align-items-center">
-                            <input type="checkbox" class="" id="checkbox-form">
-                            <label for="checkbox-form" class="josefinsans-normal-chetwode-blue-20px px-3">He leído y
-                                acepto los
-                                términos
-                                y condiciones de uso.
+            <div class="user-top">
+                <div class="close">
+                    <img onclick="goBack()" src="assets/svg/xcircle.svg" class="x-circle" alt="" style="width: 3em;">
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-10 col-10 user-body">
+                <h1 class="title josefinsans-normal-black-30px text-center py-5">Completa tu perfil</h1>
+                <div class="d-flex justify-content-center align-content-center align-items-center">
+                    <form action="" method="" id="form-user">
+                        <div class="base-form d-flex flex-column justify-content-center">
+                            <label for="inputBirthDate"
+                                class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Cuándo
+                                naciste?
                             </label>
+                            <input type="text"
+                                class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue datepicker"
+                                placeholder="Fecha de nacimiento" id="birthdate">
                         </div>
-                        <div class="d-flex justify-content-center">
-                            <input type="submit" value="Ingresar"
-                                class="button-p josefinsans-normal-white-20px button-primary">
+                        <br>
+                        <div class="base-form d-flex flex-column justify-content-center">
+                            <label for="inputPhone"
+                                class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Cómo te
+                                podemos
+                                contactar?
+                            </label>
+                            <input type="tel"
+                                class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                                placeholder="Teléfono" id="phone">
                         </div>
-                    </div>
-                </form>
+                        <br>
+                        <div class="base-form d-flex flex-column justify-content-center">
+                            <label for="inputOccupation"
+                                class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿A qué te
+                                dedicas?
+                            </label>
+                            <input type="text"
+                                class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                                placeholder="Ocupación" id="occupation">
+                        </div>
+                        <br>
+                        <div class="base-form d-flex flex-column justify-content-center">
+                            <label for="inputAdress"
+                                class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Dónde vives?
+                            </label>
+                            <input type="street-address"
+                                class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                                placeholder="Calle y número" id="street">
+                            <br>
+                            <input type="address-line1"
+                                class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                                placeholder="Colonia" id="neighbourhood">
+                            <br>
+                            <input type="address-line2"
+                                class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                                placeholder="Municipio/Delegación" id="city">
+                            <br>
+                            <input type="address-line3"
+                                class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                                placeholder="Estado" id="state">
+                            <br>
+                            <input type="postal-code"
+                                class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                                placeholder="Código postal" id="zip-code">
+                        </div>
+                        <br>
+                        <div class="base-form d-flex flex-column justify-content-center">
+                            <label for="inputDescription"
+                                class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap"> ¿Por qué
+                                deseas
+                                adoptar?
+                            </label>
+                            <input type="text"
+                                class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue"
+                                id="story">
+                        </div>
+                        <br>
+                        <div class="base-form d-flex flex-column justify-content-center">
+                            <label for="inputDescription"
+                                class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap"> Sube tu foto
+                                de perfil.
+                            </label>
+                            <input type="file" class="input-picture josefinsans-normal-chetwode-blue-16px" id="image">
+                        </div>
+                        <br>
+                        <div>
+                            <div class="d-flex flex-row align-items-center">
+                                <input type="checkbox" class="" id="checkbox-form">
+                                <label for="checkbox-form" class="josefinsans-normal-chetwode-blue-20px px-3">He leído y
+                                    acepto los
+                                    términos
+                                    y condiciones de uso.
+                                </label>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <input type="submit" value="Ingresar"
+                                    class="button-p josefinsans-normal-white-20px button-primary">
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </main>

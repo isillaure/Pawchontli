@@ -481,30 +481,35 @@ header button {
           justify-content: center;
 }
 
-.top-background {
-  background-color: var(--porsche);
-  padding-bottom: 2em;
-  height: 80px;
-}
-
-.top-background .rectangle-background {
-  background-color: white;
-  border-radius: 15px;
-  height: 50px;
-  position: relative;
-  top: 4em;
-}
-
-.top-background .x-circle {
+.x-circle {
   position: relative;
   left: 85%;
-  top: -2.5em;
+  top: 1em;
+}
+
+.adoption-form {
+  background-color: var(--porsche);
+  position: relative;
+  top: -0.5em;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 6em;
+}
+
+.adoption-form .adoption-body {
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  padding-bottom: 4em;
 }
 
 .adoption-form .title {
   position: relative;
   padding-top: 2em;
-  width: 80%;
 }
 
 .adoption-form .title .josefinsans-normal-black-30px {
@@ -714,12 +719,51 @@ collapsible:hover .arrow-white {
   --chetwode-white: #9CA2F6;
 }
 
+.create-pet-form {
+  background-color: var(--porsche);
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 6em;
+}
+
+.create-pet-form .pet-body {
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  padding-bottom: 4em;
+}
+
 .create-pet-form .josefinsans-normal-chetwode-blue-20px {
   color: var(--chetwode-blue);
   font-family: "Josefin Sans";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
+}
+
+.create-pet-form form {
+  width: 80%;
+}
+
+.create-pet-form form ::-webkit-input-placeholder {
+  color: var(--chetwode-blue);
+}
+
+.create-pet-form form :-ms-input-placeholder {
+  color: var(--chetwode-blue);
+}
+
+.create-pet-form form ::-ms-input-placeholder {
+  color: var(--chetwode-blue);
+}
+
+.create-pet-form form ::placeholder {
+  color: var(--chetwode-blue);
 }
 
 .button-p {
@@ -759,6 +803,8 @@ collapsible:hover .arrow-white {
   top: 1em;
   -webkit-box-shadow: 0px -5px -5px rgba(0, 0, 0, 0.1);
           box-shadow: 0px -5px -5px rgba(0, 0, 0, 0.1);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .detail-pet h2 {
@@ -771,9 +817,10 @@ collapsible:hover .arrow-white {
   background-color: white;
   border-radius: 15px;
   position: relative;
-  top: -1em;
   -webkit-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .detail-pet .user-actions {
@@ -981,12 +1028,35 @@ collapsible:hover .arrow-white {
   --porsche: rgba(236, 163, 107, 1);
 }
 
+.shelter-form {
+  background-color: var(--porsche);
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 6em;
+}
+
+.shelter-form .shelter-body {
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  padding-bottom: 4em;
+}
+
 .shelter-form .josefinsans-normal-chetwode-blue-20px {
   color: var(--chetwode-blue);
   font-family: "Josefin Sans";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
+}
+
+.shelter-form form {
+  width: 80%;
 }
 
 .shelter-form form ::-webkit-input-placeholder {
@@ -1005,19 +1075,23 @@ collapsible:hover .arrow-white {
   color: var(--chetwode-blue);
 }
 
-.josefinsans-medium-chetwode-blue-14px {
-  font-family: Josefin Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 14px;
-  color: var(--chetwode-blue);
+.user-form {
+  background-color: var(--porsche);
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 6em;
 }
 
-:root {
-  --chetwode-blue: rgba(118, 126, 237, 1);
-  --white-lilac: rgb(24, 38, 95);
-  --porsche: rgba(236, 163, 107, 1);
+.user-form .user-body {
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  padding-bottom: 4em;
 }
 
 .user-form .josefinsans-normal-chetwode-blue-20px {
@@ -1026,6 +1100,10 @@ collapsible:hover .arrow-white {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
+}
+
+.user-form form {
+  width: 80%;
 }
 
 .user-form form ::-webkit-input-placeholder {
@@ -1466,104 +1544,63 @@ collapsible:hover .arrow-white {
   --white: rgba(255, 255, 255, 1);
 }
 
-.log-in {
+.log-in-form {
+  background-color: var(--porsche);
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 6em;
+}
+
+.log-in-form a {
+  text-decoration: none;
+  position: relative;
+  left: 80%;
+}
+
+.log-in-form .title {
   position: relative;
   padding-top: 3em;
   text-align: center;
 }
 
-.log-in a {
-  position: fixed;
-  right: 4em;
-}
-
-.group-form {
-  position: relative;
-  top: 4em;
-}
-
-.group-form ul {
-  list-style-type: none;
-  margin-right: 2em;
-}
-
-.group-form ul li {
-  padding-top: 1em;
-  margin-left: 5em;
-  margin-right: 5em;
-}
-
-.group-form label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.group-form p {
+.log-in-form .log-in-body {
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   margin-left: auto;
   margin-right: auto;
-  text-align: justify;
-  text-justify: inter-word;
+  margin-top: 2em;
+  padding-bottom: 4em;
 }
 
-.group-form .overlap-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: var(--white-lilac);
-  border-radius: 15px;
-  height: 60px;
-  width: 70vw;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.group-form .input-base.is-invalid {
-  border: 2px solid red;
-  color: red;
-}
-
-.group-form ::-webkit-input-placeholder {
-  color: var(--chetwode-blue);
-}
-
-.group-form :-ms-input-placeholder {
-  color: var(--chetwode-blue);
-}
-
-.group-form ::-ms-input-placeholder {
-  color: var(--chetwode-blue);
-}
-
-.group-form ::placeholder {
-  color: var(--chetwode-blue);
-}
-
-.group-form .border-2px-chetwode-blue {
-  border: 2px solid var(--chetwode-blue);
-}
-
-.group-form .josefinsans-normal-chetwode-blue-16px {
-  color: var(--chetwode-blue);
-  font-family: "Josefin Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-}
-
-.group-form .josefinsans-normal-chetwode-blue-20px {
+.log-in-form .josefinsans-normal-chetwode-blue-20px {
   color: var(--chetwode-blue);
   font-family: "Josefin Sans";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
+}
+
+.log-in-form form {
+  width: 80%;
+}
+
+.log-in-form form ::-webkit-input-placeholder {
+  color: var(--chetwode-blue);
+}
+
+.log-in-form form :-ms-input-placeholder {
+  color: var(--chetwode-blue);
+}
+
+.log-in-form form ::-ms-input-placeholder {
+  color: var(--chetwode-blue);
+}
+
+.log-in-form form ::placeholder {
+  color: var(--chetwode-blue);
 }
 
 .button-primary {
@@ -1581,6 +1618,8 @@ collapsible:hover .arrow-white {
   width: 343px;
   display: block;
   margin-top: 1em;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .button-primary .button-p {
@@ -2233,6 +2272,65 @@ collapsible:hover .arrow-white {
 
 :root {
   --porsche: rgba(236, 163, 107, 1);
+}
+
+.sign-up-form {
+  background-color: var(--porsche);
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 6em;
+}
+
+.sign-up-form a {
+  text-decoration: none;
+  position: relative;
+  left: 80%;
+}
+
+.sign-up-form .title {
+  position: relative;
+  padding-top: 3em;
+  text-align: center;
+}
+
+.sign-up-form .sign-up-body {
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  padding-bottom: 4em;
+}
+
+.sign-up-form .josefinsans-normal-chetwode-blue-20px {
+  color: var(--chetwode-blue);
+  font-family: "Josefin Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sign-up-form form {
+  width: 80%;
+}
+
+.sign-up-form form ::-webkit-input-placeholder {
+  color: var(--chetwode-blue);
+}
+
+.sign-up-form form :-ms-input-placeholder {
+  color: var(--chetwode-blue);
+}
+
+.sign-up-form form ::-ms-input-placeholder {
+  color: var(--chetwode-blue);
+}
+
+.sign-up-form form ::placeholder {
+  color: var(--chetwode-blue);
 }
 
 body {

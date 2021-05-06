@@ -63,102 +63,110 @@
     </nav>
 
     <main>
-        <div class="top-background">
-            <div class="rectangle-background container-fluid"></div>
-            <div class="close">
-                <img onclick="goBack()" src="assets/svg/xcircle.svg" class="x-circle" alt="" style="width: 3em;">
-            </div>
-        </div>
         <div class="create-pet-form">
-            <h1 class="title josefinsans-normal-black-30px text-center py-5">Actualizar datos<br /> de una mascota</h1>
-            <div class="d-flex justify-content-center align-content-center align-items-center">
-                <form action="" method="">
-                    <div class="base-form d-flex flex-column justify-content-center">
-                        <label for="inputText"
-                            class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Cómo se llama?
-                        </label>
-                        <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
-                    </div>
-                    <br>
-                    <div class="base-form d-flex flex-column justify-content-center">
-                        <label for="inputText"
-                            class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Qué tipo de
-                            mascota
-                            es?
-                        </label>
-                        <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
-                    </div>
-                    <br>
-                    <div class="base-form d-flex flex-column justify-content-center">
-                        <label for="inputText"
-                            class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Cuál
-                            es su edad
-                            aproximada?
-                        </label>
-                        <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
-                    </div>
-                    <br>
-                    <div class="base-form d-flex flex-column justify-content-center">
-                        <label for="inputText4"
-                            class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Cuál es su sexo?
-                        </label>
-                        <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
-                    </div>
-                    <br>
-                    <div class="base-form d-flex flex-column justify-content-center">
-                        <label for="inputText5"
-                            class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Cuál es su talla
-                            aproximada?
-                        </label>
-                        <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
-                    </div>
-                    <br>
-                    <div class="base-form d-flex flex-column justify-content-center">
-                        <label for="inputText6"
-                            class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">Cuéntanos sobre su
-                            carácter.
-                        </label>
-                        <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
-                    </div>
-                    <br>
-                    <div class="base-form d-flex flex-column justify-content-center">
-                        <label for="inputText7"
-                            class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">Cuéntanos un poco
-                            de
-                            su historia.
-                        </label>
-                        <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
-                    </div>
-                    <br>
-                    <div class="base-form d-flex flex-column justify-content-center">
-                        <label for="inputText8"
-                            class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Requiere atención
-                            o
-                            cuidados especiales? ¿Cuáles?
-                        </label>
-                        <input type="text"
-                            class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
-                    </div>
-                    <br>
-                    <div class="file-upload">
-                        <label for="inputDescription"
-                            class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap"> Cambiar la
-                            fotografía de la mascota.
-                        </label>
-                        <input type="file" class="input-picture josefinsans-normal-chetwode-blue-16px" id="image"
-                            type="file" accept="image/*">
-                    </div>
-                    <div class="d-flex justify-content-center pt-3">
-                        <input type="submit" value="Actualizar" class="button-p josefinsans-normal-white-20px ">
-                    </div>
-                </form>
+            <div class="pet-top">
+                <div class="close">
+                    <img onclick="goBack()" src="assets/svg/xcircle.svg" class="x-circle" alt="" style="width: 3em;">
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-10 col-10 pet-body">
+                <h1 class="title josefinsans-normal-black-30px text-center py-5">Actualizar datos<br /> de una mascota
+                </h1>
+                <div class="d-flex justify-content-center align-content-center align-items-center">
+                    <form action="" method="">
+                        <div class="base-form d-flex flex-column justify-content-center">
+                            <label for="inputText"
+                                class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Cómo se
+                                llama?
+                            </label>
+                            <input type="text"
+                                class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
+                        </div>
+                        <br>
+                        <div class="base-form d-flex flex-column justify-content-center">
+                            <label for="inputText"
+                                class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Qué tipo de
+                                mascota
+                                es?
+                            </label>
+                            <input type="text"
+                                class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
+                        </div>
+                        <br>
+                        <div class="base-form d-flex flex-column justify-content-center">
+                            <label for="inputText"
+                                class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Cuál
+                                es su edad
+                                aproximada?
+                            </label>
+                            <input type="text"
+                                class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
+                        </div>
+                        <br>
+                        <div class="base-form d-flex flex-column justify-content-center">
+                            <label for="inputText4"
+                                class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Cuál es su
+                                sexo?
+                            </label>
+                            <input type="text"
+                                class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
+                        </div>
+                        <br>
+                        <div class="base-form d-flex flex-column justify-content-center">
+                            <label for="inputText5"
+                                class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Cuál es su
+                                talla
+                                aproximada?
+                            </label>
+                            <input type="text"
+                                class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
+                        </div>
+                        <br>
+                        <div class="base-form d-flex flex-column justify-content-center">
+                            <label for="inputText6"
+                                class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">Cuéntanos
+                                sobre su
+                                carácter.
+                            </label>
+                            <input type="text"
+                                class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
+                        </div>
+                        <br>
+                        <div class="base-form d-flex flex-column justify-content-center">
+                            <label for="inputText7"
+                                class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">Cuéntanos un
+                                poco
+                                de
+                                su historia.
+                            </label>
+                            <input type="text"
+                                class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
+                        </div>
+                        <br>
+                        <div class="base-form d-flex flex-column justify-content-center">
+                            <label for="inputText8"
+                                class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap">¿Requiere
+                                atención
+                                o
+                                cuidados especiales? ¿Cuáles?
+                            </label>
+                            <input type="text"
+                                class="input-base josefinsans-normal-chetwode-blue-16px overlap-group border-2px-chetwode-blue">
+                        </div>
+                        <br>
+                        <div class="file-upload">
+                            <label for="inputDescription"
+                                class="form-label josefinsans-normal-chetwode-blue-20px d-flex flex-wrap"> Cambiar la
+                                fotografía de la mascota.
+                            </label>
+                            <input type="file" class="input-picture josefinsans-normal-chetwode-blue-16px" id="image"
+                                type="file" accept="image/*">
+                        </div>
+                        <div class="d-flex justify-content-center pt-3">
+                            <input type="submit" value="Actualizar" class="button-p josefinsans-normal-white-20px ">
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
