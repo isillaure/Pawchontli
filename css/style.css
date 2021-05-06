@@ -362,7 +362,8 @@ header button {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background-image: url(assets/img/403.jpg);
+  background-image: url(/../assets/img/403.jpg);
+  background-position: 50% 45%;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;

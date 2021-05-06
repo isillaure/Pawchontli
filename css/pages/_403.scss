@@ -1,14 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:700");
 
-
-.x403 .bg {
-    align-items: flex-start;
-    background-image: url(assets/img/403.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    padding: 15px 12px;
-    width: 100%;
+.x403 {
+    .bg {
+        align-items: flex-start;
+        background-image: url(/../assets/img/403.jpg);
+        background-position: 50% 45%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        padding: 15px 12px;
+        width: 100%;
+    }
 }
 
 .x403 .text-4 {
