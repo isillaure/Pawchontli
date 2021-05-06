@@ -1,15 +1,15 @@
 $(document).ready(async () => {
     const pets = await fetch(`http://localhost:8000/api/pets/`, {
-      headers: {
-        //Authorization: `Token ${authtoken}`,
-      },
+        headers: {
+            //Authorization: `Token ${authtoken}`,
+        },
     });
     const arrayPets = await pets.json();
     console.log(arrayPets);
     let layoutpets = "";
     arrayPets.forEach(pet => {
-        if(pet.species == "Cat" || pet.species == "cat"  ){
-        layoutpets+=`
+        if (pet.species == "Cat" || pet.species == "cat") {
+            layoutpets += `
         <div class="card" style="width: 20rem;">
                 <svg class="ico" viewBox="0 0 24 24" style="width: 3em; height: 3em">
                     <path
@@ -32,4 +32,4 @@ $(document).ready(async () => {
     });
     $('.search-pet').html(layoutpets)
 
-  });
+});
