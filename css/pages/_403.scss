@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:700");
+
+.x403 {
+    .bg {
+        align-items: flex-start;
+        background-image: url(/../assets/img/403.jpg);
+        background-position: 50% 45%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        padding: 15px 12px;
+        width: 100%;
+    }
+}
+
+.x403 .text-4 {
+    height: 220px;
+    letter-spacing: 0px;
+    margin-left: 4px;
+    margin-top: 370px;
+    min-height: 142px;
+    width: 311px;
+}
+
+.josefinsans-bold-porsche-150px {
+    color: var(--porsche);
+    font-family: "Josefin Sans", Helvetica;
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.josefinsans-bold-porsche-55px {
+    color: var(--porsche);
+    font-family: "Josefin Sans", Helvetica;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+:root {
+    --porsche: rgba(236, 163, 107, 1);
+    --white: rgba(255, 255, 255, 0.16);
+}
+
+.valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

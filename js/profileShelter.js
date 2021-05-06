@@ -45,8 +45,6 @@ $(document).ready(async () => {
                     </a>
                 </div>
             </div>
-
-    
         `
     });
     $('.search-pet').html(layoutpets)
