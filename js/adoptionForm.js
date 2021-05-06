@@ -103,26 +103,29 @@ $(function () {
         }
 
         try {
-            const data = await fetch("http://localhost:8000/api/adopters/create/", {
+            const formData = new FormData()
+            formData.append('amount_pets_today', amountPetsToday)
+            formData.append('which_pets_today', whichPetsToday)
+            formData.append('amount_pets_past', amountPetsPast)
+            formData.append('story_pets_past', storyPetsPast)
+            formData.append('everyone_agrees', everyoneAgrees)
+            formData.append('allowed_to_own', allowedToOwn)
+            formData.append('if_change_address', ifChangeAddress)
+            formData.append('average_age', averageAge)
+            formData.append('place_of_sleep', placeOfSleep)
+            formData.append('time_by_itself', timeByItself)
+            formData.append('petcare_awareness', petcareAwareness)
+            formData.append('pet_responsable', petResponsible)
+            formData.append('veterinarian', veterinarian)
+
+            const data = await fetch("http://localhost:8000/api/adoption_forms/create/", {
                 method: "POST",
                 headers: {
-                    "Content-Type": "application/json",
+                    //Authorization: `Token ${authtoken}`
+                    
                 },
-                body: JSON.stringify({
-                    amountPetsToday,
-                    whichPetsToday,
-                    amountPetsPast,
-                    storyPetsPast,
-                    everyoneAgrees,
-                    allowedToOwn,
-                    ifChangeAddress,
-                    averageAge,
-                    placeOfSleep,
-                    timeByItself,
-                    petcareAwareness,
-                    petResponsible,
-                    veterinarian
-                }),
+                body: formData
+                
             });
             const json = await data.json();
             console.log(data, json);
