@@ -12,6 +12,7 @@ $(function (){
         element.preventDefault()
         localStorage.removeItem("authtoken");
         localStorage.removeItem("authtokenshelter");
+        localStorage.removeItem("is_adopter");
         window.location.href = "/index.html";
     });
 })
