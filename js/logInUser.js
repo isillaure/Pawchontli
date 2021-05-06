@@ -1,6 +1,6 @@
 $(function () {
     console.log('is profile')
-
+    const previous_page = localStorage.getItem("previous_page")
     $("#login-form").on("submit", async (event) => {
         event.preventDefault();
         const username = $("#username").val();
@@ -35,6 +35,7 @@ $(function () {
             console.log(data, json);
             if (data.status === 200) {
                 const authtoken=localStorage.setItem("authtoken", json.token);
+                const is_adopter=localStorage.setItem("is_adopter", json.is_adopter)
                 var adopter_id = json.adopter_id
                 const adopterinfo = await fetch(`http://localhost:8000/api/adopters/${adopter_id}/`, {
                 headers: {
@@ -46,7 +47,12 @@ $(function () {
                     window.location.href = "/formUser.html?adopter_id="+adopter_id;
                 }
                 else{
-                    window.location.href = "/searchPet.html?adopter_id="+adopter_id;
+                    if (previous_page == null){
+                        window.location.href = "/searchPet.html?adopter_id="+adopter_id;
+                    }
+                    else {
+                        window.location.href = previous_page
+                    }
                 }
                 
             }

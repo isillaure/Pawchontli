@@ -1,78 +1,31 @@
-// Title 
-.log-in {
-    position: relative;
-    padding-top: 3em;
-    text-align: center;
+.log-in-form{
 
     a {
-        position: fixed;
-        right: 4em;
+        text-decoration: none;
+        position: relative;
+        left: 80%;
     }
-}
 
-// Form
+    .title {
+        position: relative;
+        padding-top: 3em;
+        text-align: center;
+    }
 
-.group-form {
+    background-color: var(--porsche);
     position: relative;
-    top: 4em;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 6em;
 
-    ul {
-        list-style-type: none;
-        margin-right: 2em;
-
-        li {
-            padding-top: 1em;
-            margin-left: 5em;
-            margin-right: 5em;
-            // Acomodar responsivo en pantallas medianas.
-        }
-    }
-
-    label {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    p {
+    .log-in-body{
+        background-color:white;
+        border-radius: 15px;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
         margin-left: auto;
         margin-right: auto;
-        text-align: justify;
-        text-justify: inter-word;
-        // Acomodar responsivo en pantallas grandes y medianas.
-    }
-
-    .overlap-group {
-        display: flex;
-        align-items: center;
-        background-color: var(--white-lilac);
-        border-radius: 15px;
-        height: 60px;
-        width: 70vw;
-        display: flex;
-        justify-content: center;
-    }
-
-    .input-base {
-        &.is-invalid {
-            border: 2px solid red;
-            color: red;
-        }
-    }
-
-    ::placeholder {
-        color: var(--chetwode-blue)
-    }
-
-    .border-2px-chetwode-blue {
-        border: 2px solid var(--chetwode-blue);
-    }
-
-    .josefinsans-normal-chetwode-blue-16px {
-        color: var(--chetwode-blue);
-        font-family: "Josefin Sans";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
+        margin-top: 2em;
+        padding-bottom: 4em;
     }
 
     .josefinsans-normal-chetwode-blue-20px {
@@ -81,6 +34,14 @@
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
+    }
+
+    form{
+        width: 80%;
+
+        ::placeholder{
+            color: var(--chetwode-blue)
+        }
     }
 }
 
@@ -97,7 +58,7 @@
     width: 343px;
     display: block;
     margin-top: 1em;
-    // box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     // border-radius: 15px;
 
     .button-p {

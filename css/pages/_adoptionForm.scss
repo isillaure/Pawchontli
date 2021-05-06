@@ -1,25 +1,9 @@
-
-// Top
-
-.top-background {
-    background-color: var(--porsche);
-    padding-bottom: 2em;
-    height: 80px;
-
-    .rectangle-background {
-        background-color:white;
-        border-radius: 15px;
-        height: 50px;
-        position: relative;
-        top:4em;
-    }
-
-    .x-circle{
-        position: relative;
-        left:85%;
-        top: -2.5em;
-    }
+.x-circle{
+    position: relative;
+    left:85%;
+    top: 1em;
 }
+
 
 // Form
 
@@ -27,10 +11,26 @@
 
 .adoption-form {
 
+    background-color: var(--porsche);
+    position: relative;
+    top: -0.5em;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 6em;
+
+    .adoption-body{
+        background-color:white;
+        border-radius: 15px;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em;
+        padding-bottom: 4em;
+    }
+
     .title {
         position: relative;
         padding-top: 2em;
-        width: 80%;
 
         .josefinsans-normal-black-30px {
             color: black;
@@ -121,10 +121,6 @@
         font-weight: 400;
     }
 }
-
-// Footer
-
-
 
 :root {
     --chetwode-blue: rgba(118, 126, 237, 1);
