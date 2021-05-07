@@ -93,9 +93,13 @@ $(document).ready(async () => {
                         veterinario de cabecera?
                     </p>
                     <p>Sí.</p>
-                    <div class="d-flex flex-row justify-content-evenly pb-4">
-                        <button class="button-secondary">Declinar</button>
-                        <button class="button-main">Aceptar</button>
+                    <div class="d-flex flex-wrap justify-content-evenly pb-4">
+                        <form action="">
+                            <input type="submit" value="Declinar"
+                            class="button-secondary">
+                            <input type="submit" value="Aceptar"
+                            class="button-main">
+                        </form>
                     </div>
                 </div>
             </div>
