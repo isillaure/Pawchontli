@@ -828,79 +828,66 @@ collapsible:hover .arrow-white {
 .detail-pet {
   background-color: var(--porsche);
   padding-bottom: 5em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.detail-pet .arrow-left {
-  position: absolute;
-  top: 2em;
-  left: 2em;
-}
-
-.detail-pet .image-pet {
-  position: relative;
-  top: 1em;
-  -webkit-box-shadow: 0px -5px -5px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px -5px -5px rgba(0, 0, 0, 0.1);
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.detail-pet h2 {
-  padding-top: 1.5em;
-  padding-bottom: 0.5em;
-  padding-left: 15%;
 }
 
 .detail-pet .rectangle-background {
   background-color: white;
   border-radius: 15px;
+  margin-top: 10em;
+}
+
+.detail-pet .rectangle-background .detail-top {
   position: relative;
-  -webkit-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
-  margin-left: auto;
-  margin-right: auto;
+  top: -8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.detail-pet .user-actions {
-  padding-top: 4em;
+.detail-pet .rectangle-background .detail-top .pet-image {
+  border-radius: 15px;
+  border: 8px solid white;
 }
 
-.detail-pet .user-actions .button-main {
+.detail-pet .rectangle-background .user-actions .button-main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   height: 64px;
 }
 
-.detail-pet .info-shelter {
+.detail-pet .rectangle-background .info-pet {
+  position: relative;
+  top: -5em;
+}
+
+.detail-pet .rectangle-background .info-pet .edit {
+  position: relative;
+  left: 80%;
+}
+
+.detail-pet .rectangle-background .info-shelter {
   margin-left: auto;
   margin-right: auto;
 }
 
-.detail-pet .info-shelter a {
+.detail-pet .rectangle-background .info-shelter a {
   text-decoration: none;
   color: black;
 }
 
-.detail-pet .info-shelter a img {
-  border-radius: 100px;
+.detail-pet .rectangle-background .info-shelter a img {
+  border-radius: 6em;
 }
 
-.detail-pet .info-shelter .text-shelter {
+.detail-pet .rectangle-background .info-shelter .text-shelter {
   padding-left: 1em;
 }
 
-.detail-pet .josefinsans-normal-black-30px {
-  color: black;
-  font-family: var(--font-family-josefin_sans);
-  font-size: 35px;
-  font-style: normal;
-  font-weight: 400;
-}
-
-.detail-pet .josefinsans-chetwode-blue-18px {
+.detail-pet .rectangle-background .josefinsans-chetwode-blue-18px {
   color: var(--chetwode-blue);
   font-family: "Josefin Sans";
   font-size: 18px;
@@ -910,16 +897,10 @@ collapsible:hover .arrow-white {
   width: 54px;
 }
 
-:root {
-  --chetwode-blue: rgba(118, 126, 237, 1);
-  --white-lilac: rgba(246, 247, 251, 1);
-  --porsche: rgba(236, 163, 107, 1);
-}
-
 .detail-pet .edit {
   position: absolute;
   right: 3em;
-  top: 2em;
+  top: -3em;
 }
 
 .detail-pet a {
@@ -1861,7 +1842,6 @@ collapsible:hover .arrow-white {
 .detail-user .rectangle-background {
   background-color: white;
   border-radius: 15px;
-  position: relative;
   margin-top: 10em;
 }
 
@@ -1874,7 +1854,6 @@ collapsible:hover .arrow-white {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 2em;
 }
 
 .detail-user .rectangle-background .detail-top .user-image {
