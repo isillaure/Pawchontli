@@ -52,4 +52,12 @@ $(document).ready(async () => {
       `
   $('.shelter-button').html(layoutshelter)
 
+  let buttonAdopt= "";
+  buttonAdopt = `
+  <a href="adoptionForm.html?id_pet=${id_pet}">
+  <button class="button-main">Adoptar</button>
+  </a>
+    `
+    $('.adoptpet').html(buttonAdopt)
+
 })
