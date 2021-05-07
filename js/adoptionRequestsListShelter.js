@@ -31,68 +31,65 @@ $(document).ready(async () => {
                 </div>
                 <div class="d-flex flex-column">
                     <p class="josefinsans-chetwode-blue-18px">NOMBRE DEL ADOPTANTE</p>
-                    <a href="profileUser.html">Victoria Robertson</a>
+                    <a href="profileUser.html">${form.adopter}</a>
                 </div>
                 <br>
-                <div class="d-flex flex-column">
-                    <p class="josefinsans-chetwode-blue-18px">ESTATUS</p>
-                    <p>Activa.</p>
-                </div>
+               
                 <div class="d-flex flex-column">
                     <p class="josefinsans-chetwode-blue-18px">FORMULARIO DE ADOPCIÓN</p>
                     <p class="question">¿Actualmente tienes
                         animales?</p>
-                    <p>Sí.</p>
+                    <p>${form.amount_pets_today}</p>
                     <p class="question">¿Cuáles?</p>
-                    <p>Un perro.</p>
+                    <p>${form.which_pets_today}</p>
                     <p class="question">¿Anteriormente has
                         tenido otros animales?</p>
-                    <p>Sí, un gato.</p>
+                    <p>${form.amount_pets_past}</p>
                     <p class="question">¿Qué fue lo que
                         pasó con ellos?</p>
-                    <p>Falleció por cáncer.</p>
+                    <p>${form.story_pets_past}</p>
                     <p class="question">¿Todas las personas
                         en
                         casa están de acuerdo en adoptar?</p>
-                    <p>Sí.</p>
+                    <p>${form.everyone_agrees}</p>
                     <p class="question">
                         Si
                         por algún motivo
                         tuvieras que cambiar de domicilio, ¿qué pasaría con el adoptado?
                     </p>
-                    <p>Buscaría un departamento donde acepten mascotas para llevarlo conmigo.</p>
+                    <p>${form.if_change_address}</p>
                     <p class="question">
                         ¿Cuántos años crees
                         que
                         vive un perro o gato en promedio?
                     </p>
-                    <p>15 años.</p>
+                    <p>${form.average_age}</p>
                     <p class="question">
                         ¿Dónde dormirá el
                         adoptado?
                     </p>
-                    <p>Conmigo.</p>
+                    <p>${form.place_of_sleep}</p>
                     <p class="question">
                         ¿Cuánto tiempo
                         pasará
                         solo?
                     </p>
-                    <p>Tal vez una hora diaria.</p>
+                    <p>${form.time_by_itself}</p>
                     <p class="question">
                         En caso de tener
                         empleados domésticos, ¿ellos están al tanto de los cuidados de un animal?
                     </p>
-                    <p>No tengo.</p>
+                    <p>${form.petcare_awareness}</p>
                     <p class="question">
                         ¿Quién será el
                         responsable y se hará cargo de cubrir los gastos del adoptado?
                     </p>
-                    <p>Yo.</p>
+                    <p>${form.pet_responsable}</p>
                     <p class="question">
                         ¿Tienes un médico
                         veterinario de cabecera?
                     </p>
-                    <p>Sí.</p>
+                    <p>${form.veterinarian}</p>
                     <div class="d-flex flex-wrap justify-content-evenly pb-4">
                         <form action="">
                             <input type="submit" value="Declinar"
