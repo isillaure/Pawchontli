@@ -1,0 +1,111 @@
+.form-base {
+
+    background-color: var(--porsche);
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 6em;
+
+    .adoption-body{
+        background-color:white;
+        border-radius: 15px;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em;
+        padding-bottom: 4em;
+    }
+
+    .title {
+        position: relative;
+        padding-top: 2em;
+
+        .josefinsans-normal-black-30px {
+            color: black;
+            font-family: "Josefin Sans";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+        }
+    }
+
+    .base-form{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    label {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .overlap-group {
+        display: flex;
+        align-items: center;
+        background-color: var(--white-lilac);
+        border-radius: 15px;
+        height: 40px;
+
+        .input-base {
+            min-height: 16px;
+        }
+    
+        .border-2px-chetwode-blue {
+            border: 2px solid var(--chetwode-blue);
+        }
+    }
+
+    .checkbox-form{
+        label{
+            padding-left: 2em;
+        }
+    }
+
+    .josefinsans-normal-chetwode-blue-16px {
+        color: var(--chetwode-blue);
+        font-family: "Josefin Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .josefinsans-normal-chetwode-blue-20px {
+        color: var(--chetwode-blue);
+        font-family: "Josefin Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+    }
+}
+
+.button-primary {
+    align-items: center;
+    background-color: var(--porsche);
+    border-radius: 15px;
+    display: flex;
+    height: 55px;
+    overflow: hidden;
+    width: 343px;
+    display: block;
+    margin-top: 1em;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-color: var(--porsche);
+    border: none;
+
+    .button-p {
+        letter-spacing: 0px;
+        min-height: 20px;
+        min-width: 61px;
+        text-align: center;
+    }
+
+    .josefinsans-normal-white-20px {
+        color: white;
+        font-family: "Josefin Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+    }
+}
