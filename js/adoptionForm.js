@@ -156,7 +156,6 @@ $(function () {
                     pet:id_pet,
                     
                 }),
-                
             });
             const json = await data.json();
             console.log(data, json);
@@ -173,4 +172,11 @@ $(function () {
             $(this).removeClass("is-invalid")
         }
     })
+
+    $('.input-base').keyup(function () {
+        if (form.checkValidity()) {
+            alert("¡Solicitud completada! Una vez que el refugio acepte tu solicitud, recibirás un correo con mayor información para finalizar la adopción.")
+        }
+    })
+
 })
