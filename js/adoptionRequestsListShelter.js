@@ -20,8 +20,8 @@ $(document).ready(async () => {
         layoutforms += `
         <div class="  d-flex justify-content-center flex-column">
             <button type="button" class="collapsible container-fluid d-flex align-items-center justify-content-between">
-                <img src="assets/img/perro_2.jpg" alt="" class="image-pet" style="width:90px;">
-                Gnocchi
+                
+                ${form.pet}
                 <img src="assets/svg/arrowdownwhite.svg" alt="" class="arrow-white" style="width: 1.5em;">
             </button>
             <div class="form-pet content container-fluid">
@@ -91,11 +91,14 @@ $(document).ready(async () => {
                     </p>
                     <p>${form.veterinarian}</p>
                     <div class="d-flex flex-wrap justify-content-evenly pb-4">
+                        Status
+                    </p>
+                    <p>${form.status}</p>
                         <form action="">
                             <input type="submit" value="Declinar"
-                            class="button-secondary">
+                            class="button-secondary decline" data-id="${form.id}">
                             <input type="submit" value="Aceptar"
-                            class="button-main">
+                            class="button-main acept" data-id="${form.id}">
                         </form>
                     </div>
                 </div>
@@ -105,6 +108,50 @@ $(document).ready(async () => {
         `
     });
     $('.formpet').html(layoutforms)
+
+    // const forms = await fetch(`http://localhost:8000/api/adoption_forms/`, {
+    //     headers: {
+    //         Authorization: `Token ${authtokenshelter}`,
+    //     },
+    // });
+    $('.acept').click(function(e){
+        e.preventDefault()
+        let id=$(this).data("id")
+        var data = {
+            status : "Approved"
+        }
+        fetch(`http://localhost:8000/api/adoption_forms/${id}/update/`, {
+        method: 'PATCH',
+        body: JSON.stringify(data),
+        headers: {
+        "Content-type": "application/json;charset=UTF-8"
+        }
+        })
+        .then(response => response.json())
+        .then(json => console.log(json))
+        
+    
+
+
+    });
+
+    $('.decline').click(function(e){
+        e.preventDefault()
+        let id=$(this).data("id")
+        var data = {
+            status : "Rejected"
+        }
+        fetch(`http://localhost:8000/api/adoption_forms/${id}/update/`, {
+        method: 'PATCH',
+        body: JSON.stringify(data),
+        headers: {
+        "Content-type": "application/json;charset=UTF-8"
+        }
+        })
+        .then(response => response.json())
+        .then(json => console.log(json))
+    });
+
 
     var coll = document.getElementsByClassName("collapsible");
     var i;
