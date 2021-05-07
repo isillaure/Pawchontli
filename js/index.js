@@ -22,4 +22,28 @@ $(document).ready(async () => {
         `
     });
     $('.pet-carousel').html(layoutpets)
+
+    $('.owl-carousel').owlCarousel({
+        loop: false,
+        margin: 30,
+        nav: true,
+        autoWidth: true,
+        stagePadding: 100,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            600: {
+                items: 2,
+                nav: false
+            },
+            1000: {
+                items: 4,
+                nav: true,
+                loop: false
+            }
+        }
+    })
 });
