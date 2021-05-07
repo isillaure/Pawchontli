@@ -66,6 +66,18 @@ $(document).ready(async () => {
         `
         $('.forms-button').html(adoptionforms)
 
+        let createpet= "";
+            createpet=` 
+            <div class="card" style="width: 30rem;"">
+                    <a href="createPet.html?association_id=${arrayShelter.id}">
+                    <img src="assets/svg/add.svg" alt="" style="height: 8em; width: 8em;">
+                    <h3 class="josefinsans-medium-chetwode-blue-20px">Añadir mascota</h3>
+                    </a>
+                </div>
+        
+        `
+        $('.create-pet').html(createpet)
+
 
 
 

@@ -15,27 +15,98 @@ $(document).ready(async () => {
     });
     const arrayForms = await forms.json();
     console.log(arrayForms);
-    let layoutforms = "";
-     arrayPets.forEach(form => {
+     let layoutforms = "";
+      arrayForms.forEach(form => {
         layoutforms+=`
-        <div class="card" style="width: 20rem;">
-                <svg class="ico" viewBox="0 0 24 24" style="width: 3em; height: 3em">
-                    <path
-                        d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z">
-                    </path>
-                </svg>
-                <a href="detailPet.html?id_pet=${pet.id}">
-                    <img class="card-img-top" src="${pet.image}" alt="Pet">
-                </a>
-                <div class="card-body">
-                    <a href="detailPet.html?id_pet=${pet.id}">
-                        <p class="card-text josefinsans-semi-bold-chetwode-blue-16px">${pet.name}</p>
-                    </a>
+        <div class="  d-flex justify-content-center flex-column">
+            <button type="button" class="collapsible container-fluid d-flex align-items-center justify-content-between">
+                <img src="assets/img/perro_2.jpg" alt="" class="image-pet" style="width:90px;">
+                Gnocchi
+                <img src="assets/svg/arrowdownwhite.svg" alt="" class="arrow-white" style="width: 1.5em;">
+            </button>
+            <div class="form-pet content container-fluid">
+                <div class="d-flex flex-column pt-3">
+                    <p class="josefinsans-chetwode-blue-18px">FECHA DE SOLICITUD</p>
+                    <p>${form.created_at}</p>
+                </div>
+                <div class="d-flex flex-column">
+                    <p class="josefinsans-chetwode-blue-18px">NOMBRE DEL ADOPTANTE</p>
+                    <a href="profileUser.html">Victoria Robertson</a>
+                </div>
+                <br>
+                <div class="d-flex flex-column">
+                    <p class="josefinsans-chetwode-blue-18px">ESTATUS</p>
+                    <p>Activa.</p>
+                </div>
+                <div class="d-flex flex-column">
+                    <p class="josefinsans-chetwode-blue-18px">FORMULARIO DE ADOPCIÓN</p>
+                    <p class="question">¿Actualmente tienes
+                        animales?</p>
+                    <p>Sí.</p>
+                    <p class="question">¿Cuáles?</p>
+                    <p>Un perro.</p>
+                    <p class="question">¿Anteriormente has
+                        tenido otros animales?</p>
+                    <p>Sí, un gato.</p>
+                    <p class="question">¿Qué fue lo que
+                        pasó con ellos?</p>
+                    <p>Falleció por cáncer.</p>
+                    <p class="question">¿Todas las personas
+                        en
+                        casa están de acuerdo en adoptar?</p>
+                    <p>Sí.</p>
+                    <p class="question">
+                        Si
+                        por algún motivo
+                        tuvieras que cambiar de domicilio, ¿qué pasaría con el adoptado?
+                    </p>
+                    <p>Buscaría un departamento donde acepten mascotas para llevarlo conmigo.</p>
+                    <p class="question">
+                        ¿Cuántos años crees
+                        que
+                        vive un perro o gato en promedio?
+                    </p>
+                    <p>15 años.</p>
+                    <p class="question">
+                        ¿Dónde dormirá el
+                        adoptado?
+                    </p>
+                    <p>Conmigo.</p>
+                    <p class="question">
+                        ¿Cuánto tiempo
+                        pasará
+                        solo?
+                    </p>
+                    <p>Tal vez una hora diaria.</p>
+                    <p class="question">
+                        En caso de tener
+                        empleados domésticos, ¿ellos están al tanto de los cuidados de un animal?
+                    </p>
+                    <p>No tengo.</p>
+                    <p class="question">
+                        ¿Quién será el
+                        responsable y se hará cargo de cubrir los gastos del adoptado?
+                    </p>
+                    <p>Yo.</p>
+                    <p class="question">
+                        ¿Tienes un médico
+                        veterinario de cabecera?
+                    </p>
+                    <p>Sí.</p>
+                    <div class="d-flex flex-row justify-content-evenly pb-4">
+                        <button class="button-secondary">Declinar</button>
+                        <button class="button-main">Aceptar</button>
+                    </div>
                 </div>
             </div>
+            
+        </div>
+            
+         
+        
         `
     });
-    $('.search-pet').html(layoutpets)
+    $('.formpet').html(layoutforms)
 
 
   });
