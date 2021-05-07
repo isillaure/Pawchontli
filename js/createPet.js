@@ -45,6 +45,7 @@ $(function () {
             $("#size").removeClass("is-invalid");
         }
         const character = $("#character").val();
+        console.log(character)
         if (character === '') {
             $("#character").addClass("is-invalid");
             return;
@@ -80,8 +81,6 @@ $(function () {
             formData.append('story', story)
             formData.append('special_needs', specialNeeds)
             formData.append('association', association)
-
-            
 
             const authtokenshelter = localStorage.getItem("authtokenshelter");
 

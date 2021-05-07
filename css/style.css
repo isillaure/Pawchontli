@@ -784,6 +784,15 @@ collapsible:hover .arrow-white {
   width: 80%;
 }
 
+.create-pet-form form .option-base {
+  border-radius: 10em;
+  height: 40px;
+  color: var(--chetwode-blue);
+  background-color: var(--white-lilac);
+  border: 2px solid var(--chetwode-blue);
+  font-family: "Josefin Sans";
+}
+
 .create-pet-form form ::-webkit-input-placeholder {
   color: var(--chetwode-blue);
 }
