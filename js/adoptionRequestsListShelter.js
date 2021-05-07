@@ -5,19 +5,19 @@ $(document).ready(async () => {
     const association_id = urlParams.get('association_id')
     const authtokenshelter = localStorage.getItem("authtokenshelter");
     const is_shelter = localStorage.getItem("is_adopter")
-    
-   
-    
+
+
+
     const forms = await fetch(`http://localhost:8000/api/adoption_forms/`, {
-      headers: {
-        Authorization: `Token ${authtokenshelter}`,
-      },
+        headers: {
+            Authorization: `Token ${authtokenshelter}`,
+        },
     });
     const arrayForms = await forms.json();
     console.log(arrayForms);
-     let layoutforms = "";
-      arrayForms.forEach(form => {
-        layoutforms+=`
+    let layoutforms = "";
+    arrayForms.forEach(form => {
+        layoutforms += `
         <div class="  d-flex justify-content-center flex-column">
             <button type="button" class="collapsible container-fluid d-flex align-items-center justify-content-between">
                 <img src="assets/img/perro_2.jpg" alt="" class="image-pet" style="width:90px;">
@@ -101,12 +101,22 @@ $(document).ready(async () => {
             </div>
             
         </div>
-            
-         
-        
         `
     });
     $('.formpet').html(layoutforms)
 
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
 
-  });
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+});

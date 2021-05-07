@@ -299,6 +299,7 @@ footer .block-footer {
 
 footer ul {
   list-style-type: none;
+  color: white;
 }
 
 footer a {
@@ -1454,7 +1455,6 @@ collapsible:hover .arrow-white {
   margin-right: auto;
   margin-top: 2em;
   margin-bottom: 4em;
-  width: 90%;
 }
 
 .shelter-register a {
@@ -1466,7 +1466,7 @@ collapsible:hover .arrow-white {
       -ms-flex-align: center;
           align-items: center;
   background-color: var(--white);
-  border-radius: 14px;
+  border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1474,12 +1474,7 @@ collapsible:hover .arrow-white {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-right: 2px;
-  min-width: 327px;
   padding: 0 120px;
-  letter-spacing: 0px;
-  min-height: 20px;
-  min-width: 85px;
   text-align: center;
   border-color: white;
   border: none;
@@ -1530,7 +1525,6 @@ collapsible:hover .arrow-white {
   padding: 36px 0;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
 }
 
 .donations a {
@@ -1650,33 +1644,7 @@ collapsible:hover .arrow-white {
   color: var(--chetwode-blue);
 }
 
-.log-in-form .button-primary {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: var(--porsche);
-  border-radius: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 55px;
-  overflow: hidden;
-  padding: 0 140px;
-  width: 343px;
-  display: block;
-  margin-top: 1em;
-  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-}
-
-.log-in-form .button-primary .button-p {
-  letter-spacing: 0px;
-  min-height: 20px;
-  min-width: 61px;
-  text-align: center;
-}
-
-.log-in-form .button-primary .josefinsans-normal-white-20px {
+.log-in-form .josefinsans-normal-white-20px {
   color: white;
   font-family: "Josefin Sans",sans-serif;
   font-size: 20px;
@@ -1922,6 +1890,12 @@ collapsible:hover .arrow-white {
   padding-right: 1em;
 }
 
+.filter-options .rectangle-background {
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
 .filter-options .pet-tag {
   background-color: var(--chetwode-blue);
   border-radius: 15px;
@@ -1958,6 +1932,14 @@ collapsible:hover .arrow-white {
   background-color: white;
   border: white;
   color: var(--chetwode-blue);
+  font-weight: 600;
+}
+
+.filter-options .josefinsans-semi-bold-chetwode-blue-16px {
+  color: var(--chetwode-blue);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 20px;
+  font-style: normal;
   font-weight: 600;
 }
 
@@ -2078,6 +2060,93 @@ collapsible:hover .arrow-white {
   font-size: var(--font-size-xxxxl);
   font-style: normal;
   font-weight: 400;
+}
+
+.container-filter label.switch {
+  text-align: left;
+  width: 50px;
+  height: calc(50px / 2);
+  border-radius: 60px;
+  background-color: var(--chetwode-blue);
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.container-filter label.switch > span {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.container-filter label.switch > input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+}
+
+.container-filter label.switch > span:before,
+.container-filter label.switch > span:after {
+  content: "";
+  cursor: pointer;
+  position: absolute;
+}
+
+.container-filter label.switch > input[type="checkbox"]:focus ~ span {
+  -webkit-box-shadow: 0 0 0 4px var(--chetwode-blue);
+          box-shadow: 0 0 0 4px var(--chetwode-blue);
+}
+
+.container-filter label.switch > input[type="checkbox"]:checked:focus ~ span {
+  -webkit-box-shadow: 0 0 0 4px #fff;
+          box-shadow: 0 0 0 4px #fff;
+}
+
+.container-filter label.switch > span {
+  border-radius: 60px;
+}
+
+.container-filter label.switch > span:before {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f1f1f1;
+  border-radius: 60px;
+  -webkit-transition: opacity .2s ease-out .1s, -webkit-transform .2s ease-out .1s;
+  transition: opacity .2s ease-out .1s, -webkit-transform .2s ease-out .1s;
+  transition: opacity .2s ease-out .1s, transform .2s ease-out .1s;
+  transition: opacity .2s ease-out .1s, transform .2s ease-out .1s, -webkit-transform .2s ease-out .1s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
+.container-filter label.switch > span:after {
+  top: 50%;
+  z-index: 3;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.44, -0.12, 0.07, 1.15);
+  transition: -webkit-transform 0.4s cubic-bezier(0.44, -0.12, 0.07, 1.15);
+  transition: transform 0.4s cubic-bezier(0.44, -0.12, 0.07, 1.15);
+  transition: transform 0.4s cubic-bezier(0.44, -0.12, 0.07, 1.15), -webkit-transform 0.4s cubic-bezier(0.44, -0.12, 0.07, 1.15);
+  width: calc(50px / 2);
+  height: calc(50px / 2);
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container-filter label.switch > input[type="checkbox"]:checked ~ span:before {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: .7;
+}
+
+.container-filter label.switch > input[type="checkbox"]:checked ~ span:after {
+  -webkit-transform: translate3d(100%, -50%, 0);
+          transform: translate3d(100%, -50%, 0);
 }
 
 :root {
