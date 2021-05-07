@@ -1,5 +1,6 @@
 $(function () {
     console.log('is profile')
+    
 
     $("#form-shelter").on("submit", async (event) => {
         event.preventDefault();

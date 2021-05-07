@@ -43,8 +43,9 @@ $(function () {
                 },
                 });
                 const arrayAdopter = await adopterinfo.json();
-                if(arrayAdopter.phone == "null"){
+                if(arrayAdopter.phone == null){
                     window.location.href = "/formUser.html?adopter_id="+adopter_id;
+                    console.log(adopter_id)
                 }
                 else{
                     if (previous_page == null){

@@ -4,6 +4,8 @@ $(function () {
     const urlParams = new URLSearchParams(queryString);
     const id_pet = urlParams.get('id_pet')
 
+    const authtoken = localStorage.getItem("authtoken");
+
     // const data = await fetch(`http://localhost:8000/api/pets/${id_pet}/`, {
     //   headers: {
     //     //Authorization: `Token ${authtokenshelter}`,
@@ -152,7 +154,7 @@ $(function () {
                     pet_responsable: petResponsible,
                     veterinarian: veterinarian,
                     pet:id_pet,
-                    adopter:"33",
+                    
                 }),
                 
             });

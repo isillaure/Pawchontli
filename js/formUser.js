@@ -17,13 +17,13 @@ $(function () {
         // } else {
         //     $("#last-name").removeClass("is-invalid");
         // }
-        const birthdate = $("#birthdate").val();
-        if (birthdate === '') {
-            $("#birthdate").addClass("is-invalid");
-            return;
-        } else {
-            $("#birthdate").removeClass("is-invalid");
-        }
+        // const birthdate = $("#birthdate").val();
+        // if (birthdate === '') {
+        //     $("#birthdate").addClass("is-invalid");
+        //     return;
+        // } else {
+        //     $("#birthdate").removeClass("is-invalid");
+        // }
         const phone = $("#phone").val();
         if (phone === '') {
             $("#phone").addClass("is-invalid");
@@ -99,7 +99,7 @@ $(function () {
             formData.append('street_and_number', street)
             formData.append('story', story)
             formData.append('occupation', occupation)
-            formData.append('birthdate', birthdate)
+            // formData.append('birthdate', birthdate)
 
             
 

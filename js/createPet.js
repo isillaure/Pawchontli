@@ -65,7 +65,7 @@ $(function () {
         } else {
             $("#special-Needs").removeClass("is-invalid");
         }
-        const association = (association_id).val();
+        const association = association_id;
 
         try {
             const fileInput = $('#image')[0].files[0]
@@ -79,7 +79,7 @@ $(function () {
             formData.append('character', character)
             formData.append('story', story)
             formData.append('special_needs', specialNeeds)
-            formData.append('association', specialNeeds)
+            formData.append('association', association)
 
             
 
@@ -97,9 +97,9 @@ $(function () {
             });
             const json = await data.json();
             console.log(data, json);
-            if (data.status === 200) {
+            if (data.status === 201) {
                 localStorage.setItem("authtoken", json.token);
-                window.location.href = "/homeShelter.html?association_id="+associationid;
+                window.location.href = "/homeShelter.html?association_id="+association_id;
             }
         } catch (error) {
             console.log(error);
