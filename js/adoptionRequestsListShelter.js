@@ -90,10 +90,11 @@ $(document).ready(async () => {
                         veterinario de cabecera?
                     </p>
                     <p>${form.veterinarian}</p>
-                    <div class="d-flex flex-wrap justify-content-evenly pb-4">
-                        Status
+                    <p class="question">
+                    Status
                     </p>
                     <p>${form.status}</p>
+                    <div class="d-flex flex-wrap justify-content-evenly pb-4">
                         <form action="">
                             <input type="submit" value="Declinar"
                             class="button-secondary decline" data-id="${form.id}">

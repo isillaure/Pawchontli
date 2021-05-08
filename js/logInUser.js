@@ -36,6 +36,7 @@ $(function () {
             if (data.status === 200) {
                 const authtoken=localStorage.setItem("authtoken", json.token);
                 const is_adopter=localStorage.setItem("is_adopter", json.is_adopter)
+                localStorage.setItem("user_id", json.adopter_id)
                 var adopter_id = json.adopter_id
                 const adopterinfo = await fetch(`http://localhost:8000/api/adopters/${adopter_id}/`, {
                 headers: {
@@ -43,6 +44,7 @@ $(function () {
                 },
                 });
                 const arrayAdopter = await adopterinfo.json();
+                console.log(arrayAdopter)
                 if(arrayAdopter.phone == null){
                     window.location.href = "/formUser.html?adopter_id="+adopter_id;
                     console.log(adopter_id)

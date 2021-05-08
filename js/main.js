@@ -8,6 +8,12 @@ $(function () {
         $('.container-menu').removeClass('open').fadeOut()
     })
 
+    $('#got-profile').on("click", (element) => {
+        element.preventDefault()
+        let idUser = localStorage.getItem('user_id')
+        window.location.href = "/profileUserEdit.html?adopter_id="+idUser;
+    });
+
     $("#log-out").on("click", (element) => {
         element.preventDefault()
         localStorage.removeItem("authtoken");
