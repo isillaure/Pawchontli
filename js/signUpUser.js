@@ -49,7 +49,7 @@ $(function () {
         }
 
         try {
-            const data = await fetch("http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com/:8000/api/register/adopter/", {
+            const data = await fetch("http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com:8000/api/register/adopter/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

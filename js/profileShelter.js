@@ -3,7 +3,7 @@ $(document).ready(async () => {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const association_id = urlParams.get('association_id')
-    const data = await fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com/:8000/api/associations/${association_id}/`, {
+    const data = await fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com:8000/api/associations/${association_id}/`, {
       headers: {
         //Authorization: `Token ${authtokenshelter}`,
       },
@@ -20,7 +20,7 @@ $(document).ready(async () => {
     $('#donation-link').attr('href',arrayShelter.donation_link)
     $('.story_shelter').text(arrayShelter.story)
     
-    const pets = await fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com/:8000/api/associations/${association_id}/pets/`, {
+    const pets = await fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com:8000/api/associations/${association_id}/pets/`, {
       headers: {
         //Authorization: `Token ${authtokenshelter}`,
       },

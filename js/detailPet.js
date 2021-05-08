@@ -4,7 +4,7 @@ $(document).ready(async () => {
   const urlParams = new URLSearchParams(queryString);
   const id_pet = urlParams.get('id_pet')
 
-  const data = await fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com/:8000/api/pets/${id_pet}/`, {
+  const data = await fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com:8000/api/pets/${id_pet}/`, {
     headers: {
       //Authorization: `Token ${authtokenshelter}`,
     },
@@ -26,7 +26,7 @@ $(document).ready(async () => {
 
   const association_id = arrayPet.association.id
   console.log(association_id)
-  const data1 = await fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com/:8000/api/associations/${association_id}/`, {
+  const data1 = await fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com:8000/api/associations/${association_id}/`, {
     headers: {
       //Authorization: `Token ${authtokenshelter}`,
     },

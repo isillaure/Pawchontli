@@ -1,7 +1,7 @@
 $(document).ready(async () => {
     const is_adopter = localStorage.getItem("is_adopter")
     if (is_adopter == "true") {
-        const pets = await fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com/:8000/api/pets/`, {
+        const pets = await fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com:8000/api/pets/`, {
             headers: {
                 //Authorization: `Token ${authtoken}`,
             },

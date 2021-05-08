@@ -8,7 +8,7 @@ $(document).ready(async () => {
 
 
 
-    const forms = await fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com/:8000/api/adopters/${adopter_id}/adoption_forms/`, {
+    const forms = await fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com:8000/api/adopters/${adopter_id}/adoption_forms/`, {
         headers: {
             Authorization: `Token ${authtoken}`,
         },

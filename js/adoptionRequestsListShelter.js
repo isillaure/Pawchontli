@@ -8,7 +8,7 @@ $(document).ready(async () => {
 
 
 
-    const forms = await fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com/:8000/api/adoption_forms/`, {
+    const forms = await fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com:8000/api/adoption_forms/`, {
         headers: {
             Authorization: `Token ${authtokenshelter}`,
         },
@@ -121,7 +121,7 @@ $(document).ready(async () => {
         var data = {
             status : "Approved"
         }
-        fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com/:8000/api/adoption_forms/${id}/update/`, {
+        fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com:8000/api/adoption_forms/${id}/update/`, {
         method: 'PATCH',
         body: JSON.stringify(data),
         headers: {
@@ -142,7 +142,7 @@ $(document).ready(async () => {
         var data = {
             status : "Rejected"
         }
-        fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com/:8000/api/adoption_forms/${id}/update/`, {
+        fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com:8000/api/adoption_forms/${id}/update/`, {
         method: 'PATCH',
         body: JSON.stringify(data),
         headers: {

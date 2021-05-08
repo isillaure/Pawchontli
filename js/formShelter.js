@@ -121,7 +121,7 @@ $(function () {
 
             const authtokenshelter = localStorage.getItem("authtokenshelter");
 
-            const data = await fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com/:8000/api/associations/${association_id}/update/`, {
+            const data = await fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com:8000/api/associations/${association_id}/update/`, {
                 method: "PATCH",
                 headers: {
                     Authorization: `Token ${authtokenshelter}`
