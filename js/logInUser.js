@@ -20,7 +20,7 @@ $(function () {
 
         try {
             /*const authtoken = localStorage.getItem("authtoken");*/
-            const data = await fetch("http://localhost:8000/api/login/adopter/", {
+            const data = await fetch("http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com/:8000/api/login/adopter/", {
                 method: "POST",
                 headers: {
                     /*Authorization: `Token ${authtoken}`,*/
@@ -38,7 +38,7 @@ $(function () {
                 const is_adopter=localStorage.setItem("is_adopter", json.is_adopter)
                 localStorage.setItem("user_id", json.adopter_id)
                 var adopter_id = json.adopter_id
-                const adopterinfo = await fetch(`http://localhost:8000/api/adopters/${adopter_id}/`, {
+                const adopterinfo = await fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com/:8000/api/adopters/${adopter_id}/`, {
                 headers: {
                         //Authorization: `Token ${authtoken}`,
                 },

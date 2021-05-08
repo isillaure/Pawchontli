@@ -19,7 +19,7 @@ $(function () {
         }
 
         try {
-            const data = await fetch("http://localhost:8000/api/login/association/", {
+            const data = await fetch("http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com/:8000/api/login/association/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -36,7 +36,7 @@ $(function () {
                 localStorage.setItem("authtokenshelter", json.token);
                 localStorage.setItem("is_adopter", json.is_adopter);
                 var association_id = json.association_id
-                const shelterinfo = await fetch(`http://localhost:8000/api/associations/${association_id}/`, {
+                const shelterinfo = await fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com/:8000/api/associations/${association_id}/`, {
                 headers: {
                     Authorization: `Token ${authtokenshelter}`,
                 },

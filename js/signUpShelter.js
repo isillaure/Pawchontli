@@ -36,7 +36,7 @@ $(function () {
         }
 
         try {
-            const data = await fetch("http://localhost:8000/api/register/association/", {
+            const data = await fetch("http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com/:8000/api/register/association/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

@@ -111,7 +111,7 @@ $(function () {
 
             const authtoken = localStorage.getItem("authtoken");
 
-            const data = await fetch(`http://localhost:8000/api/adopters/${adopter_id}/update/`, {
+            const data = await fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com/:8000/api/adopters/${adopter_id}/update/`, {
                 method: "PATCH",
                 headers: {
                     Authorization: `Token ${authtoken}`

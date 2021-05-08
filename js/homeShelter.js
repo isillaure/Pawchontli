@@ -8,7 +8,7 @@ $(document).ready(async () => {
     
     if(is_shelter == 'false'){
 
-        const data = await fetch(`http://localhost:8000/api/associations/${association_id}/`, {
+        const data = await fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com/:8000/api/associations/${association_id}/`, {
       headers: {
         Authorization: `Token ${authtokenshelter}`,
       },
@@ -23,7 +23,7 @@ $(document).ready(async () => {
 
 
 
-        const pets = await fetch(`http://localhost:8000/api/associations/${association_id}/pets/`, {
+        const pets = await fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com/:8000/api/associations/${association_id}/pets/`, {
           headers: {
             Authorization: `Token ${authtokenshelter}`,
           },

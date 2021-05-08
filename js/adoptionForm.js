@@ -132,7 +132,7 @@ $(function () {
             // formData.append('veterinarian', veterinarian)
             
 
-            const data = await fetch(`http://localhost:8000/api/adoption_forms/create/`, {
+            const data = await fetch(`http://ec2-18-219-223-87.us-east-2.compute.amazonaws.com/:8000/api/adoption_forms/create/`, {
                 method: "POST",
                 headers: {
                     //Authorization: `Token ${authtoken}`
